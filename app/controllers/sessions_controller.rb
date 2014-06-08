@@ -18,4 +18,9 @@ class SessionsController < ApplicationController
     redirect_to root_url, alert: "Authentication failed, please try again."
   end
 
+  def auth_hash
+    request.env['omniauth.auth']
+  end
+
+
 end
