@@ -5,37 +5,31 @@ class SessionsController < ApplicationController
   def new
   end
 
+  # authentication via twitter or facebook
   def create
-
     #start local sesion
     user = User.from_omniauth(env["omniauth.auth"])
-    session[:user_id] = user.id
-    
+    session[:user_id] = user.id    
     #for later twitter configuration
     session[:access_token] = env["omniauth.auth"]["credentials"]["token"]
     session[:access_token_secret] = env["omniauth.auth"]["credentials"]["secret"]
 
-    redirect_to root_url, notice: "Signed in!"
+    redirect_to algo_path, notice: "Signed in!"
   end
 
 
+  # show of content
   def show
-
-    @user = Twitter::REST::Client.new do |config|
-      config.consumer_key = 'b1BcFmbc1ILHAcVbhNKyg'
-      config.consumer_secret = 'T7JUvNcTu3RvJ12RRmRkdnaccpH8RDmrZwFR2AY'
-      config.oauth_token = session[:access_token]
-      config.oauth_token_secret = session[:access_token_secret]
-    end
-
+    # social media from twitter
     if session['access_token'] && session['access_token_secret']
-      @user = client.user(include_entities: true)
+      @user = twitter_client.user(include_entities: true)
+      @client = twitter_client
     else
       redirect_to failure_path
-    end
-    
-  end
+    end 
+    #social media from facebook
 
+  end
 
 
   def destroy

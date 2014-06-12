@@ -16,7 +16,7 @@ class ApplicationController < ActionController::Base
   end
   helper_method :current_user, :signed_in?
 
-  def client
+  def twitter_client
     @client = Twitter::REST::Client.new do |config|
       config.consumer_key = 'b1BcFmbc1ILHAcVbhNKyg'
       config.consumer_secret = 'T7JUvNcTu3RvJ12RRmRkdnaccpH8RDmrZwFR2AY'
