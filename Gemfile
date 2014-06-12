@@ -48,7 +48,10 @@ gem 'omniauth-facebook'
 gem 'omniauth-twitter'
 
 # API comunication
+#twitter
 gem 'twitter'
+#facebook
+gem "koala", "~> 1.10.0rc"
 
 
 group :development do
@@ -56,3 +59,4 @@ group :development do
   gem 'binding_of_caller'
   #gem 'meta_request'
 end
+
