@@ -40,9 +40,19 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
 gem 'rails_12factor', group: :production
 
+# authentication
 gem 'omniauth'
-
+# facebook authentication
 gem 'omniauth-facebook'
-
+# twitter authentication
 gem 'omniauth-twitter'
 
+# API comunication
+gem 'twitter'
+
+
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  #gem 'meta_request'
+end
