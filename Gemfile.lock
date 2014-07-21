@@ -150,6 +150,7 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (~> 2.8)
+    tf_idf (0.0.2)
     thor (0.19.1)
     thread_safe (0.3.4)
     tilt (1.4.1)
@@ -196,6 +197,7 @@ DEPENDENCIES
   rails_12factor
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
+  tf_idf
   turbolinks
   twitter
   tzinfo-data

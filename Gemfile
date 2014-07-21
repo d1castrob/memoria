@@ -40,6 +40,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
 gem 'rails_12factor', group: :production
 
+
+######################## SOCIAL NETWORK COMUNICATION #####################################
+
 # authentication
 gem 'omniauth'
 # facebook authentication
@@ -52,6 +55,16 @@ gem 'omniauth-twitter'
 gem 'twitter'
 #facebook
 gem "koala", "~> 1.10.0rc"
+
+
+######################## TEXT SIMILARITY #########################################
+
+#tfidf
+gem 'tf_idf'
+
+#steamer
+
+
 
 
 group :development do
