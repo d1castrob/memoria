@@ -60,8 +60,10 @@ gem "koala", "~> 1.10.0rc"
 ######################## TEXT SIMILARITY #########################################
 
 #tfidf
-gem 'tf_idf'
+# gem 'tf_idf'
 
+#tfidf y distancia de coseno
+gem 'tf-idf-similarity'
 #steamer
 
 

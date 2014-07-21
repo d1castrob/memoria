@@ -1,5 +1,6 @@
 require 'twitter'
-require 'tf_idf'
+require 'matrix'
+require 'tf-idf-similarity'
 
 class ApplicationController < ActionController::Base
   # Prevent CSRF attacks by raising an exception.
@@ -32,24 +33,16 @@ class ApplicationController < ActionController::Base
 
   #
   # construye un TfIdf entre todos los distintos mensajes
-  # a.tf, a.idf y a.tf_idf son metodos validos
+  # usando https://github.com/opennorth/tf-idf-similarity
   #
   def tf_idf
-    #build data
-    data = []
+    #build corpus
+    corpus = []
     Message.all.each do |m|
-      data << m.text.split(' ')
+      corpus << TfIdfSimilarity::Document.new(m.text.split(' '))
     end
-    
-    tiffany = TfIdf.new(data)
-  end
 
-  #
-  # calcula la distancia de coseno entre dos vectores
-  # necesita el diccionario tfidf
-  #
-  def cosine_distance
-    
+    model = TfIdfSimilarity::TfIdfModel.new(corpus)
   end
 
 end
