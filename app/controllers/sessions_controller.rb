@@ -26,6 +26,7 @@ class SessionsController < ApplicationController
         @user = twitter_client.user(include_entities: true)
         @client = twitter_client
         @timeline = @client.home_timeline()
+        @site = 'twitter'
       else
         redirect_to failure_path
       end 
@@ -34,6 +35,7 @@ class SessionsController < ApplicationController
       @user = @graph.get_object("me","likes")
       @feed = @graph.get_connections("me", "feed")
       @timeline = @user.home
+      @site = 'facebook'
     end
 
   end

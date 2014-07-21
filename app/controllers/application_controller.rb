@@ -20,8 +20,8 @@ class ApplicationController < ActionController::Base
     @client = Twitter::REST::Client.new do |config|
       config.consumer_key = 'b1BcFmbc1ILHAcVbhNKyg'
       config.consumer_secret = 'T7JUvNcTu3RvJ12RRmRkdnaccpH8RDmrZwFR2AY'
-      config.oauth_token = session[:access_token]
-      config.oauth_token_secret = session[:access_token_secret]
+      config.access_token = session[:access_token]
+      config.access_token_secret = session[:access_token_secret]
     end
   end
 
