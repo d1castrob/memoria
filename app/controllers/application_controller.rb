@@ -73,16 +73,16 @@ class ApplicationController < ActionController::Base
   #  los stemmea y luego crea un modelo de tfidf en base a ellos
   #  retorna el modelo, que puede tiene una matriz de similaridad model.similarity_matrix
   #
-  def process (msgs)
+  def process_data()
     corpus = []
 
     # para cada mensaje (o documento)
-    msgs.each.do |m|
+    documents.each do |m|
       
       # pre procesamos el texto
       @message = m.text.split(' ')
       output []
-      @message.each.do |word|
+      @message.each do |word|
         output << @@stemmer.stem(word)
       end
 
