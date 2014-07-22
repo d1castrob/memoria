@@ -27,6 +27,7 @@ class SessionsController < ApplicationController
         @client = twitter_client
         @timeline = @client.home_timeline()
         @site = 'twitter'
+        @user.debugitty
       else
         redirect_to failure_path
       end 

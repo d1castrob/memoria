@@ -172,19 +172,35 @@ class ApplicationController < ActionController::Base
 
 #################################### DISTANCIA GEOGRAFICA ###############################################
 
+  #
   # 1era prioridad
   # mencion en el texto a un lugar geografico
+  #
   def mention
   end
-  
+
+  #
   # 2da prioridad
   # que el contenido tengo adjunto informacion de su ubicacion
+  #
   def location
+
   end
 
+  #
   # 3era prioridad
   # que el usuario sea de algun lado
+  #
   def user_location
+    @location
+    #en facebook
+    if current_user.provider == 'facebook'
+      me = @graph.get_object("me")
+      @location = me['location']['id']
+    #en twitter
+    else
+      @location = @user.location
+    end
   end
 
 
