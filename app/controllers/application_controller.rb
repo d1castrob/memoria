@@ -37,7 +37,7 @@ class ApplicationController < ActionController::Base
   end
 
 
-#################################### DISTANCIA DE TEXTO ###############################################
+#################################### DISTANCIA DE TEXTO ENTRE DOS MENSAJES ###############################################
 
 
   # #
@@ -65,8 +65,6 @@ class ApplicationController < ActionController::Base
     end
     output.join(' ')
   end
-
-
 
   #
   #  pesca muchos objetos tipo Message
@@ -97,12 +95,14 @@ class ApplicationController < ActionController::Base
   end
 
 
-#################################### DISTANCIA DE TEXTO ###############################################
+#################################### DISTANCIA SOCIAL ENTRE DOS USUARIOS ###############################################
 
 
   #
   # aca yo soy user y other_user es el que posteo
   # falta manejar excepcion si es que yo posties
+  #
+  # nota: la gema retorna objetos del tipo Twitter::User
   #
   def twitter_social_distance(poster_id)
     #fetch a user by screen name or id
@@ -135,33 +135,57 @@ class ApplicationController < ActionController::Base
     end
   end
 
+  #
+  # recibe el id que la persona que posteo algo
+  # ante la posibilidad de contar amigos mutuos con la gente que no conozco, decidi tomar el peso como 
+  # la cantidad de amigos en comun mas un peso si es que es amigo mio
+  # retorna este peso social
+  #
+  # nota: a diferencia de twitter la gema retorna pares {"name"=>"Constanza Arcos", "id"=>"502769140"}
+  #
+  def facebook_social_distance(poster_id)
+    # mis amigos
+    friends = @graph.get_connections("me", "friends")
+    # la cantidad de amigos mutuos que tenemos
+    mutualfriends = @graph.get_connections("me", "mutualfriends/#{poster_id}")
+    
+    #veo si esta dentro de mis amigos
+    friends.each do |f|
+      if  poster_id == a['id']
+        friends.count + mutualfriends.count
+      else
+        mutualfriends.count
+      end
+    end
+  end
 
 
+#################################### DISTANCIA TEMPORAL ENTRE DOS MENSAJES ###############################################
 
-    # #retorna todos mis amigos
-    # @amigos = @client.friends.to_a 
-    # #cada amigo
-    # @amigos.each do |a|
-    #   #nombre de usuario de un amigo
-    #   a.screen_name
-    # end
+  # Los mensajes de prueba y tambien los que seran minados mediante scripts todos deben tener 
+  # una fecha de creacion que sea igual a la de inclusion a la BD (al ser creados se sobreescribe este campo)
+  # debido a esto la distancia temporal es solo distancia entre fechas
 
-    # #retorna amigos de un usuario dado un person_id
-    # @client.friends('screen_name or id').to_a
+  def temporal_distance(message1, message2)
+    (message1.created_at - message2.created_at).to_i.abs
+  end
 
+#################################### DISTANCIA GEOGRAFICA ###############################################
 
-    # #si el tweet lo posteo 'adnradiochile'
-    # if ()    
+  # 1era prioridad
+  # mencion en el texto a un lugar geografico
+  def mention
+  end
+  
+  # 2da prioridad
+  # que el contenido tengo adjunto informacion de su ubicacion
+  def location
+  end
 
-
-
-
-
-
-
-
-
-
+  # 3era prioridad
+  # que el usuario sea de algun lado
+  def user_location
+  end
 
 
 
