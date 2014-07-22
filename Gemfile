@@ -65,7 +65,7 @@ gem "koala", "~> 1.10.0rc"
 #tfidf y distancia de coseno
 gem 'tf-idf-similarity'
 #steamer
-
+gem 'ruby-stemmer', '>=0.8.3', :require => 'lingua/stemmer'
 
 
 

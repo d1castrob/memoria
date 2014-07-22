@@ -1,13 +1,18 @@
 require 'twitter'
 require 'matrix'
 require 'tf-idf-similarity'
+require 'lingua/stemmer'
 
 class ApplicationController < ActionController::Base
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
+  @@stemmer = Lingua::Stemmer.new(:language => "spanish", :encoding => 'UTF-8')
 
   protected
+
+#################################### MANEJO DE REDES SOCIALES ##########################################
+
 
   def current_user
     @current_user ||= User.find(session[:user_id]) if session[:user_id]
@@ -31,6 +36,10 @@ class ApplicationController < ActionController::Base
     end
   end
 
+
+#################################### DISTANCIA DE TEXTO ###############################################
+
+
   #
   # construye un TfIdf entre todos los distintos mensajes
   # usando https://github.com/opennorth/tf-idf-similarity
@@ -43,6 +52,18 @@ class ApplicationController < ActionController::Base
     end
 
     model = TfIdfSimilarity::TfIdfModel.new(corpus)
+  end
+
+  #
+  # recibe un arreglo de palabras naturales y
+  # retorna un arreglo con las mismas palabras stemeadas
+  #
+  def stem(arrayofwords)
+    output = []
+    arrayofwords.each do |word|
+      output << @@stemmer.stem(word)
+    end
+    output
   end
 
 end
