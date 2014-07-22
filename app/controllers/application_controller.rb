@@ -54,17 +54,17 @@ class ApplicationController < ActionController::Base
   #   model = TfIdfSimilarity::TfIdfModel.new(corpus)
   # end
 
-  # #
-  # # recibe un arreglo de palabras naturales y
-  # # retorna un arreglo con las mismas palabras stemeadas
-  # #
-  # def stem(arrayofwords)
-  #   output = []
-  #   arrayofwords.each do |word|
-  #     output << @@stemmer.stem(word)
-  #   end
-  #   output
-  # end
+  #
+  # recibe una palabra y la devuelve stemisada
+  # retorna un arreglo con las mismas palabras stemeadas
+  #
+  def stem(text)
+    output = []
+    text.split(' ').each do |word|
+      output << @@stemmer.stem(word)
+    end
+    output.join(' ')
+  end
 
 
 
@@ -87,7 +87,7 @@ class ApplicationController < ActionController::Base
       end
 
       #lo agregamos al corpues
-      corpus << TfIdfSimilarity::Document.new(output.join)
+      corpus << TfIdfSimilarity::Document.new(output.join(' '))
     
     end
 
