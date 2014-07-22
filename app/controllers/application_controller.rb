@@ -101,26 +101,26 @@ class ApplicationController < ActionController::Base
 
 
   #
-  # aca yo soy user, un amigo mio es other y una persona desconocida es unknown
-  #
+  # aca yo soy user y other_user es el que posteo
+  # falta manejar excepcion si es que yo posties
   #
   def twitter_social_distance(poster_id)
     #fetch a user by screen name or id
     @other_user = client.user(poster_id)
     #this is me
-    @user
+    #@user
     @friend_level = 0
 
     # following? retorna true si yo sigo al mencionado
     # osea: if i follow the user who paosted
     if @other_user.following?
-      @friend_level ++
+      @friend_level += 1
     end
 
     # client.followers.to_a retorna la gente que me sigue
     # osea: if he follows me
     if @other_user.in?client.followers.to_a
-      @friend_level ++
+      @friend_level += 1
     end
     
     # si quisiera investigar grados de separacion debiese hacer
@@ -130,7 +130,7 @@ class ApplicationController < ActionController::Base
       @followers_of_my_followers = @client.followers(follwer.id).to_a
       #veo si el que posteo algo esta entre ellos
       if @other_user.in?@followers_of_my_followers
-        @friend_level ++
+        @friend_level += 1
       end
     end
   end

@@ -23,9 +23,7 @@ class SessionsController < ApplicationController
 
     if current_user.provider = 'twitter' # social media from twitter
       if session['access_token'] && session['access_token_secret']
-        
         @user = twitter_client.user(include_entities: true)
-        @user.blasdfasdf
         @client = twitter_client
         @timeline = @client.home_timeline()
         @site = 'twitter'
