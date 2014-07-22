@@ -40,30 +40,60 @@ class ApplicationController < ActionController::Base
 #################################### DISTANCIA DE TEXTO ###############################################
 
 
+  # #
+  # # construye un TfIdf entre todos los distintos mensajes
+  # # usando https://github.com/opennorth/tf-idf-similarity
+  # #
+  # def tf_idf
+  #   #build corpus
+  #   corpus = []
+  #   Message.all.each do |m|
+  #     corpus << TfIdfSimilarity::Document.new(m.text)
+  #   end
+
+  #   model = TfIdfSimilarity::TfIdfModel.new(corpus)
+  # end
+
+  # #
+  # # recibe un arreglo de palabras naturales y
+  # # retorna un arreglo con las mismas palabras stemeadas
+  # #
+  # def stem(arrayofwords)
+  #   output = []
+  #   arrayofwords.each do |word|
+  #     output << @@stemmer.stem(word)
+  #   end
+  #   output
+  # end
+
+
+
   #
-  # construye un TfIdf entre todos los distintos mensajes
-  # usando https://github.com/opennorth/tf-idf-similarity
+  #  pesca muchos objetos tipo Message
+  #  los stemmea y luego crea un modelo de tfidf en base a ellos
+  #  retorna el modelo, que puede tiene una matriz de similaridad model.similarity_matrix
   #
-  def tf_idf
-    #build corpus
+  def process (msgs)
     corpus = []
-    Message.all.each do |m|
-      corpus << TfIdfSimilarity::Document.new(m.text.split(' '))
+
+    # para cada mensaje (o documento)
+    msgs.each.do |m|
+      
+      # pre procesamos el texto
+      @message = m.text.split(' ')
+      output []
+      @message.each.do |word|
+        output << @@stemmer.stem(word)
+      end
+
+      #lo agregamos al corpues
+      corpus << TfIdfSimilarity::Document.new(output.join)
+    
     end
 
-    model = TfIdfSimilarity::TfIdfModel.new(corpus)
-  end
+    #construimos el modelo
+    model = TfIdfSimilarity::TfIdfModel.new(corpus)      
 
-  #
-  # recibe un arreglo de palabras naturales y
-  # retorna un arreglo con las mismas palabras stemeadas
-  #
-  def stem(arrayofwords)
-    output = []
-    arrayofwords.each do |word|
-      output << @@stemmer.stem(word)
-    end
-    output
   end
 
 end
