@@ -170,13 +170,29 @@ class ApplicationController < ActionController::Base
     (message1.created_at - message2.created_at).to_i.abs
   end
 
-#################################### DISTANCIA GEOGRAFICA ###############################################
+#################################### DISTANCIA GEOGRAFICA ##############################################################
 
   #
-  # 1era prioridad
-  # mencion en el texto a un lugar geografico
+  # 1era prioridad: mencion en el texto a un lugar geografico
+  # toma un mensaje y ve si menciona algun lugar del diccionario
+  # retorna dicho lugar mencionado o bien un string vacio
   #
-  def mention
+  # nota: necesito un diccionario
+  #
+  def mention(message)
+    places = ['chile', 'cuiaba', 'vitacura', 'las condes']
+    words = message.text.downcase.split[' ']
+
+    @location = ''
+
+    words.each do |w|
+      places.each do |p|
+        if p.include? w
+          @location = w
+        end
+      end
+    end
+    @location
   end
 
   #
