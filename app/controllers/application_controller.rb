@@ -199,7 +199,24 @@ class ApplicationController < ActionController::Base
   # 2da prioridad
   # que el contenido tengo adjunto informacion de su ubicacion
   #
-  def location
+  def location(options={})
+
+    if current_user.provider == 'twitter'
+      #si me entregan un usuario
+      if options[:user_id].present?
+        timeline = @client.user_timeline('biobio')
+        timeline.first['geo']
+      #si me entregan el id de un mensaje
+      else
+        status = @client.status(492036512675278848)
+        status['geo']
+      end
+
+    elsif current_user.provider == 'facebook'
+      
+
+    end
+      
 
   end
 
