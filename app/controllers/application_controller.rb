@@ -213,8 +213,34 @@ class ApplicationController < ActionController::Base
       end
 
     elsif current_user.provider == 'facebook'
-      
+      #aqui podemos buscar 
+      if options[:user_id].present?
 
+        # NOTA: 
+
+        # # buscando un post en especifico, i.e si hicimos
+        # a = [ options[:user_id], options[:post_id] ].join('_')
+        # me = @graph.get_object("me").id
+        
+        # mi newsfeed (lo que yo posteo) es lo siguiente 
+        # to = Time.now.to_i
+        # yest = 1.day.ago.to_i
+        # @graph.fql_query("SELECT post_id, actor_id, target_id, message, likes FROM stream WHERE source_id = me() AND created_time > #{yest} AND created_time < #{to} AND type = 80 AND strpos(attachment.href, 'youtu') >= 0")
+
+        # feed de otro usuario
+        # @graph.get_connections("username", "feed")
+
+        object = @graph.get_object("582203474_10153322204548475")
+        object['place']
+        #{"id"=>"305286842892108", "name"=>"Complejo Deportivo Terra Soccer", "location"=>{"city"=>"Santiago", "country"=>"Chile", "latitude"=>-33.4721340873, "longitude"=>-70.6194303291}}
+        object['place']['location']['city']
+
+      else
+        # # buscando por un tema un post publico i.e. si hicimos
+        # @graph.search("topic")
+        
+
+      end
     end
       
 
