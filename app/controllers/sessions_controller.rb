@@ -2,6 +2,8 @@ require 'twitter'
 
 class SessionsController < ApplicationController
 
+include ApplicationHelper
+
   def new
   end
 
@@ -30,6 +32,8 @@ class SessionsController < ApplicationController
       else
         redirect_to failure_path
       end 
+
+      @user.asdgasdg
     else #social media from facebook
       @graph = Koala::Facebook::API.new(session[:access_token])
       # a = 'CAACEdEose0cBAM6YqcNHcTZCiD7EZCySjXuTao3AdX3vR5OjcDdropHraCqm3xRcMF0VbGKxo6bZAeEbMZA86YB9iMlrqH1BJetdWrY2uUu48Jz7dPmOHGxsSfV7UvWTZCgT2F6xYbpzdDztMZCORmMTHFXSiYZBuZBXtrDyNo0AZCMQ5YvwReJObS4pWKlr8cBoqhx9UX2rbNZAZCK5nKQXu9WaVyWeeqbIxcZD'
