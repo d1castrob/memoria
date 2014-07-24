@@ -237,9 +237,7 @@ class ApplicationController < ActionController::Base
 
       else
         # # buscando por un tema un post publico i.e. si hicimos
-        # @graph.search("topic")
-        
-
+        # @graph.search("topic")        
       end
     end
       
