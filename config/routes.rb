@@ -11,6 +11,8 @@ Rails.application.routes.draw do
 
   get "/algo" => "sessions#show"
 
+  get "/run" => "sessions#run"
+
   resources :users
 
   resources :messages

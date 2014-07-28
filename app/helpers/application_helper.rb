@@ -112,6 +112,7 @@ module ApplicationHelper
   # retorna este peso social
   #
   # nota: a diferencia de twitter la gema retorna pares {"name"=>"Constanza Arcos", "id"=>"502769140"}
+  # nota: la operacion get_connections("other user", "friends") no esta soportada por la API: https://developers.facebook.com/docs/graph-api/reference/v2.0/user/
   #
   def facebook_social_distance(poster_id)
     # mis amigos

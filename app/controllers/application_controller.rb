@@ -37,6 +37,14 @@ class ApplicationController < ActionController::Base
       config.access_token_secret = session[:access_token_secret]
     end
   end
+  
+  #
+  # inicializa un cliente de fb mediante el cual se puede pedir info privada
+  # del usuario cuya que inicio sesion en la app web
+  #
+  def facebook_client
+    @graph ||= Koala::Facebook::API.new(session[:access_token])
+  end
 
 
   #
@@ -110,12 +118,12 @@ class ApplicationController < ActionController::Base
   # en base al texto de dos mensajes, calcula cuanto difiere uno de otro
   #
   def calculate_text_distance
+    model = process_data(:documents => Message.all)
     Message.all.each do |m1|
       Message.all.each do |m2|
 
-        model = process_data(:documents => Message.all)
-
         # agregar a la bd
+
 
       end
     end

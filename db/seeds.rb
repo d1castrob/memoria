@@ -1,10 +1,4 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+# encoding: utf-8
 Message.create(from: 'sebastian.domic', id_at_site: '10152295064614500', text: 'msg de prueba', created_at: DateTime.new(2014,6,16,15,20), location: 'sin ubicacion', media: 'sin media', comments:    5   , likes:    1   )
 Message.create(from: 'sebastian.domic', id_at_site: '10152295064614500', text: 'Jajajajajajajajajajajaja con razón sampaoli trabaja a puertas cerradas!!! XD jajajajajajajajajaja   ', created_at: DateTime.new(2014,6,16,15,20), location: 'sin ubicacion', media: 'sin media', comments:    5   , likes:    1   )
 Message.create(from: 'nselmanh  ', id_at_site: '    10152553841616400   ', text: '  muy buena columna   ', created_at: DateTime.new(2014, 6, 17 , 0, 8), location: ' sin ubicacion   ', media: ' articulo    ', comments:    7   , likes:    4   )
