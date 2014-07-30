@@ -42,6 +42,9 @@ module ApplicationHelper
   #  retorna el modelo, que puede tiene una matriz de similaridad model.similarity_matrix
   #
   def process_data(options={})
+
+    @@stemmer = Lingua::Stemmer.new(:language => "spanish", :encoding => 'UTF-8')
+
     corpus = []
 
     # para cada mensaje (o documento)
@@ -49,7 +52,7 @@ module ApplicationHelper
       
       # pre procesamos el texto
       @message = m.text.split(' ')
-      output []
+      output = []
       @message.each do |word|
         output << @@stemmer.stem(word)
       end

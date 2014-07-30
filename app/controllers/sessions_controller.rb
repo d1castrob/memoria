@@ -34,7 +34,7 @@ include ApplicationHelper
       else
         redirect_to failure_path
       end 
-
+      calculate_text_distance
       @user.asdgasdg
     else #social media from facebook
       @graph = facebook_client(include_entities: true)
@@ -52,7 +52,8 @@ include ApplicationHelper
 
   def run
 
-    @hola.asdgasdg
+    #text similarity
+    model = process_data(:documents => Message.all)
 
 
   end

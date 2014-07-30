@@ -118,14 +118,22 @@ class ApplicationController < ActionController::Base
   # en base al texto de dos mensajes, calcula cuanto difiere uno de otro
   #
   def calculate_text_distance
-    model = process_data(:documents => Message.all)
-    Message.all.each do |m1|
-      Message.all.each do |m2|
-
-        # agregar a la bd
-
-
+    model = process_data(:documents => Message.all);0
+    ActiveRecord::Base.logger = nil
+    # itera para el modelo construido
+    # los mensajes parten en 1 y la matriz en cero asi que por eso estan los indices corridos
+    # i.e. Messages.find(1) == model.documents[0] => true
+    # nota: index (e,i,j) == (valor,fila,col)
+    model.similarity_matrix.each_with_index do |e,i,j|
+      #pues la matriz es simetrica
+      if j > i 
+        #encontrar ids de mensajes en el sitio
+        m1 = Message.find(i.to_i+1).id_at_site;0
+        m2 = Message.find(j.to_i+1).id_at_site;0
+        #crear cada eje
+        Edge.create(:source => m1,:target => m2,:text_distance => model.similarity_matrix[i,j]);0
       end
+      puts i,j
     end
   end
 
