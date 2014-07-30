@@ -167,6 +167,9 @@ module ApplicationHelper
 
     @location = ''
 
+    # esto puede que sea mas rapido
+    # Message.where('text LIKE ?', '%chile%').all
+    
     words.each do |w|
       places.each do |p|
         if w.include? p
