@@ -12,13 +12,20 @@
 	<%= link_to "Sign in with Facebook", "/auth/facebook" %>
 <% end %>
 
+<br>
 
 <p>
-  Bajar la BD como un archivo CSV para visualizar local
+  Bajar la BD (msgs como nodos) sin procesar como un archivo CSV para visualizar local
   <%= link_to "CSV", messages_path(format: "csv") %>
 </p>
 
+<p>
+  Bajar la BD (ejes) procesada como un archivo CSV para visualizar local
+  <%= link_to "CSV", edges_path(format: "csv") %>
+</p>
 
+
+<br>
 
 <p>
 	Para correr la aplicacion ir a /run

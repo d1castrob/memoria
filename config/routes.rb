@@ -17,6 +17,8 @@ Rails.application.routes.draw do
 
   resources :messages
 
+  resources :edges
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
