@@ -80,14 +80,23 @@ class ApplicationController < ActionController::Base
   # asumo que se obtiene la distancia temporal apenas se mina el contenido.
   #
   def calculate_temporal_distance
-    Message.all.each do |m1|
-      Message.all.each do |m2|
-
-        temporal_distance(m1,m2)
-
-        #agregar a BD
-
+    #ahorro tiempo
+    ActiveRecord::Base.logger = nil
+    # itero sobre los datos donde m son objetos mensajes, mientras que i y j son indices
+    Message.all.each_with_index do |m1,i|
+      Message.all.each_with_index do |m2,j|
+        # para ahorrar, pues la matriz es simetrica
+        if j > i
+          # calcular distancia
+          dist = temporal_distance(m1,m2)
+          #agregar a BD
+          e = Edge.where(source: m1.id_at_site, target: m2.id_at_site).first
+          e.time_distance = dist
+          e.save
+        end
       end
+      # print progreso
+      puts i
     end
   end
 
@@ -125,7 +134,7 @@ class ApplicationController < ActionController::Base
     # i.e. Messages.find(1) == model.documents[0] => true
     # nota: index (e,i,j) == (valor,fila,col)
     model.similarity_matrix.each_with_index do |e,i,j|
-      #pues la matriz es simetrica
+      # para ahorrar, pues la matriz es simetrica
       if j > i 
         #encontrar ids de mensajes en el sitio
         m1 = Message.find(i.to_i+1).id_at_site;0
@@ -133,7 +142,8 @@ class ApplicationController < ActionController::Base
         #crear cada eje
         Edge.create(:source => m1,:target => m2,:text_distance => model.similarity_matrix[i,j]);0
       end
-      puts i,j
+      #print para saber el progreso del proceso
+      puts i
     end
   end
 
