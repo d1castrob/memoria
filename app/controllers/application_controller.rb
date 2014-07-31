@@ -47,6 +47,12 @@ class ApplicationController < ActionController::Base
   end
 
 
+
+#################################### AUMENTAR LA BD ##########################################
+
+
+
+
   #
   # calcula la posicion geografica del contenido publicado y lo agrega a su informacion
   #
@@ -88,11 +94,13 @@ class ApplicationController < ActionController::Base
         # para ahorrar, pues la matriz es simetrica
         if j > i
           # calcular distancia
-          dist = temporal_distance(m1,m2)
           #agregar a BD
           e = Edge.where(source: m1.id_at_site, target: m2.id_at_site).first
-          e.time_distance = dist
-          e.save
+          unless e.nil?
+            dist = temporal_distance(m1,m2)
+            e.time_distance = dist
+            e.save
+          end
         end
       end
       # print progreso
@@ -139,13 +147,29 @@ class ApplicationController < ActionController::Base
         #encontrar ids de mensajes en el sitio
         m1 = Message.find(i.to_i+1).id_at_site;0
         m2 = Message.find(j.to_i+1).id_at_site;0
-        #crear cada eje
-        Edge.create(:source => m1,:target => m2,:text_distance => model.similarity_matrix[i,j]);0
+        #encontrar distancia
+        dist = model.similarity_matrix[i,j]
+
+        unless dist = 0
+          Edge.create(:source => m1,:target => m2,:text_distance => dist);0  
+        end
+
       end
       #print para saber el progreso del proceso
       puts i
     end
   end
+
+
+
+#################################### LIMPIAR INFO ##########################################
+
+# umbrales para los ejes
+# 
+
+# todo downcase
+# todo strip
+# la ubicacion con el mismo grado de precision, osea, tal vez mas de un campo
 
 
 

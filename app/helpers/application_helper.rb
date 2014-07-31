@@ -142,7 +142,7 @@ module ApplicationHelper
 
   def temporal_distance(message1, message2)
   	# si esta en la BD
-    (message1.created_at - message2.created_at).to_i.abs
+    (message1.created_at - message2.created_at).to_i
     # si no esta
     # if current_user.provider == twitter
     #   status = @client.status(options[:message].id_at_site.to_i)
