@@ -1,28 +1,34 @@
 == README
 
+esta aplicación pretende partir con un set de datos y procesarlo.
+tiene la opción de bajar la base de datos pre y post procesamiento.
+luego, esta base de datos se puede visualizar usando Gephi para obtener resultados interesantes.
+
+--
+
+La documentación del procceso se encuentra en /documentacion/documentacion proceso
+
+Las imagenes de los datos de prueba que repesentan el funcionamiento ideal del proceso están en /documentacion/resultado
+
+
+
+
+
+
+
+
+
+== README
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
 Things you may want to cover:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Ruby version in gemfile
+* System dependencies: if runnning locally in win7 x86  theres a problem with omniauth (faraday error fix) 
+* Configuration: none
+* Database initialization: rake db:seed
 
 
-Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.

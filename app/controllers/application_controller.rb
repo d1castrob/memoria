@@ -95,7 +95,7 @@ class ApplicationController < ActionController::Base
         if j > i
           # calcular distancia
           #agregar a BD
-          e = Edge.where(source: m1.id_at_site, target: m2.id_at_site).first
+          e = Edge.where(source: m1.id_at_site, target: m2.id_at_site).first_or_create
           unless e.nil?
             dist = temporal_distance(m1,m2)
             e.time_distance = dist
