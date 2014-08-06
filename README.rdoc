@@ -20,15 +20,8 @@ Las imagenes de los datos de prueba que repesentan el funcionamiento ideal del p
 
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version in gemfile
-* System dependencies: if runnning locally in win7 x86  theres a problem with omniauth (faraday error fix) 
-* Configuration: none
-* Database initialization: rake db:seed
-
+hay que correr a mano, hasta el momento, los metodos de el controlador de la aplicacion
+que se apoyan en su helper correpondiente. El resto es solo limpieza opcional y correr
+rake db:seed para los datos iniciales
 
 <tt>rake doc:app</tt>.

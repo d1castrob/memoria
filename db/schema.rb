@@ -39,7 +39,7 @@ ActiveRecord::Schema.define(version: 20140805224436) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "site"
-    t.integer  "time"
+    t.integer  "tiempoenint"
   end
 
   create_table "users", force: true do |t|

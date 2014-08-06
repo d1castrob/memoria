@@ -54,11 +54,11 @@ module ApplicationHelper
       @message = m.text.split(' ')
       output = []
       @message.each do |word|
-        output << @@stemmer.stem(word)
+        output << @@stemmer.stem(word);
       end
 
       #lo agregamos al corpues
-      corpus << TfIdfSimilarity::Document.new(output.join(' '))
+      corpus << TfIdfSimilarity::Document.new(output.join(' '));
     
     end
 
