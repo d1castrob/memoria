@@ -1,0 +1,15 @@
+la distancia de texto puede existir(dist_texto>0) por lo que parece una buena
+idea filtrar por distancia de texto para ver que pasa con la generalidad del grafo.
+Al hacer eso, la estrucutra del grafo no cambia mucho.  
+
+
+Lo único observable es que hay nodos muy cercanos (abajo levemente a la derecha) cuyo 
+texto es corto y comparten algunas expresiones en común: Chile, Australia, Vamos, Mierda, CTM.
+
+Los nodos mas lejos de estos por lo general comparten una sola expresión de las mencionadas anteriormente
+ej. "Que grande Chile!! muy feliz celebrando" comparte sólo "Chile" y se encuentra cerca de otras menciones
+a celebraciones "Que grande Chile! celebrando el partido desde Canadá"
+
+
+Podríamos aventurar que hay una expresión colectiva "Vamos Chile CTM!!!" y que a medida que los nodos se alejan,
+complementan esta expresión con detalles sobre la naturaleza de la idea central (que es animar a chile ctm)
