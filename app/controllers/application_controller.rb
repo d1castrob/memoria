@@ -56,28 +56,53 @@ class ApplicationController < ActionController::Base
   #
   # calcula la posicion geografica del contenido publicado y lo agrega a su informacion
   #
-  def calculate_geo
+  # def calculate_geo
+  #   Message.all.each do |m|
+      
+  #     #si todavia no tiene ubicacion
+  #     unless m.location != '  sin ubicacion '
+        
+  #       # primero buscamos is el texto hace referencia a un lugar
+  #       m.location = mention(m)
+  #       if mention(m).nil?          
+          
+  #         # sino buscamos si el contenido fue posteado desde algun lugar
+  #         m.location = location(m)
+  #         if location(m).nil?
+            
+  #           # sino buscamos donde vive el usuario
+  #           m.location = user_location?
+  #         else
+  #           m.location = 'sin ubicacion'
+  #         end
+  #       end
+  #     end
+
+  #   end
+  # end
+
+
+  def calculate_geo2
     Message.all.each do |m|
       
       #si todavia no tiene ubicacion
-      unless m.location != '  sin ubicacion '
+      if m.location.nil?
         
         # primero buscamos is el texto hace referencia a un lugar
         m.location = mention(m)
-        if mention(m).nil?          
+        if mention(m).blank?          
           
           # sino buscamos si el contenido fue posteado desde algun lugar
           m.location = location(m)
           if location(m).nil?
             
             # sino buscamos donde vive el usuario
-            m.location = user_location?
+            m.location = user_location(m)
           else
             m.location = 'sin ubicacion'
           end
         end
       end
-
     end
   end
 
@@ -135,25 +160,24 @@ class ApplicationController < ActionController::Base
   # en base al texto de dos mensajes, calcula cuanto difiere uno de otro
   #
   def calculate_text_distance
-    model = process_data(:documents => Message.all);0
+    model = process_data(:documents => Message.all);
     ActiveRecord::Base.logger = nil
     # itera para el modelo construido
     # los mensajes parten en 1 y la matriz en cero asi que por eso estan los indices corridos
     # i.e. Messages.find(1) == model.documents[0] => true
     # nota: index (e,i,j) == (valor,fila,col)
-    model.similarity_matrix.each_with_index do |e,i,j|
+    # es vital separar en estas dos lineas
+    m = model.similarity_matrix
+    m.each_with_index do |e,i,j|
       # para ahorrar, pues la matriz es simetrica
       if j > i 
         #encontrar ids de mensajes en el sitio
-        m1 = Message.find(i.to_i+1).id_at_site;0
-        m2 = Message.find(j.to_i+1).id_at_site;0
+        m1 = Message.find(i.to_i+407).id_at_site;
+        m2 = Message.find(j.to_i+407).id_at_site;
         #encontrar distancia
-        dist = model.similarity_matrix[i,j]
-
-        unless dist = 0
-          Edge.create(:source => m1,:target => m2,:text_distance => dist);0  
+        unless e == 0
+          Edge.create(:source => m1,:target => m2,:text_distance => e);  
         end
-
       end
       #print para saber el progreso del proceso
       puts i

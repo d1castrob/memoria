@@ -54,11 +54,11 @@ module ApplicationHelper
       @message = m.text.split(' ')
       output = []
       @message.each do |word|
-        output << @@stemmer.stem(word);
+        output << @@stemmer.stem(word);0
       end
 
       #lo agregamos al corpues
-      corpus << TfIdfSimilarity::Document.new(output.join(' '));
+      corpus << TfIdfSimilarity::Document.new(output.join(' '));0
     
     end
 
@@ -189,47 +189,48 @@ module ApplicationHelper
 
     @client = options[:client]
 
-    if current_user.provider == 'twitter' && !@client.nil?
-      # # si me entregan el id de un usuario que posteo
-      # if options[:user_id].present?
-      #   timeline = @client.user_timeline('biobio')
-      #   timeline.first['geo']
-      # # si me entregan el id de un mensaje
-      # else
-        status = @client.status(options[:message].id_at_site.to_i)
-        status['geo']
-      # end
+    if !@client.nil?
+      if current_user.provider == 'twitter'
+        # # si me entregan el id de un usuario que posteo
+        # if options[:user_id].present?
+        #   timeline = @client.user_timeline('biobio')
+        #   timeline.first['geo']
+        # # si me entregan el id de un mensaje
+        # else
+          status = @client.status(options[:message].id_at_site.to_i)
+          status['geo']
+        # end
 
-    elsif current_user.provider == 'facebook'
-      # aqui podemos buscar 
-      # if options[:user_id].present?
+      elsif current_user.provider == 'facebook'
+        # aqui podemos buscar 
+        # if options[:user_id].present?
 
-        # NOTA: 
+          # NOTA: 
 
-        # # buscando un post en especifico, i.e si hicimos
-        # a = [ options[:user_id], options[:post_id] ].join('_')
-        # me = @graph.get_object("me").id
-        
-        # mi newsfeed (lo que yo posteo) es lo siguiente 
-        # to = Time.now.to_i
-        # yest = 1.day.ago.to_i
-        # @graph.fql_query("SELECT post_id, actor_id, target_id, message, likes FROM stream WHERE source_id = me() AND created_time > #{yest} AND created_time < #{to} AND type = 80 AND strpos(attachment.href, 'youtu') >= 0")
+          # # buscando un post en especifico, i.e si hicimos
+          # a = [ options[:user_id], options[:post_id] ].join('_')
+          # me = @graph.get_object("me").id
+          
+          # mi newsfeed (lo que yo posteo) es lo siguiente 
+          # to = Time.now.to_i
+          # yest = 1.day.ago.to_i
+          # @graph.fql_query("SELECT post_id, actor_id, target_id, message, likes FROM stream WHERE source_id = me() AND created_time > #{yest} AND created_time < #{to} AND type = 80 AND strpos(attachment.href, 'youtu') >= 0")
 
-        # feed de otro usuario
-        # @graph.get_connections("username", "feed")
+          # feed de otro usuario
+          # @graph.get_connections("username", "feed")
 
 
-        object = @graph.get_object("582203474_10153322204548475")
-        # object['place']
-        # {"id"=>"305286842892108", "name"=>"Complejo Deportivo Terra Soccer", "location"=>{"city"=>"Santiago", "country"=>"Chile", "latitude"=>-33.4721340873, "longitude"=>-70.6194303291}}
-        object['place']['location']['city']
+          object = @graph.get_object("582203474_10153322204548475")
+          # object['place']
+          # {"id"=>"305286842892108", "name"=>"Complejo Deportivo Terra Soccer", "location"=>{"city"=>"Santiago", "country"=>"Chile", "latitude"=>-33.4721340873, "longitude"=>-70.6194303291}}
+          object['place']['location']['city']
 
-      # else
-        # # buscando por un tema un post publico i.e. si hicimos
-        # @graph.search("topic")        
-      # end
+        # else
+          # # buscando por un tema un post publico i.e. si hicimos
+          # @graph.search("topic")        
+        # end
+      end
     end
-      
 
   end
 
@@ -237,7 +238,7 @@ module ApplicationHelper
   # 3era prioridad
   # que el usuario sea de algun lado
   #
-  def user_location
+  def user_location(mensaje)
     @location
     #en facebook
     if current_user.provider == 'facebook'
@@ -245,7 +246,7 @@ module ApplicationHelper
       @location = me['location']['id']
     #en twitter
     else
-      @location = @user.location
+      @location = twitter_client.user(mensaje.from.to_i).location
     end
   end
 

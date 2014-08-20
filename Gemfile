@@ -66,7 +66,8 @@ gem "koala", "~> 1.10.0rc"
 gem 'tf-idf-similarity'
 #steamer
 gem 'ruby-stemmer', '>=0.8.3', :require => 'lingua/stemmer'
-
+#velocidad
+#gem 'gsl'
 
 
 group :development do

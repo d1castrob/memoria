@@ -34,7 +34,14 @@ include ApplicationHelper
       else
         redirect_to failure_path
       end 
-      calculate_text_distance
+      
+
+
+      #debug here
+
+
+      calculate_geo2
+      #calculate_text_distance
       @user.asdgasdg
     else #social media from facebook
       @graph = facebook_client(include_entities: true)
