@@ -98,8 +98,9 @@ class ApplicationController < ActionController::Base
             
             # sino buscamos donde vive el usuario
             m.location = user_location(m)
-          else
-            m.location = 'sin ubicacion'
+            
+            if m.location.nil? || m.location.false?
+              m.location = 'sin ubicacion'
           end
         end
       end
