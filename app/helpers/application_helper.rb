@@ -43,7 +43,7 @@ module ApplicationHelper
   #
   def process_data(options={})
 
-    @@stemmer = Lingua::Stemmer.new(:language => "spanish", :encoding => 'UTF-8')
+    @@stemmer = Lingua::Stemmer.new(:language => "english", :encoding => 'UTF-8')
 
     corpus = []
 
