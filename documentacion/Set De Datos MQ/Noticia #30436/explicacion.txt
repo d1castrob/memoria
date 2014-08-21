@@ -1,0 +1,7 @@
+Se puede ver que unos clusters tienen unos nodos muy socialmente populares.  Sin embargo, esto parece ser un error.
+Lo que si es claro es que los clusters comparten palabras en común no muy frecuentes en el tema.  Por ejemmplo
+El primer cluster raro habla sobre el arresto de un "mexican drug lord" gracias a la copa del mundo. El segundo cluster
+raro habla sobre un como se "arreglo (fix)" la copa del mundo.  Los tweets más grandes sin embargo
+son irrelevantes a estos temas (la polola de neymar... etc).
+
+Sobre la pata:
