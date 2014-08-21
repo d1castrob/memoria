@@ -162,29 +162,35 @@ class ApplicationController < ActionController::Base
   # en base al texto de dos mensajes, calcula cuanto difiere uno de otro
   #
   def calculate_text_distance
-    model = process_data(:documents => Message.all);0
+    model = process_data(:documents => Message.all);
     ActiveRecord::Base.logger = nil
     # itera para el modelo construido
     # los mensajes parten en 1 y la matriz en cero asi que por eso estan los indices corridos
     # i.e. Messages.find(1) == model.documents[0] => true
     # nota: index (e,i,j) == (valor,fila,col)
-    model.similarity_matrix.each_with_index do |e,i,j|
-      # para ahorrar, pues la matriz es simetrica
-      if j > i
-        #encontrar ids de mensajes en el sitio
-        m1 = Message.find(i.to_i+1).id_at_site;0
-        m2 = Message.find(j.to_i+1).id_at_site;0
-        #encontrar distancia
-        dist = model.similarity_matrix[i,j]
+    # es vital separar en estas dos lineas
+    puts 'loading matrix'
+    m = model.similarity_matrix
+    puts 'printing to db'
+    numeroIter = m.shape[0]-1
 
-        unless dist = 0
-          Edge.create(:source => m1,:target => m2,:text_distance => dist);0
+    for i in 0..numeroIter
+      for j in 0..numeroIter
+        # para ahorrar, pues la matriz es simetrica
+        if j > i 
+          #encontrar ids de mensajes en el sitio
+          m1 = Message.find(i.to_i+1).id_at_site;
+          m2 = Message.find(j.to_i+1).id_at_site;
+          #encontrar distancia
+          unless m[i,j] == 0
+            Edge.create(:source => m1,:target => m2,:text_distance => m[i,j]);  
+          end
         end
-
+        #print para saber el progreso del proceso
       end
-      #print para saber el progreso del proceso
       puts i
     end
+
   end
 
 
