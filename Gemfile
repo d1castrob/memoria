@@ -67,8 +67,7 @@ gem 'tf-idf-similarity'
 #steamer
 gem 'ruby-stemmer', '>=0.8.3', :require => 'lingua/stemmer'
 #velocidad
-#gem 'gsl'
-
+gem 'narray', '~> 0.6.0.9'
 
 group :development do
   gem 'better_errors'

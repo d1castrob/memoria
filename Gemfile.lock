@@ -79,6 +79,7 @@ GEM
     multi_json (1.10.1)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
+    narray (0.6.0.9)
     naught (1.0.0)
     oauth (0.4.7)
     oauth2 (0.9.4)
@@ -190,6 +191,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   koala (~> 1.10.0rc)
+  narray (~> 0.6.0.9)
   omniauth
   omniauth-facebook
   omniauth-twitter

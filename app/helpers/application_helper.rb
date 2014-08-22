@@ -43,10 +43,11 @@ module ApplicationHelper
   #
   def process_data(options={})
 
-    @@stemmer = Lingua::Stemmer.new(:language => "english", :encoding => 'UTF-8')
+
+    @@stemmer = Lingua::Stemmer.new(:language => "en", :encoding => 'UTF-8')
 
     corpus = []
-
+    puts 'loading docs'
     # para cada mensaje (o documento)
     options[:documents].each do |m|
       
@@ -61,9 +62,9 @@ module ApplicationHelper
       corpus << TfIdfSimilarity::Document.new(output.join(' '));0
     
     end
-
+    puts 'building model'
     #construimos el modelo
-    model = TfIdfSimilarity::TfIdfModel.new(corpus)      
+    model = TfIdfSimilarity::TfIdfModel.new(corpus, :library => :narray)      
 
   end
 
