@@ -1,0 +1,7 @@
+El cluster de abajo comparte hashtags  del tipo #fifa2014.  El de arriba comparte una noticia sobre
+el técnico de méxico jurgen klinsmann y su celebración muy teatral.
+
+Los nodos muy grandes son noticias que al parecer motivaron mucho pero que fueron poco comentadas.
+Esta noticia tiene las mismas palabras "soccer world" que la noticia #30436 y la ocupe para ver si
+el keyword influía en la fisonomía de la noticia.  A pesar de ser sobre los mismos keywords,
+el numero de tweets fue mucho menor (como la mitad).
