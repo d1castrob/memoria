@@ -190,21 +190,28 @@ class ApplicationController < ActionController::Base
     # i.e. Messages.find(1) == model.documents[0] => true
     # nota: index (e,i,j) == (valor,fila,col)
     # es vital separar en estas dos lineas
+    puts 'loading matrix'
     m = model.similarity_matrix
-    m.each_with_index do |e,i,j|
-      # para ahorrar, pues la matriz es simetrica
-      if j > i 
-        #encontrar ids de mensajes en el sitio
-        m1 = Message.find(i.to_i+407).id_at_site;
-        m2 = Message.find(j.to_i+407).id_at_site;
-        #encontrar distancia
-        unless e == 0
-          Edge.create(:source => m1,:target => m2,:text_distance => e);  
+    puts 'printing to db'
+    numeroIter = m.shape[0]-1
+
+    for i in 0..numeroIter
+      for j in 0..numeroIter
+        # para ahorrar, pues la matriz es simetrica
+        if j > i 
+          #encontrar ids de mensajes en el sitio
+          m1 = Message.find(i.to_i+1).id_at_site;
+          m2 = Message.find(j.to_i+1).id_at_site;
+          #encontrar distancia
+          unless m[i,j] == 0
+            Edge.create(:source => m1,:target => m2,:text_distance => m[i,j]);  
+          end
         end
+        #print para saber el progreso del proceso
       end
-      #print para saber el progreso del proceso
       puts i
     end
+
   end
 
 
