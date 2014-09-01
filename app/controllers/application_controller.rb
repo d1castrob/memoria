@@ -30,7 +30,7 @@ class ApplicationController < ActionController::Base
   # del usuario cuya que inicio sesion en la app web
   #
   def twitter_client
-    @client = Twitter::REST::Client.new do |config|
+    @client ||= Twitter::REST::Client.new do |config|
       config.consumer_key = 'b1BcFmbc1ILHAcVbhNKyg'
       config.consumer_secret = 'T7JUvNcTu3RvJ12RRmRkdnaccpH8RDmrZwFR2AY'
       config.access_token = session[:access_token]
@@ -86,27 +86,48 @@ class ApplicationController < ActionController::Base
     Message.all.each do |m|
       
       #si todavia no tiene ubicacion
-      if m.location.nil?
+      unless !m.location.nil?
         
-        # primero buscamos is el texto hace referencia a un lugar
-        m.location = mention(m)
-        if mention(m).blank?          
-          
-          # sino buscamos si el contenido fue posteado desde algun lugar
-          m.location = location(m)
-          if location(m).nil?
-            
-            # sino buscamos donde vive el usuario
-            m.location = user_location(m)
-            
-            if m.location.blank?
-              m.location = 'sin ubicacion'
+        begin
+
+
+          # primero buscamos is el texto hace referencia a un lugar
+          m.location = mention(m)          
+          # sino, buscamos si el contenido fue posteado desde algun lugar
+          if m.location.blank?    
+            m.location = location(m)
+            # sino, buscamos donde vive el usuario
+            if m.location.nil?
+              m.location = user_location(m)
+              #sino encontramos nada guardamos sin ubicacion  
+              if m.location.blank?
+                m.location = 'sin ubicacion'
+                puts 'guardando sin ubicacion'
+              end
             end
           end
+
+        rescue Twitter::Error::Forbidden
+          m.location = 'sin ubicacion'
+          puts 'user forbidden, guardando sin ubicacion'
+
+        rescue Twitter::Error::NotFound
+          m.location = 'sin ubicacion'
+          puts 'not found, guardando sin ubicacion'
+
+        rescue Twitter::Error::TooManyRequests
+          puts 'rate exceeded'
+          return 0
+
         end
+
+        m.save
+
       end
     end
   end
+
+
 
 
   #

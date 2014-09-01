@@ -2,6 +2,7 @@ module ApplicationHelper
 
 
 
+  @@places = ['spain','germany','brazil','portugal','argentina','switzerland','uruguay','colombia','italy','england','belgium','greece','united states','chile','netherlands','france','croatia','russia','mexico','bosnia and herzegovina','algeria','ivory coast','ecuador','costa rica','honduras','ghana','iran','nigeria','japan','cameroon','south korea','australia']
 
 # aqui va todo lo que se ocupa para calcular distancia entre mensajes o usuarios
 # de modo que es un modulo que ayuda en el procesamiento de datos internos para pasar
@@ -162,7 +163,6 @@ module ApplicationHelper
   # nota: necesito un diccionario
   #
   def mention(mensaje)
-    places = ['chile', 'cuiaba', 'vitacura', 'las condes']
     words = mensaje.text.downcase.split
 
     @location = ''
@@ -171,7 +171,7 @@ module ApplicationHelper
     # Message.where('text LIKE ?', '%chile%').all
     
     words.each do |w|
-      places.each do |p|
+      @@places.each do |p|
         if w.include? p
           @location = w
         end
