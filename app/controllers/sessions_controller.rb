@@ -40,8 +40,7 @@ include ApplicationHelper
       #debug here
 
 
-      calculate_geo2
-      #calculate_text_distance
+      #calculate_geo2
       @user.asdgasdg
     else #social media from facebook
       @graph = facebook_client(include_entities: true)
@@ -60,7 +59,8 @@ include ApplicationHelper
   def run
 
     #text similarity
-    model = process_data(:documents => Message.all)
+    calculate_text_distance
+    #model = process_data(:documents => Message.all)
 
 
   end
