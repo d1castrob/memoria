@@ -51,37 +51,6 @@ class ApplicationController < ActionController::Base
 #################################### AUMENTAR LA BD ##########################################
 
 
-
-
-  #
-  # calcula la posicion geografica del contenido publicado y lo agrega a su informacion
-  #
-  # def calculate_geo
-  #   Message.all.each do |m|
-      
-  #     #si todavia no tiene ubicacion
-  #     unless m.location != '  sin ubicacion '
-        
-  #       # primero buscamos is el texto hace referencia a un lugar
-  #       m.location = mention(m)
-  #       if mention(m).nil?          
-          
-  #         # sino buscamos si el contenido fue posteado desde algun lugar
-  #         m.location = location(m)
-  #         if location(m).nil?
-            
-  #           # sino buscamos donde vive el usuario
-  #           m.location = user_location?
-  #         else
-  #           m.location = 'sin ubicacion'
-  #         end
-  #       end
-  #     end
-
-  #   end
-  # end
-
-
   def calculate_geo2
     Message.all.each do |m|
       
@@ -165,16 +134,17 @@ class ApplicationController < ActionController::Base
       Message.all.each do |m2|
         @user2 = m2.from
 
-        # si los sitios son el mismo la calculo segun el sitio, sino no retorno nada
-        if m1.site == m2.site
-
-          if m1.site == 'twitter'
-            dist = twitter_social_distance(@user1,@user2)
-          else
-            dist = facebook_social_distance(@user1,@user2)
+        a = Edge.where(source: @user1, target: @user2)
+        dist = twitter_social_distance(@user1,@user2)
+        
+        if a.blank? || !a.social_distance.nil?
+          Edge.create(sourc: @user1, target: @user2, social_distance: dist)
+        else
+          a.each do |edg|
+            edg.social_distance = dist
           end
         end
-
+      
       end
     end
   end
