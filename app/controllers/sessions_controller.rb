@@ -40,8 +40,8 @@ include ApplicationHelper
       #debug here
 
 
-      #calculate_geo2
       @user.asdgasdg
+      calculate_social_distance
     else #social media from facebook
       @graph = facebook_client(include_entities: true)
       # @graph = Koala::Facebook::API.new(session[:access_token])

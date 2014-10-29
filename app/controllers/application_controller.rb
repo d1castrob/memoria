@@ -128,23 +128,37 @@ class ApplicationController < ActionController::Base
   #
   # necesita dos id de usuarios 
   #
-  def calculate_soocial_distance
+  def calculate_social_distance
     Message.all.each do |m1|
       @user1 = m1.from
       Message.all.each do |m2|
         @user2 = m2.from
 
-        a = Edge.where(source: @user1, target: @user2)
-        dist = twitter_social_distance(@user1,@user2)
-        
-        if a.blank? || !a.social_distance.nil?
-          Edge.create(sourc: @user1, target: @user2, social_distance: dist)
-        else
-          a.each do |edg|
-            edg.social_distance = dist
+        # begin
+
+          a = Edge.where(source: @user1, target: @user2)
+          holi.holi
+          dist = twitter_social_distance(@user1,@user2)
+          
+          if a.blank? || !a.social_distance.nil?
+            Edge.create(sourc: @user1, target: @user2, social_distance: dist)
+          else
+            a.each do |edg|
+              edg.social_distance = dist
+            end
           end
-        end
-      
+
+        # rescue Twitter::Error::Forbidden
+        #   m.location = 'sin ubicacion'
+        #   puts 'user forbidden, guardando sin ubicacion'
+        # rescue Twitter::Error::NotFound
+        #   m.location = 'sin ubicacion'
+        #   puts 'not found, guardando sin ubicacion'
+        # rescue Twitter::Error::TooManyRequests
+        #   puts 'rate exceeded'
+        #   return 0
+        # end
+
       end
     end
   end

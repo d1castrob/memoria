@@ -79,36 +79,62 @@ module ApplicationHelper
   #
   # nota: la gema retorna objetos del tipo Twitter::User
   #
-  def twitter_social_distance(poster_id)
-    #fetch a user by screen name or id
-    @other_user = client.user(poster_id)
-    #this is me
-    #@user
-    @friend_level = 0
+  # def twitter_social_distance(poster_id)
+  #   #fetch a user by screen name or id
+  #   @other_user = client.user(poster_id)
+  #   #this is me
+  #   #@user
+  #   @friend_level = 0
 
-    # following? retorna true si yo sigo al mencionado
-    # osea: if i follow the user who paosted
-    if @other_user.following?
-      @friend_level += 1
-    end
+  #   # following? retorna true si yo sigo al mencionado
+  #   # osea: if i follow the user who paosted
+  #   if @other_user.following?
+  #     @friend_level += 1
+  #   end
 
-    # client.followers.to_a retorna la gente que me sigue
-    # osea: if he follows me
-    if @other_user.in?client.followers.to_a
-      @friend_level += 1
-    end
+  #   # client.followers.to_a retorna la gente que me sigue
+  #   # osea: if he follows me
+  #   if @other_user.in?client.followers.to_a
+  #     @friend_level += 1
+  #   end
     
-    # si quisiera investigar grados de separacion debiese hacer
-    # de todos mis seguidores
-    @client.followers.to_a.each do |follower|
-      #busco los seguidores de mis seguidores
-      @followers_of_my_followers = @client.followers(follwer.id).to_a
-      #veo si el que posteo algo esta entre ellos
-      if @other_user.in?@followers_of_my_followers
-        @friend_level += 1
+  #   # si quisiera investigar grados de separacion debiese hacer
+  #   # de todos mis seguidores
+  #   @client.followers.to_a.each do |follower|
+  #     #busco los seguidores de mis seguidores
+  #     @followers_of_my_followers = @client.followers(follwer.id).to_a
+  #     #veo si el que posteo algo esta entre ellos
+  #     if @other_user.in?@followers_of_my_followers
+  #       @friend_level += 1
+  #     end
+  #   end
+  # end
+
+
+  def twitter_social_distance(user1, user2)
+
+    debug.debug
+    followers1 = twitter_client.followers(user1.to_i).to_a
+    user2 = twitter_client.user(user2.to_i)
+
+    dist = 0
+
+    asdf.asdfosadf
+
+    followers1.each do |f1|
+      if user2.following?f1
+        dist += 1
       end
     end
+
   end
+
+
+
+
+
+
+
 
   #
   # recibe el id que la persona que posteo algo
