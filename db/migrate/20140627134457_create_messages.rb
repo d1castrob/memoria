@@ -4,9 +4,10 @@ class CreateMessages < ActiveRecord::Migration
       t.string :from
       t.string :id_at_site
       t.string :text
-      t.datetime :time
+      t.integer :tiempoenint
       t.string :location
       t.string :media
+      t.string :site
       t.integer :comments
       t.integer :likes
 

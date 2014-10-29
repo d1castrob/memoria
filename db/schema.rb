@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140805224436) do
+ActiveRecord::Schema.define(version: 20140728210912) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,23 +23,23 @@ ActiveRecord::Schema.define(version: 20140805224436) do
     t.float    "social_distance"
     t.float    "text_distance"
     t.float    "time_distance"
+    t.string   "city"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "city"
   end
 
   create_table "messages", force: true do |t|
     t.string   "from"
     t.string   "id_at_site"
     t.string   "text"
+    t.integer  "tiempoenint"
     t.string   "location"
     t.string   "media"
+    t.string   "site"
     t.integer  "comments"
     t.integer  "likes"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "site"
-    t.integer  "tiempoenint"
   end
 
   create_table "users", force: true do |t|

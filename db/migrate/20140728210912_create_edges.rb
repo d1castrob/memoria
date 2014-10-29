@@ -7,6 +7,7 @@ class CreateEdges < ActiveRecord::Migration
       t.float :social_distance
       t.float :text_distance
       t.float :time_distance
+      t.string :city
 
       t.timestamps
     end

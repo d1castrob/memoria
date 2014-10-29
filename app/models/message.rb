@@ -1,5 +1,6 @@
 class Message < ActiveRecord::Base
 
+  has_one_ad_belong_to_many :expressions
 
   def self.to_csv(options = {})
     CSV.generate(options) do |csv|
