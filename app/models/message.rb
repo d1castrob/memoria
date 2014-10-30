@@ -2,6 +2,8 @@ class Message < ActiveRecord::Base
 
   has_one_ad_belong_to_many :expressions
 
+  after_create :create_expressions
+
   def self.to_csv(options = {})
     CSV.generate(options) do |csv|
       csv << column_names
@@ -49,6 +51,27 @@ class Message < ActiveRecord::Base
     self.save
     
     end  	
+  end
+
+  def create_expressions
+    words = self.texto.strip
+    words.each do |w|
+      e = Expression.find_or_create_by(raw_text: w, type: get_type(w))
+      self.expressions.build(e)
+    end
+    self.save()
+  end
+
+  def get_type(word)
+    if word.contains?'#'
+      'hashtag'
+    elsif word.contains?'@'
+      'at'
+    elsif word.contains?'://'
+      'link'
+    else
+      nil
+    end
   end
 
 end
