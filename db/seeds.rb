@@ -12,29 +12,36 @@ ActiveRecord::Base.logger = nil
 total = 0
 skipped = 0 
 
-#para cada linea del archivo
+
 file.each_line do |line|
-  # para el mismo evento
+
   if line.split(/\t/)[15].remove(/\n/) == '26900'
     total += 1
     puts 'found'
     # likes = rt, comments = favs
     l = line.split(/\t/)
    	m = Message.find_by_text(l[1])
+
+
    	if m.nil?
-      Message.create(from: l[12], text: l[1], id_at_site:l[0], likes:l[3], comments: l[9], created_at: l[14].to_datetime)
-  	else
-      skipped += 1
-  	  #add favorites and retweets
-  	  m.likes = m.likes + l[3].to_i
-  	  m.comments = m.likes + l[9].to_i
-      m.save
-  	end
+      m = Message.create(from: l[12], text: l[1], id_at_site:l[0], likes:l[3], comments: l[9], created_at: l[14].to_datetime)
+    else
+      #add favorites and retweets
+      m.likes = m.likes + l[3].to_i
+      m.comments = m.likes + l[9].to_i
+      m.repetitions += 1
+    end
+    m.save
+
+    expressions = m.get_expressions
+    expressions.each do |e|
+      aux = Expression.find_or_create_by(raw_text: e[0], symbol: e[1])
+      aux.count += 1
+      aux.save
+    end
+
   end
 end
-
-puts 'found '+total.to_s+' tweeets of which '
-puts skipped.to_s+' where skipped because the where repeated'
 
 # found 485 tweeets of which
 # 161 where skipped because the where repeated

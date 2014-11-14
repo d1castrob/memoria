@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141029231454) do
+ActiveRecord::Schema.define(version: 20141029224048) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -29,14 +29,11 @@ ActiveRecord::Schema.define(version: 20141029231454) do
   end
 
   create_table "expressions", force: true do |t|
-    t.string  "type"
-    t.string  "count"
+    t.string  "symbol"
+    t.integer "count",          default: 0
     t.string  "raw_text"
     t.string  "processed_text"
-    t.integer "message_id"
   end
-
-  add_index "expressions", ["message_id"], name: "index_expressions_on_message_id", using: :btree
 
   create_table "messages", force: true do |t|
     t.string   "from"
@@ -48,12 +45,10 @@ ActiveRecord::Schema.define(version: 20141029231454) do
     t.string   "site"
     t.integer  "comments"
     t.integer  "likes"
+    t.integer  "repetitions", default: 0
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "expression_id"
   end
-
-  add_index "messages", ["expression_id"], name: "index_messages_on_expression_id", using: :btree
 
   create_table "users", force: true do |t|
     t.string   "name"

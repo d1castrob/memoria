@@ -1,8 +1,7 @@
 class Message < ActiveRecord::Base
 
-  has_one_ad_belong_to_many :expressions
+  has_and_belongs_to_many :expressions
 
-  after_create :create_expressions
 
   def self.to_csv(options = {})
     CSV.generate(options) do |csv|
@@ -53,21 +52,30 @@ class Message < ActiveRecord::Base
     end  	
   end
 
-  def create_expressions
-    words = self.texto.strip
+  def get_expressions
+    words = self.text.split
+    output = []
+
     words.each do |w|
-      e = Expression.find_or_create_by(raw_text: w, type: get_type(w))
-      self.expressions.build(e)
+      expression = get_type(w)
+      if !expression.nil?
+        output << [w, expression]
+      end
     end
-    self.save()
+
+    # if expressions_count != 0
+    #   coocurrance
+    # end
+
+    output
   end
 
   def get_type(word)
-    if word.contains?'#'
+    if word.include?'#'
       'hashtag'
-    elsif word.contains?'@'
+    elsif word.include?'@'
       'at'
-    elsif word.contains?'://'
+    elsif word.include?'://'
       'link'
     else
       nil

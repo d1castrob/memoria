@@ -10,6 +10,7 @@ class CreateMessages < ActiveRecord::Migration
       t.string :site
       t.integer :comments
       t.integer :likes
+      t.integer :repetitions, :default => false
 
       t.timestamps
     end
