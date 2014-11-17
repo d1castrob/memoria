@@ -62,11 +62,6 @@ class Message < ActiveRecord::Base
         output << [w, expression]
       end
     end
-
-    # if expressions_count != 0
-    #   coocurrance
-    # end
-
     output
   end
 

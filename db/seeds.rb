@@ -23,6 +23,7 @@ file.each_line do |line|
    	m = Message.find_by_text(l[1])
 
 
+    #crear los mensajes
    	if m.nil?
       m = Message.create(from: l[12], text: l[1], id_at_site:l[0], likes:l[3], comments: l[9], created_at: l[14].to_datetime)
     else
@@ -33,11 +34,23 @@ file.each_line do |line|
     end
     m.save
 
+    #crear las expresiones
     expressions = m.get_expressions
-    expressions.each do |e|
-      aux = Expression.find_or_create_by(raw_text: e[0], symbol: e[1])
-      aux.count += 1
-      aux.save
+    expressions.each do |e, index|
+      
+      aux = [Expression.find_or_create_by(raw_text: e[0], symbol: e[1]), index]
+      aux[0].count += 1
+      aux[0].save
+
+      #si existen coocurrencias
+      if index> 1
+        #para toda tupla de aux con indice menor al actual
+        for i in 0..index-1
+          #crear relacion con aux actual
+          aux[index].relationship.build(coocurrance: aux[i])
+        end
+      end
+
     end
 
   end

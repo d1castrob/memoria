@@ -31,13 +31,24 @@ class ApplicationController < ActionController::Base
   #
   def twitter_client
     @client ||= Twitter::REST::Client.new do |config|
-      config.consumer_key = 'b1BcFmbc1ILHAcVbhNKyg'
-      config.consumer_secret = 'T7JUvNcTu3RvJ12RRmRkdnaccpH8RDmrZwFR2AY'
+      config.consumer_key = 'Ze6uAgUGLBYmUerv8iHEZmK9P'
+      config.consumer_secret = 'cBtKADamQzPsaLd0kXtrnkDlH6T6kIOnbK5FudZ6PkYqfWFQiu'
       config.access_token = session[:access_token]
       config.access_token_secret = session[:access_token_secret]
     end
   end
   
+  # def twitter_client
+  #   @client ||= Twitter::REST::Client.new do |config|
+  #     config.consumer_key = 'Ze6uAgUGLBYmUerv8iHEZmK9P'
+  #     config.consumer_secret = 'cBtKADamQzPsaLd0kXtrnkDlH6T6kIOnbK5FudZ6PkYqfWFQiu'
+  #     config.access_token = '1452788382-D5Qo9GpSppus25RLkB4rHoBENX9a9bBai9GkCjx'
+  #     config.access_token_secret = 'L8UC4ARhdEa8RHquAEEsREamP9b79LyGQjB4WXaRgIGqD'
+  #   end
+  # end
+
+
+
   #
   # inicializa un cliente de fb mediante el cual se puede pedir info privada
   # del usuario cuya que inicio sesion en la app web
