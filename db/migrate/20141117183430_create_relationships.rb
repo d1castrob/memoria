@@ -3,7 +3,7 @@ class CreateRelationships < ActiveRecord::Migration
     create_table :relationships do |t|
       t.integer :expression_id
       t.integer :coocurrance_id
-      t.integer :count
+      t.integer :count, :default => 0
 
       t.timestamps
     end

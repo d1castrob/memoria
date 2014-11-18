@@ -36,18 +36,21 @@ file.each_line do |line|
 
     #crear las expresiones
     expressions = m.get_expressions
-    expressions.each do |e, index|
+    aux = []
+    expressions.each_with_index do |e, index|
       
-      aux = [Expression.find_or_create_by(raw_text: e[0], symbol: e[1]), index]
-      aux[0].count += 1
-      aux[0].save
+      aux << [Expression.find_or_create_by(raw_text: e[0], symbol: e[1]), index]
+      aux[index][0].count += 1
+      aux[index][0].save
 
       #si existen coocurrencias
-      if index> 1
+      if index > 1
         #para toda tupla de aux con indice menor al actual
         for i in 0..index-1
           #crear relacion con aux actual
-          aux[index].relationship.build(coocurrance: aux[i])
+          @eje = aux[index][0].relationships.find_or_initialize_by(coocurrance_id: aux[i][0].id)
+          @eje.count += 1
+          @eje.save
         end
       end
 

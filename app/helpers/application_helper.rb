@@ -60,7 +60,9 @@ module ApplicationHelper
       end
 
       #lo agregamos al corpues
-      corpus << TfIdfSimilarity::Document.new(output.join(' '));0
+      for i in 0..m.repetitions do 
+        corpus << TfIdfSimilarity::Document.new(output.join(' '));0
+      end
     
     end
     puts 'building model'

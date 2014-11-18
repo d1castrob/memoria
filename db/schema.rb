@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141029224048) do
+ActiveRecord::Schema.define(version: 20141117183430) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -46,6 +46,14 @@ ActiveRecord::Schema.define(version: 20141029224048) do
     t.integer  "comments"
     t.integer  "likes"
     t.integer  "repetitions", default: 0
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "relationships", force: true do |t|
+    t.integer  "expression_id"
+    t.integer  "coocurrance_id"
+    t.integer  "count",          default: 0
     t.datetime "created_at"
     t.datetime "updated_at"
   end
