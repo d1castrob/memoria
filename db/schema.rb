@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141117183430) do
+ActiveRecord::Schema.define(version: 20141121034259) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -33,6 +33,14 @@ ActiveRecord::Schema.define(version: 20141117183430) do
     t.integer "count",          default: 0
     t.string  "raw_text"
     t.string  "processed_text"
+  end
+
+  create_table "friendships", force: true do |t|
+    t.integer  "user_id"
+    t.integer  "friend_id"
+    t.float    "weight",     default: 0.0
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "messages", force: true do |t|
@@ -62,6 +70,7 @@ ActiveRecord::Schema.define(version: 20141117183430) do
     t.string   "name"
     t.string   "uid"
     t.string   "provider"
+    t.string   "twitter_name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

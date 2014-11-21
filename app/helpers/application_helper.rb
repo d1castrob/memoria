@@ -135,6 +135,8 @@ module ApplicationHelper
       end
     end
 
+    dist
+
   end
 
 

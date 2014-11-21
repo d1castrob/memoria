@@ -40,7 +40,7 @@ include ApplicationHelper
       #debug here
 
 
-      @user.asdgasdg
+      #@user.asdgasdg
       calculate_social_distance
     else #social media from facebook
       @graph = facebook_client(include_entities: true)
