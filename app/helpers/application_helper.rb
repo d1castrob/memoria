@@ -115,13 +115,19 @@ module ApplicationHelper
 
   def twitter_social_distance(user1, user2)
 
-    debug.debug
-    followers1 = twitter_client.followers(user1.to_i).to_a
-    user2 = twitter_client.user(user2.to_i)
+    u1 = user1.to_i
+    u2 = user2.to_i
+
+    u1 = u1 == 0 ? user1 : u1
+    u2 = u2 == 0 ? user2 : u2
+
+    #debug.debug
+    followers1 = twitter_client.followers(u1).to_a
+    user2 = twitter_client.user(u2)
 
     dist = 0
 
-    asdf.asdfosadf
+    #asdf.asdfosadf
 
     followers1.each do |f1|
       if user2.following?f1

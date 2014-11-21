@@ -148,7 +148,7 @@ class ApplicationController < ActionController::Base
         # begin
 
           a = Edge.where(source: @user1, target: @user2)
-          holi.holi
+          #holi.holi
           dist = twitter_social_distance(@user1,@user2)
           
           if a.blank? || !a.social_distance.nil?

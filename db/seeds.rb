@@ -2,16 +2,22 @@
 
 #archivo proporcionado por MQ con tweets
 file = File.open('C:\Users\VAIO\Desktop\tweets.csv')
-
 # primera linea del archivo (headers)
 l1 = file.readline.split(/\t/)[15]
 # aqui esta el id del evento
-# evento = line.remove(/\n/)
 ActiveRecord::Base.logger = nil
+
+
+#
+# PASO 1
+#
+# preprocesamiento de los datos proveidos por MQ
+# se incluyen en el modelo de datos de la aplicacion
+# y se limpian redundancias obvias
+#
 
 total = 0
 skipped = 0 
-
 
 file.each_line do |line|
 
@@ -59,5 +65,10 @@ file.each_line do |line|
   end
 end
 
-# found 485 tweeets of which
-# 161 where skipped because the where repeated
+
+#
+# PASO 2: post procesamiento de los datos
+#
+# calcular distancias entre distintos nodos.
+# en este caso dist social
+#

@@ -4,6 +4,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :name
       t.string :uid
       t.string :provider
+      t.string :twitter_name
 
       t.timestamps
     end
