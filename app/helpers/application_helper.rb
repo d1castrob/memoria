@@ -122,20 +122,32 @@ module ApplicationHelper
     u2 = u2 == 0 ? user2 : u2
 
     #debug.debug
-    followers1 = twitter_client.followers(u1).to_a
-    user2 = twitter_client.user(u2)
+    # followers1 = twitter_client.followers(u1).to_a
+    # user2 = twitter_client.user(u2)
 
-    dist = 0
+    # dist = 0
 
-    #asdf.asdfosadf
+    # #asdf.asdfosadf
 
-    followers1.each do |f1|
-      if user2.following?f1
-        dist += 1
-      end
-    end
+    # followers1.each do |f1|
+    #   if user2.following?f1
+    #     dist += 1
+    #   end
+    # end
 
-    dist
+    # dist
+
+
+    f1 = twitter_client.friend_ids(u1).to_a
+    f2 = twitter_client.friend_ids(u2).to_a
+
+    common = f1 & f2
+
+    #abs
+    common.count
+
+    #normalized by popularity
+    common.count/Math.sqrt(f1.count*f1.count + f2.count*f2.count)
 
   end
 

@@ -145,7 +145,7 @@ class ApplicationController < ActionController::Base
       User.all.each do |m2|
         @user2 = m2.twitter_name
 
-        begin
+        # begin
 
           a = Edge.where(source: @user1, target: @user2)
           #holi.holi
@@ -159,16 +159,16 @@ class ApplicationController < ActionController::Base
             end
           end
 
-        rescue Twitter::Error::Forbidden
-          m.location = 'sin ubicacion'
-          puts 'user forbidden, guardando sin ubicacion'
-        rescue Twitter::Error::NotFound
-          m.location = 'sin ubicacion'
-          puts 'not found, guardando sin ubicacion'
-        rescue Twitter::Error::TooManyRequests
-          puts 'rate exceeded'
-          return 0
-        end
+        # rescue Twitter::Error::Forbidden
+        #   m.location = 'sin ubicacion'
+        #   puts 'user forbidden, guardando sin ubicacion'
+        # rescue Twitter::Error::NotFound
+        #   m.location = 'sin ubicacion'
+        #   puts 'not found, guardando sin ubicacion'
+        # rescue Twitter::Error::TooManyRequests
+        #   puts 'rate exceeded'
+        #   return 0
+        # end
 
       end
     end

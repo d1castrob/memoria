@@ -85,7 +85,7 @@ User.all.each do |u1|
 
     a = Edge.where(source: u1.twitter_name, target: u2.twitter_name)
     #holi.holi
-    dist = twitter_social_distance(u1.twitter_name,u2.twitter_name)
+    dist = twitter_social_distance(u1.twitter_name, u2.twitter_name)
     
     if a.blank? || !a.social_distance.nil?
       Edge.create(sourc: u1.twitter_name, target: u2.twitter_name, social_distance: dist)
