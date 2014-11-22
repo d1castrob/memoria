@@ -145,30 +145,32 @@ class ApplicationController < ActionController::Base
       User.all.each do |m2|
         @user2 = m2.twitter_name
 
-        # begin
+        begin
 
-          a = Edge.where(source: @user1, target: @user2)
+          a = Edge.where(source: @user1, target: @user2).first
           #holi.holi
           dist = twitter_social_distance(@user1,@user2)
           
           if a.blank? || !a.social_distance.nil?
-            Edge.create(sourc: @user1, target: @user2, social_distance: dist)
+            Edge.create(source: @user1, target: @user2, social_distance: dist)
           else
             a.each do |edg|
               edg.social_distance = dist
             end
           end
 
-        # rescue Twitter::Error::Forbidden
-        #   m.location = 'sin ubicacion'
-        #   puts 'user forbidden, guardando sin ubicacion'
-        # rescue Twitter::Error::NotFound
-        #   m.location = 'sin ubicacion'
-        #   puts 'not found, guardando sin ubicacion'
-        # rescue Twitter::Error::TooManyRequests
-        #   puts 'rate exceeded'
-        #   return 0
-        # end
+        rescue Twitter::Error::Forbidden
+          puts '----------------------user forbidden, guardando sin ubicacion-----------------'
+        rescue Twitter::Error::NotFound
+          puts '----------------------not found, guardando sin ubicacion----------------------'
+        rescue Twitter::Error::Unauthorized
+          puts '----------------------Unauthorized----------------------'
+        rescue Twitter::Error::TooManyRequests
+          puts
+          puts '----------------------rate exceeded----------------------'
+          puts
+          return 0
+        end
 
       end
     end
