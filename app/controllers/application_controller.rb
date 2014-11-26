@@ -140,6 +140,7 @@ class ApplicationController < ActionController::Base
   # necesita dos id de usuarios 
   #
   def calculate_social_distance
+    ActiveRecord::Base.logger = nil
     User.all.each do |m1|
       @user1 = m1.twitter_name
       User.all.each do |m2|
@@ -147,28 +148,33 @@ class ApplicationController < ActionController::Base
 
         begin
 
+
           a = Edge.where(source: @user1, target: @user2).first
-          #holi.holi
-          dist = twitter_social_distance(@user1,@user2)
           
-          if a.blank? || !a.social_distance.nil?
-            Edge.create(source: @user1, target: @user2, social_distance: dist)
+          if a.blank? || a.social_distance.nil?
+            dist = twitter_social_distance(@user1,@user2)
+            @e = Edge.create(source: @user1, target: @user2, social_distance: dist)
+            @e.save
+            puts 'saving ' + @user1 + ', '+@user2
           else
-            a.each do |edg|
-              edg.social_distance = dist
-            end
+            # a.each do |edg|
+            #   edg.social_distance = dist
+            # end
+            puts 'skipping'
           end
 
         rescue Twitter::Error::Forbidden
-          puts '----------------------user forbidden, guardando sin ubicacion-----------------'
+          @e = Edge.create(source: @user1, target: @user2, social_distance: 0)
+          puts '----------------------user forbidden, guardando sin datos------'
         rescue Twitter::Error::NotFound
-          puts '----------------------not found, guardando sin ubicacion----------------------'
+          @e = Edge.create(source: @user1, target: @user2, social_distance: 0)
+          puts '----------------------not found, guardando sin datos-----------'
         rescue Twitter::Error::Unauthorized
-          puts '----------------------Unauthorized----------------------'
+          @e = Edge.create(source: @user1, target: @user2, social_distance: 0)
+          puts '----------------------Unauthorized-----------------------------'
         rescue Twitter::Error::TooManyRequests
-          puts
-          puts '----------------------rate exceeded----------------------'
-          puts
+          puts '----------------------rate exceeded----------------------------'
+          debug.debug
           return 0
         end
 
