@@ -79,21 +79,23 @@ Expression.where(symbol: 'at').each do |e|
   User.create(twitter_name: e.raw_text)
 end
 
-User.all.each do |u1|
-  User.all.each do |u2|
 
-
-    a = Edge.where(source: u1.twitter_name, target: u2.twitter_name)
-    #holi.holi
-    dist = twitter_social_distance(u1.twitter_name, u2.twitter_name)
-    
-    if a.blank? || !a.social_distance.nil?
-      Edge.create(sourc: u1.twitter_name, target: u2.twitter_name, social_distance: dist)
-    else
-      a.each do |edg|
-        edg.social_distance = dist
-      end
-    end
-
-  end
-end
+#
+# @ApplicationController
+#
+# User.all.each do |u1|
+#   User.all.each do |u2|
+#
+#     a = Edge.where(source: u1.twitter_name, target: u2.twitter_name)
+#     #holi.holi
+#     dist = twitter_social_distance(u1.twitter_name, u2.twitter_name)
+#   
+#     if a.blank? || !a.social_distance.nil?
+#       Edge.create(sourc: u1.twitter_name, target: u2.twitter_name, social_distance: dist)
+#     else
+#       a.each do |edg|
+#         edg.social_distance = dist
+#       end
+#     end
+#   end
+# end

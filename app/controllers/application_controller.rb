@@ -141,25 +141,27 @@ class ApplicationController < ActionController::Base
   #
   def calculate_social_distance
     ActiveRecord::Base.logger = nil
-    User.all.each do |m1|
-      @user1 = m1.twitter_name
-      User.all.each do |m2|
-        @user2 = m2.twitter_name
+    User.all.each do |u1|
+      @user1 = u1.twitter_name
+      @followers1 = twitter_client.friend_ids(@user1).to_a
+
+      User.all.each do |u2|
+        @user2 = u2.twitter_name
 
         begin
-
 
           a = Edge.where(source: @user1, target: @user2).first
           
           if a.blank? || a.social_distance.nil?
-            dist = twitter_social_distance(@user1,@user2)
+            
+            @followers2 = twitter_client.friend_ids(@user2).to_a
+            dist = twitter_social_distance(@followers1, @followers2)
+            
             @e = Edge.create(source: @user1, target: @user2, social_distance: dist)
             @e.save
             puts 'saving ' + @user1 + ', '+@user2
+          
           else
-            # a.each do |edg|
-            #   edg.social_distance = dist
-            # end
             puts 'skipping'
           end
 
@@ -171,7 +173,7 @@ class ApplicationController < ActionController::Base
           puts '----------------------not found, guardando sin datos-----------'
         rescue Twitter::Error::Unauthorized
           @e = Edge.create(source: @user1, target: @user2, social_distance: 0)
-          puts '----------------------Unauthorized-----------------------------'
+          puts '----------------------Unauthorized, guardando sin datos--------'
         rescue Twitter::Error::TooManyRequests
           puts '----------------------rate exceeded----------------------------'
           debug.debug
@@ -217,6 +219,7 @@ class ApplicationController < ActionController::Base
 
   end
 
+end
 
 
 #################################### LIMPIAR INFO ##########################################
@@ -229,5 +232,3 @@ class ApplicationController < ActionController::Base
 # la ubicacion con el mismo grado de precision, osea, tal vez mas de un campo
 
 
-
-end

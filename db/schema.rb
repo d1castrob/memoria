@@ -71,6 +71,7 @@ ActiveRecord::Schema.define(version: 20141121034259) do
     t.string   "uid"
     t.string   "provider"
     t.string   "twitter_name"
+    t.boolean  "info_available"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

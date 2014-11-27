@@ -115,36 +115,34 @@ module ApplicationHelper
 
   def twitter_social_distance(user1, user2)
 
-    u1 = user1.to_i
-    u2 = user2.to_i
-
-    u1 = u1 == 0 ? user1 : u1
-    u2 = u2 == 0 ? user2 : u2
-
-    #debug.debug
+    # DESCARTADO POR LIMITE LLAMADAS TWITTER
+    #
     # followers1 = twitter_client.followers(u1).to_a
     # user2 = twitter_client.user(u2)
-
     # dist = 0
-
-    # #asdf.asdfosadf
-
     # followers1.each do |f1|
     #   if user2.following?f1
     #     dist += 1
     #   end
     # end
-
     # dist
+   
 
+    # si viene como arreglo
+    if user1.is_a?(Array) && user2.is_a?(Array) 
+      f1 = user1
+      f2 = user2
+      puts 'array'
+    # si viene como numero o username
+    else   
+      u1 = user1.to_i == 0 ? user1 : user1.to_i
+      u2 = user2.to_i == 0 ? user2 : user2.to_i
 
-    f1 = twitter_client.friend_ids(u1).to_a
-    f2 = twitter_client.friend_ids(u2).to_a
+      f1 = twitter_client.friend_ids(u1).to_a
+      f2 = twitter_client.friend_ids(u2).to_a
+    end
 
     common = f1 & f2
-
-    #abs
-    common.count
 
     #normalized by popularity
     common.count/Math.sqrt(f1.count*f1.count + f2.count*f2.count)

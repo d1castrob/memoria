@@ -13,6 +13,8 @@ Rails.application.routes.draw do
 
   get "/run" => "sessions#run"
 
+  get "/users_cleanup" => "users#cleanup"
+
   resources :users
 
   resources :messages
