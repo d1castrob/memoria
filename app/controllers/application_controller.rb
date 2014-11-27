@@ -143,20 +143,28 @@ class ApplicationController < ActionController::Base
     ActiveRecord::Base.logger = nil
     User.all.each do |u1|
       @user1 = u1.twitter_name
-      @followers1 = twitter_client.friend_ids(@user1).to_a
+      
+      if u1.followers1.empty?
+        @followers1 = twitter_client.friend_ids(@user1).to_a
+        u1.build_followers(@followers1)
+      end
 
       User.all.each do |u2|
         @user2 = u2.twitter_name
 
         begin
 
-          a = Edge.where(source: @user1, target: @user2).first
-          
-          if a.blank? || a.social_distance.nil?
+          a = Edge.where(source: @user1, target: @user2)
+          b = Edge.where(source: @user2, target: @user1)
+
+          if a.blank? && b.blank?
             
-            @followers2 = twitter_client.friend_ids(@user2).to_a
-            dist = twitter_social_distance(@followers1, @followers2)
-            
+            if u2.followers.empty?
+              @followers2 = twitter_client.friend_ids(@user2).to_a
+              u2.build_followers(@followers2)
+            end
+
+            dist = twitter_social_distance(u1, u2)            
             @e = Edge.create(source: @user1, target: @user2, social_distance: dist)
             @e.save
             puts 'saving ' + @user1 + ', '+@user2
