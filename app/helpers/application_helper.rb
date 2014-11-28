@@ -262,7 +262,17 @@ module ApplicationHelper
     end
   end
 
-
+  def build_user_followers(user)
+    if user.followers.empty?
+      @followers_array = twitter_client.friend_ids(user.twitter_name).to_a
+      @followers_array.each do |follower|
+        f = Follower.find_or_create_by(id_at_twitter: follower.to_s)
+        user.followers << f
+      end  
+      user.save
+    end
+    user.followers
+  end
 
 
 end

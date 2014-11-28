@@ -143,11 +143,7 @@ class ApplicationController < ActionController::Base
     ActiveRecord::Base.logger = nil
     User.all.each do |u1|
       @user1 = u1.twitter_name
-      
-      if u1.followers1.empty?
-        @followers1 = twitter_client.friend_ids(@user1).to_a
-        u1.build_followers(@followers1)
-      end
+      @followers1 = build_user_followers(u1)
 
       User.all.each do |u2|
         @user2 = u2.twitter_name
@@ -159,12 +155,9 @@ class ApplicationController < ActionController::Base
 
           if a.blank? && b.blank?
             
-            if u2.followers.empty?
-              @followers2 = twitter_client.friend_ids(@user2).to_a
-              u2.build_followers(@followers2)
-            end
+            @followers2 = build_user_followers(u2)
+            dist = twitter_social_distance(u1, u2)
 
-            dist = twitter_social_distance(u1, u2)            
             @e = Edge.create(source: @user1, target: @user2, social_distance: dist)
             @e.save
             puts 'saving ' + @user1 + ', '+@user2
@@ -191,6 +184,38 @@ class ApplicationController < ActionController::Base
       end
     end
   end
+
+  def calculate_social_distance2
+    begin
+      User.all.each do |u|
+        build_user_followers(u)
+      end
+
+      a = Edge.where(source: @user1, target: @user2)
+      b = Edge.where(source: @user2, target: @user1)
+
+      if a.blank? && b.blank?
+        dist = twitter_social_distance(u1, u2)
+        @e = Edge.create(source: @user1, target: @user2, social_distance: dist)
+        puts 'saving ' + @user1 + ', '+@user2
+      else
+        puts 'skipping'
+      end
+
+    rescue Twitter::Error::Forbidden, Twitter::Error::NotFound, Twitter::Error::Unauthorized
+      @e = Edge.create(source: @user1, target: @user2, social_distance: 0)
+      puts '----------------------guardando sin datos------'
+    rescue Twitter::Error::TooManyRequests
+      puts '----------------------rate exceeded----------------------------'
+      debug.debug
+      return 0
+    end
+
+  end
+
+
+
+
 
   #
   # en base al texto de dos mensajes, calcula cuanto difiere uno de otro

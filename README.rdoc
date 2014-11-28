@@ -11,7 +11,13 @@ La documentación del procceso se encuentra en /documentacion/documentacion proc
 Las imagenes de los datos de prueba que repesentan el funcionamiento ideal del proceso están en /documentacion/resultado
 
 
+  	STEPS
 
+
+  	1. RUN rake db:migrate and rake db:seed to load DB
+  	2. RUN /users_cleanup to clean up the db according to twitter permisions
+  	3. login via twitter or run /algo for social distance
+  	4. go to /
 
 
 
