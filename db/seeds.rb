@@ -76,7 +76,7 @@ end
 # en este caso dist social
 #
 Expression.where(symbol: 'at').each do |e|
-  User.create(twitter_name: e.raw_text)
+  User.create(twitter_name: e.raw_text, mentions: e.count)
 end
 
 

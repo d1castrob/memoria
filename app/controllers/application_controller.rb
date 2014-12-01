@@ -156,11 +156,15 @@ class ApplicationController < ActionController::Base
           if a.blank? && b.blank?
             
             @followers2 = build_user_followers(u2)
-            dist = twitter_social_distance(u1, u2)
+            @dist = twitter_social_distance(u1, u2)
 
-            @e = Edge.create(source: @user1, target: @user2, social_distance: dist)
-            @e.save
-            puts 'saving ' + @user1 + ', '+@user2
+            if @dist != 0
+              @e = Edge.create(source: @user1, target: @user2, social_distance: dist)
+              @e.save
+              puts 'saving ' + @user1 + ', '+@user2
+            end
+
+            puts 'no followers in common for '+ @user1 + ', '+@user2
           
           else
             puts 'skipping'

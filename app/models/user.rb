@@ -3,7 +3,7 @@ class User < ActiveRecord::Base
   # friendships es usado para crear el grafo de distancia entre usuarios
   # mientras que followers es usado en conjunto con la API para
   # calcular la distancia entre usuarios. 
-  has_many :followers
+  has_and_belongs_to_many :followers
   has_many :friendships
   has_many :friends, :through => :firendships
   

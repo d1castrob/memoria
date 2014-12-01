@@ -5,6 +5,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :uid
       t.string :provider
       t.string :twitter_name
+      t.integer :mentions
       t.boolean :info_available
       t.timestamps
     end

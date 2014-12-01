@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141127180827) do
+ActiveRecord::Schema.define(version: 20141128131142) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -36,11 +36,18 @@ ActiveRecord::Schema.define(version: 20141127180827) do
   end
 
   create_table "followers", force: true do |t|
-    t.integer  "user_id"
     t.string   "id_at_twitter"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "followers_users", id: false, force: true do |t|
+    t.integer "follower_id"
+    t.integer "user_id"
+  end
+
+  add_index "followers_users", ["follower_id", "user_id"], name: "index_followers_users_on_follower_id_and_user_id", using: :btree
+  add_index "followers_users", ["user_id"], name: "index_followers_users_on_user_id", using: :btree
 
   create_table "friendships", force: true do |t|
     t.integer  "user_id"
@@ -78,6 +85,7 @@ ActiveRecord::Schema.define(version: 20141127180827) do
     t.string   "uid"
     t.string   "provider"
     t.string   "twitter_name"
+    t.integer  "mentions"
     t.boolean  "info_available"
     t.datetime "created_at"
     t.datetime "updated_at"

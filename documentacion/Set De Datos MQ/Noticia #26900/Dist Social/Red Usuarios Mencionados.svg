@@ -1,0 +1,1698 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg contentScriptType="text/ecmascript" width="595px"
+     xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify"
+     contentStyleType="text/css" viewBox="-117 -138 238 253" height="632px"
+     preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
+     version="1.1">
+    <g id="edges">
+        <path fill="none" stroke-width="0.029904807"
+              d="M -81.213646,42.274128 C -64.573792,-12.677727 42.813778,-70.145714 97.765633,-53.505856"
+              class="@Newsmax_Media @newsguy2005" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0015983789"
+              d="M -81.213646,42.274128 C -53.220280,39.115360 -6.492084,76.367264 -3.333315,104.360626"
+              class="@Newsmax_Media @sharethis" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="3.372954E-4"
+              d="M -81.213646,42.274128 C -98.785141,35.262878 -114.625496,-1.611241 -107.614243,-19.182732"
+              class="@Newsmax_Media @RichardGEarl" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -81.213646,42.274128 C -81.115051,26.494129 -57.297157,2.972015 -41.517159,3.070610"
+              class="@Newsmax_Media @BBCWorld" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.031428017"
+              d="M -81.213646,42.274128 C -47.624500,16.107691 42.008862,27.241751 68.175301,60.830894"
+              class="@Newsmax_Media @YahooNews" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -81.213646,42.274128 C -72.031921,19.646709 -24.318222,-0.521839 -1.690802,8.659879"
+              class="@Newsmax_Media @BeboMundial" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -81.213646,42.274128 C -66.761307,22.688616 -15.704535,14.988855 3.880978,29.441196"
+              class="@Newsmax_Media @Pontifex" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0067867334"
+              d="M -81.213646,42.274128 C -42.066925,28.405582 37.455967,66.322845 51.324512,105.469566"
+              class="@Newsmax_Media @NBCNews" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.051666215"
+              d="M -81.213646,42.274128 C -84.377747,3.812344 -31.431232,-58.626480 7.030552,-61.790581"
+              class="@Newsmax_Media @FoxNews" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.011844921"
+              d="M -81.213646,42.274128 C -100.042770,17.920740 -91.756363,-46.853016 -67.402977,-65.682137"
+              class="@Newsmax_Media @Reuters" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.023537181"
+              d="M -81.213646,42.274128 C -42.542358,4.046734 72.805664,4.712566 111.033058,43.383854"
+              class="@Newsmax_Media @TeamLOA" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -81.213646,42.274128 C -65.890366,15.948345 -3.416773,-0.555412 22.909010,14.767867"
+              class="@Newsmax_Media @dimkay_" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.002005516"
+              d="M -81.213646,42.274128 C -91.550125,-15.503157 -20.388906,-117.673790 37.388378,-128.010269"
+              class="@Newsmax_Media @cnalive" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -81.213646,42.274128 C -75.627319,16.873671 -29.147133,-12.847521 -3.746676,-7.261190"
+              class="@Newsmax_Media @toohsuite" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="8.7599905E-4"
+              d="M -81.213646,42.274128 C -90.065613,14.250648 -61.308342,-41.062515 -33.284863,-49.914482"
+              class="@Newsmax_Media @nytimes" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="4.0650548E-4"
+              d="M -81.213646,42.274128 C -56.833862,28.185215 0.869187,43.621521 14.958100,68.001305"
+              class="@Newsmax_Media @AP" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.008532858"
+              d="M -81.213646,42.274128 C -86.981918,32.453983 -80.904106,9.071366 -71.083969,3.303094"
+              class="@Newsmax_Media @INSSIsrael" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.006336153"
+              d="M -81.213646,42.274128 C -67.708504,41.267262 -45.940506,60.014668 -44.933640,73.519806"
+              class="@Newsmax_Media @americamag" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -81.213646,42.274128 C -72.937996,28.487274 -39.844238,20.220474 -26.057384,28.496128"
+              class="@Newsmax_Media @willyfelipe1" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -81.213646,42.274128 C -75.077011,11.533781 -19.761545,-25.371784 10.978801,-19.235151"
+              class="@Newsmax_Media @blader809" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -81.213646,42.274128 C -83.799431,17.603767 -50.672573,-23.280457 -26.002213,-25.866245"
+              class="@Newsmax_Media @RossR5" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="8.3935686E-4"
+              d="M -81.213646,42.274128 C -94.835747,4.014679 -57.879723,-73.807632 -19.620272,-87.429726"
+              class="@Newsmax_Media @romereports" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.010183841"
+              d="M -81.213646,42.274128 C -94.516357,24.355577 -87.592606,-22.476324 -69.674049,-35.779037"
+              class="@Newsmax_Media @townhallcom" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.009857198"
+              d="M -81.213646,42.274128 C -54.029221,-0.752041 51.286674,-24.514664 94.312843,2.669760"
+              class="@Newsmax_Media @guardian" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.5700278E-4"
+              d="M -81.213646,42.274128 C -76.239494,-2.401522 -1.764791,-61.953770 42.910858,-56.979614"
+              class="@Newsmax_Media @officialR5" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -81.213646,42.274128 C -75.064705,38.698490 -60.477840,42.558441 -56.902203,48.707382"
+              class="@Newsmax_Media @georgegalloway" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -81.213646,42.274128 C -68.928871,11.960430 -5.031156,-15.082952 25.282541,-2.798177"
+              class="@Newsmax_Media @ChamakoSeriOo" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0071215676"
+              d="M -81.213646,42.274128 C -64.931267,-0.330296 23.398933,-39.813358 66.003357,-23.530977"
+              class="@Newsmax_Media @Btselem" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0042813835"
+              d="M 97.765633,-53.505856 C 109.119141,-1.712765 48.459778,93.007111 -3.333315,104.360626"
+              class="@newsguy2005 @sharethis" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0060150726"
+              d="M 97.765633,-53.505856 C 63.554279,-5.565254 -59.673645,15.028622 -107.614243,-19.182732"
+              class="@newsguy2005 @RichardGEarl" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="5.817056E-4"
+              d="M 97.765633,-53.505856 C 81.224365,-14.334005 -2.345307,19.611874 -41.517159,3.070610"
+              class="@newsguy2005 @BBCWorld" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.025513766"
+              d="M 97.765633,-53.505856 C 114.714912,-24.720440 96.960716,43.881615 68.175301,60.830894"
+              class="@newsguy2005 @YahooNews" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 97.765633,-53.505856 C 90.307495,-21.181419 30.633635,16.118019 -1.690802,8.659879"
+              class="@newsguy2005 @BeboMundial" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 97.765633,-53.505856 C 95.578110,-18.139513 39.247318,31.628716 3.880978,29.441196"
+              class="@newsguy2005 @Pontifex" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.009508174"
+              d="M 97.765633,-53.505856 C 120.272491,-12.422545 92.407822,82.962708 51.324512,105.469566"
+              class="@newsguy2005 @NBCNews" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.022713738"
+              d="M 97.765633,-53.505856 C 77.961678,-37.015785 23.520622,-41.986622 7.030552,-61.790581"
+              class="@newsguy2005 @FoxNews" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.009453587"
+              d="M 97.765633,-53.505856 C 62.296654,-22.907391 -36.804512,-30.213158 -67.402977,-65.682137"
+              class="@newsguy2005 @Reuters" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.021629525"
+              d="M 97.765633,-53.505856 C 119.797066,-36.781399 127.757515,21.352425 111.033058,43.383854"
+              class="@newsguy2005 @TeamLOA" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 97.765633,-53.505856 C 96.449059,-24.879787 51.535076,16.084446 22.909010,14.767867"
+              class="@newsguy2005 @dimkay_" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0041314643"
+              d="M 97.765633,-53.505856 C 70.789307,-56.331287 34.562946,-101.033936 37.388378,-128.010269"
+              class="@newsguy2005 @cnalive" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 97.765633,-53.505856 C 86.712105,-23.954458 25.804720,3.792337 -3.746676,-7.261190"
+              class="@newsguy2005 @toohsuite" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0010068787"
+              d="M 97.765633,-53.505856 C 72.273811,-26.577484 -6.356490,-24.422657 -33.284863,-49.914482"
+              class="@newsguy2005 @nytimes" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0010586382"
+              d="M 97.765633,-53.505856 C 105.505554,-12.642918 55.821037,60.261383 14.958100,68.001305"
+              class="@newsguy2005 @AP" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0011574529"
+              d="M 97.765633,-53.505856 C 75.357498,-8.374142 -25.952255,25.711227 -71.083969,3.303094"
+              class="@newsguy2005 @INSSIsrael" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0040141647"
+              d="M 97.765633,-53.505856 C 94.630905,0.439133 9.011349,76.654526 -44.933640,73.519806"
+              class="@newsguy2005 @americamag" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0011562577"
+              d="M 97.765633,-53.505856 C 89.401428,-12.340857 15.107616,36.860336 -26.057384,28.496128"
+              class="@newsguy2005 @willyfelipe1" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 97.765633,-53.505856 C 87.262405,-29.294346 35.190311,-8.731924 10.978801,-19.235151"
+              class="@newsguy2005 @blader809" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="5.8160326E-4"
+              d="M 97.765633,-53.505856 C 78.539986,-23.224363 4.279278,-6.640598 -26.002213,-25.866245"
+              class="@newsguy2005 @RossR5" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0034668734"
+              d="M 97.765633,-53.505856 C 67.503677,-36.813450 -2.927866,-57.167770 -19.620272,-87.429726"
+              class="@newsguy2005 @romereports" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.033662546"
+              d="M 97.765633,-53.505856 C 67.823059,-16.472553 -32.640747,-5.836464 -69.674049,-35.779037"
+              class="@newsguy2005 @townhallcom" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.014279629"
+              d="M 97.765633,-53.505856 C 108.310196,-41.580173 106.238525,-7.874805 94.312843,2.669760"
+              class="@newsguy2005 @guardian" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 97.765633,-53.505856 C 86.099930,-43.229652 53.187061,-45.313908 42.910858,-56.979614"
+              class="@newsguy2005 @officialR5" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0012383604"
+              d="M 97.765633,-53.505856 C 87.274712,-2.129642 -5.525988,59.198303 -56.902203,48.707382"
+              class="@newsguy2005 @georgegalloway" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 97.765633,-53.505856 C 93.410553,-28.867699 49.920696,1.556906 25.282541,-2.798177"
+              class="@newsguy2005 @ChamakoSeriOo" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.007100314"
+              d="M 97.765633,-53.505856 C 97.408157,-41.158424 78.350784,-23.173498 66.003357,-23.530977"
+              class="@newsguy2005 @Btselem" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0061819535"
+              d="M -3.333315,104.360626 C -48.898170,100.508141 -111.466728,26.382126 -107.614243,-19.182732"
+              class="@sharethis @RichardGEarl" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -3.333315,104.360626 C -31.228088,91.739395 -54.138393,30.965382 -41.517159,3.070610"
+              class="@sharethis @BBCWorld" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.015683198"
+              d="M -3.333315,104.360626 C 2.262461,81.352959 45.167633,55.235119 68.175301,60.830894"
+              class="@sharethis @YahooNews" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -3.333315,104.360626 C -22.144962,84.891968 -21.159454,27.471527 -1.690802,8.659879"
+              class="@sharethis @BeboMundial" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -3.333315,104.360626 C -16.874344,87.933884 -12.545767,42.982224 3.880978,29.441196"
+              class="@sharethis @Pontifex" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.00689691"
+              d="M -3.333315,104.360626 C 7.820039,93.650848 40.614731,94.316216 51.324512,105.469566"
+              class="@sharethis @NBCNews" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0020636502"
+              d="M -3.333315,104.360626 C -34.490784,69.057610 -28.272465,-30.633110 7.030552,-61.790581"
+              class="@sharethis @FoxNews" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0031337729"
+              d="M -3.333315,104.360626 C -50.155800,83.166008 -88.597595,-18.859650 -67.402977,-65.682137"
+              class="@sharethis @Reuters" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.00473264"
+              d="M -3.333315,104.360626 C 7.344604,69.291992 75.964432,32.705933 111.033058,43.383854"
+              class="@sharethis @TeamLOA" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -3.333315,104.360626 C -16.003403,81.193611 -0.258007,27.437956 22.909010,14.767867"
+              class="@sharethis @dimkay_" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="9.855236E-4"
+              d="M -3.333315,104.360626 C -41.663158,49.742104 -17.230145,-89.680428 37.388378,-128.010269"
+              class="@sharethis @cnalive" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -3.333315,104.360626 C -25.740351,82.118935 -25.988367,15.145845 -3.746676,-7.261190"
+              class="@sharethis @toohsuite" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.002468059"
+              d="M -3.333315,104.360626 C -40.178650,79.495911 -58.149574,-13.069148 -33.284863,-49.914482"
+              class="@sharethis @nytimes" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0017553141"
+              d="M -3.333315,104.360626 C -6.946897,93.430473 4.027952,71.614883 14.958100,68.001305"
+              class="@sharethis @AP" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="6.899823E-4"
+              d="M -3.333315,104.360626 C -37.094955,97.699249 -77.745346,37.064735 -71.083969,3.303094"
+              class="@sharethis @INSSIsrael" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0011482959"
+              d="M -3.333315,104.360626 C -17.821543,106.512527 -42.781738,88.008041 -44.933640,73.519806"
+              class="@sharethis @americamag" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="4.5991308E-4"
+              d="M -3.333315,104.360626 C -23.051029,93.732544 -36.685471,48.213844 -26.057384,28.496128"
+              class="@sharethis @willyfelipe1" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -3.333315,104.360626 C -25.190050,76.779037 -16.602781,2.621583 10.978801,-19.235151"
+              class="@sharethis @blader809" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="2.3017354E-4"
+              d="M -3.333315,104.360626 C -33.912468,82.849030 -47.513809,4.712908 -26.002213,-25.866245"
+              class="@sharethis @RossR5" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0022342764"
+              d="M -3.333315,104.360626 C -44.948776,69.259949 -54.720951,-45.814262 -19.620272,-87.429726"
+              class="@sharethis @romereports" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0016512343"
+              d="M -3.333315,104.360626 C -44.629395,89.600845 -84.433838,5.517041 -69.674049,-35.779037"
+              class="@sharethis @townhallcom" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0058075045"
+              d="M -3.333315,104.360626 C -4.142256,64.493225 54.445442,3.478701 94.312843,2.669760"
+              class="@sharethis @guardian" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="5.201857E-4"
+              d="M -3.333315,104.360626 C -26.352528,62.843739 1.393974,-33.960403 42.910858,-56.979614"
+              class="@sharethis @officialR5" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="4.2847483E-4"
+              d="M -3.333315,104.360626 C -25.177742,103.943756 -57.319073,70.551811 -56.902203,48.707382"
+              class="@sharethis @georgegalloway" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -3.333315,104.360626 C -19.041904,77.205688 -1.872391,12.910414 25.282541,-2.798177"
+              class="@sharethis @ChamakoSeriOo" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0027335614"
+              d="M -3.333315,104.360626 C -15.044302,64.914970 26.557703,-11.819990 66.003357,-23.530977"
+              class="@sharethis @Btselem" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -107.614243,-19.182732 C -89.944153,-27.951481 -50.285908,-14.599476 -41.517159,3.070610"
+              class="@RichardGEarl @BBCWorld" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0013261571"
+              d="M -107.614243,-19.182732 C -56.453606,-38.337921 49.020111,9.670258 68.175301,60.830894"
+              class="@RichardGEarl @YahooNews" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -107.614243,-19.182732 C -80.861031,-34.798897 -17.306969,-18.093332 -1.690802,8.659879"
+              class="@RichardGEarl @BeboMundial" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -107.614243,-19.182732 C -75.590416,-31.756992 -8.693282,-2.582634 3.880978,29.441196"
+              class="@RichardGEarl @Pontifex" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="4.100249E-4"
+              d="M -107.614243,-19.182732 C -50.896030,-26.040020 44.467224,48.751358 51.324512,105.469566"
+              class="@RichardGEarl @NBCNews" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="3.3748668E-4"
+              d="M -107.614243,-19.182732 C -93.206848,-50.633263 -24.419979,-76.197975 7.030552,-61.790581"
+              class="@RichardGEarl @FoxNews" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -107.614243,-19.182732 C -108.871872,-36.524864 -84.745110,-64.424507 -67.402977,-65.682137"
+              class="@RichardGEarl @Reuters" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="8.4171403E-4"
+              d="M -107.614243,-19.182732 C -51.371464,-50.398876 79.816910,-12.858925 111.033058,43.383854"
+              class="@RichardGEarl @TeamLOA" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.687675E-4"
+              d="M -107.614243,-19.182732 C -74.719467,-38.497265 3.594478,-18.126905 22.909010,14.767867"
+              class="@RichardGEarl @dimkay_" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0010073944"
+              d="M -107.614243,-19.182732 C -100.379227,-69.948769 -13.377657,-135.245285 37.388378,-128.010269"
+              class="@RichardGEarl @cnalive" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -107.614243,-19.182732 C -84.456421,-37.571938 -22.135881,-30.419012 -3.746676,-7.261190"
+              class="@RichardGEarl @toohsuite" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -107.614243,-19.182732 C -98.894714,-40.194958 -54.297089,-58.634007 -33.284863,-49.914482"
+              class="@RichardGEarl @nytimes" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="9.3218684E-4"
+              d="M -107.614243,-19.182732 C -65.662971,-26.260391 7.880441,26.050032 14.958100,68.001305"
+              class="@RichardGEarl @AP" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="4.2203194E-4"
+              d="M -107.614243,-19.182732 C -95.811028,-21.991621 -73.892860,-8.500125 -71.083969,3.303094"
+              class="@RichardGEarl @INSSIsrael" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -107.614243,-19.182732 C -76.537613,-13.178344 -38.929253,42.443176 -44.933640,73.519806"
+              class="@RichardGEarl @americamag" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.6880906E-4"
+              d="M -107.614243,-19.182732 C -81.767097,-25.958332 -32.832985,2.648987 -26.057384,28.496128"
+              class="@RichardGEarl @willyfelipe1" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -107.614243,-19.182732 C -83.906113,-42.911827 -12.750292,-42.943275 10.978801,-19.235151"
+              class="@RichardGEarl @blader809" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -107.614243,-19.182732 C -92.628540,-36.841843 -43.661324,-40.851952 -26.002213,-25.866245"
+              class="@RichardGEarl @RossR5" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0014912429"
+              d="M -107.614243,-19.182732 C -103.664841,-50.430927 -50.868469,-91.379120 -19.620272,-87.429726"
+              class="@RichardGEarl @romereports" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0018706918"
+              d="M -107.614243,-19.182732 C -103.345467,-30.090033 -80.581345,-40.047817 -69.674049,-35.779037"
+              class="@RichardGEarl @townhallcom" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.6813219E-4"
+              d="M -107.614243,-19.182732 C -62.858322,-55.197651 58.297924,-42.086155 94.312843,2.669760"
+              class="@RichardGEarl @guardian" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="2.2324325E-4"
+              d="M -107.614243,-19.182732 C -85.068596,-56.847130 5.246459,-79.525261 42.910858,-56.979614"
+              class="@RichardGEarl @officialR5" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="8.3552666E-5"
+              d="M -107.614243,-19.182732 C -83.893806,-15.747116 -53.466583,24.986948 -56.902203,48.707382"
+              class="@RichardGEarl @georgegalloway" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="8.441053E-5"
+              d="M -107.614243,-19.182732 C -77.757973,-42.485180 1.980093,-32.654446 25.282541,-2.798177"
+              class="@RichardGEarl @ChamakoSeriOo" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="4.2148208E-4"
+              d="M -107.614243,-19.182732 C -73.760368,-54.775902 30.410185,-57.384850 66.003357,-23.530977"
+              class="@RichardGEarl @Btselem" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.003058354"
+              d="M -41.517159,3.070610 C -8.026609,-7.315825 57.788864,27.340347 68.175301,60.830894"
+              class="@BBCWorld @YahooNews" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -41.517159,3.070610 C -32.434032,-3.776808 -8.538218,-0.423247 -1.690802,8.659879"
+              class="@BBCWorld @BeboMundial" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -41.517159,3.070610 C -27.163414,-0.734901 0.075468,15.087452 3.880978,29.441196"
+              class="@BBCWorld @Pontifex" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="3.4546576E-4"
+              d="M -41.517159,3.070610 C -2.469030,4.982065 53.235970,66.421440 51.324512,105.469566"
+              class="@BBCWorld @NBCNews" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -41.517159,3.070610 C -44.779854,-19.611172 -15.651228,-58.527885 7.030552,-61.790581"
+              class="@BBCWorld @FoxNews" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0019142744"
+              d="M -41.517159,3.070610 C -60.444870,-5.502778 -75.976364,-46.754425 -67.402977,-65.682137"
+              class="@BBCWorld @Reuters" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0011024708"
+              d="M -41.517159,3.070610 C -2.944466,-19.376785 88.585663,4.811161 111.033058,43.383854"
+              class="@BBCWorld @TeamLOA" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -41.517159,3.070610 C -26.292473,-7.475173 12.363228,-0.456819 22.909010,14.767867"
+              class="@BBCWorld @dimkay_" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="4.3610835E-5"
+              d="M -41.517159,3.070610 C -51.952229,-38.926670 -4.608902,-117.575203 37.388378,-128.010269"
+              class="@BBCWorld @cnalive" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -41.517159,3.070610 C -36.029423,-6.549847 -13.367132,-12.748926 -3.746676,-7.261190"
+              class="@BBCWorld @toohsuite" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -41.517159,3.070610 C -50.467720,-9.172869 -45.528339,-40.963921 -33.284863,-49.914482"
+              class="@BBCWorld @nytimes" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -41.517159,3.070610 C -17.235968,4.761698 16.649189,43.720116 14.958100,68.001305"
+              class="@BBCWorld @AP" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -41.517159,3.070610 C -47.384022,9.030469 -65.124115,9.169960 -71.083969,3.303094"
+              class="@BBCWorld @INSSIsrael" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0032769805"
+              d="M -41.517159,3.070610 C -28.110615,17.843746 -30.160503,60.113262 -44.933640,73.519806"
+              class="@BBCWorld @americamag" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -41.517159,3.070610 C -33.340103,5.063758 -24.064236,20.319069 -26.057384,28.496128"
+              class="@BBCWorld @willyfelipe1" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -41.517159,3.070610 C -35.479118,-11.889735 -3.981544,-25.273190 10.978801,-19.235151"
+              class="@BBCWorld @blader809" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -41.517159,3.070610 C -44.201542,-5.819751 -34.892574,-23.181864 -26.002213,-25.866245"
+              class="@BBCWorld @RossR5" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -41.517159,3.070610 C -55.237846,-19.408834 -42.099716,-73.709038 -19.620272,-87.429726"
+              class="@BBCWorld @romereports" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="3.0371457E-4"
+              d="M -41.517159,3.070610 C -54.918465,0.932058 -71.812599,-22.377729 -69.674049,-35.779037"
+              class="@BBCWorld @townhallcom" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.006453299"
+              d="M -41.517159,3.070610 C -14.431328,-24.175560 67.066673,-24.416071 94.312843,2.669760"
+              class="@BBCWorld @guardian" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -41.517159,3.070610 C -36.641602,-25.825039 14.015210,-61.855171 42.910858,-56.979614"
+              class="@BBCWorld @officialR5" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -41.517159,3.070610 C -35.466812,15.274973 -44.697842,42.657036 -56.902203,48.707382"
+              class="@BBCWorld @georgegalloway" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -41.517159,3.070610 C -29.330976,-11.463087 10.748844,-14.984359 25.282541,-2.798177"
+              class="@BBCWorld @ChamakoSeriOo" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0062899766"
+              d="M -41.517159,3.070610 C -25.333374,-23.753811 39.178936,-39.714760 66.003357,-23.530977"
+              class="@BBCWorld @Btselem" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 68.175301,60.830894 C 43.767876,64.369911 1.848216,33.067303 -1.690802,8.659879"
+              class="@YahooNews @BeboMundial" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 68.175301,60.830894 C 49.038498,67.411819 10.461904,48.577999 3.880978,29.441196"
+              class="@YahooNews @Pontifex" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.056922946"
+              d="M 68.175301,60.830894 C 73.732880,73.128784 63.622406,99.911987 51.324512,105.469566"
+              class="@YahooNews @NBCNews" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.030596875"
+              d="M 68.175301,60.830894 C 31.422054,48.535549 -5.264793,-25.037334 7.030552,-61.790581"
+              class="@YahooNews @FoxNews" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.03698524"
+              d="M 68.175301,60.830894 C 15.757034,62.643944 -65.589928,-13.263870 -67.402977,-65.682137"
+              class="@YahooNews @Reuters" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.042674575"
+              d="M 68.175301,60.830894 C 73.257446,48.769932 98.972092,38.301708 111.033058,43.383854"
+              class="@YahooNews @TeamLOA" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 68.175301,60.830894 C 49.909439,60.671547 22.749660,33.033730 22.909010,14.767867"
+              class="@YahooNews @dimkay_" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0071168607"
+              d="M 68.175301,60.830894 C 24.249683,29.220049 5.777531,-84.084648 37.388378,-128.010269"
+              class="@YahooNews @cnalive" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 68.175301,60.830894 C 40.172485,61.596874 -2.980698,20.741625 -3.746676,-7.261190"
+              class="@YahooNews @toohsuite" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.045676973"
+              d="M 68.175301,60.830894 C 25.734194,58.973846 -35.141907,-7.473373 -33.284863,-49.914482"
+              class="@YahooNews @nytimes" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.012976094"
+              d="M 68.175301,60.830894 C 58.965942,72.908417 27.035624,77.210663 14.958100,68.001305"
+              class="@YahooNews @AP" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.006534618"
+              d="M 68.175301,60.830894 C 28.817883,77.177185 -54.737675,42.660511 -71.083969,3.303094"
+              class="@YahooNews @INSSIsrael" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.01993539"
+              d="M 68.175301,60.830894 C 48.091293,85.990463 -19.774067,93.603813 -44.933640,73.519806"
+              class="@YahooNews @americamag" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 68.175301,60.830894 C 42.861813,73.210480 -13.677801,53.809616 -26.057384,28.496128"
+              class="@YahooNews @willyfelipe1" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 68.175301,60.830894 C 40.722794,56.256989 6.404892,8.217357 10.978801,-19.235151"
+              class="@YahooNews @blader809" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="8.7372866E-4"
+              d="M 68.175301,60.830894 C 32.000366,62.326965 -24.506140,10.308687 -26.002213,-25.866245"
+              class="@YahooNews @RossR5" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0064490545"
+              d="M 68.175301,60.830894 C 20.964066,48.737885 -31.713280,-40.218491 -19.620272,-87.429726"
+              class="@YahooNews @romereports" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.010226949"
+              d="M 68.175301,60.830894 C 21.283443,69.078781 -61.426167,11.112822 -69.674049,-35.779037"
+              class="@YahooNews @townhallcom" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.052145682"
+              d="M 68.175301,60.830894 C 61.770584,43.971161 77.453110,9.074478 94.312843,2.669760"
+              class="@YahooNews @guardian" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0014825969"
+              d="M 68.175301,60.830894 C 39.560310,42.321678 24.401644,-28.364622 42.910858,-56.979614"
+              class="@YahooNews @officialR5" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.003502373"
+              d="M 68.175301,60.830894 C 40.735096,83.421692 -34.311405,76.147583 -56.902203,48.707382"
+              class="@YahooNews @georgegalloway" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 68.175301,60.830894 C 46.870934,56.683632 21.135277,18.506189 25.282541,-2.798177"
+              class="@YahooNews @ChamakoSeriOo" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.028223017"
+              d="M 68.175301,60.830894 C 50.868538,44.392906 49.565369,-6.224213 66.003357,-23.530977"
+              class="@YahooNews @Btselem" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -1.690802,8.659879 C 3.579818,11.701787 6.922886,24.170576 3.880978,29.441196"
+              class="@BeboMundial @Pontifex" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -1.690802,8.659879 C 28.274200,17.418755 60.083389,75.504562 51.324512,105.469566"
+              class="@BeboMundial @NBCNews" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -1.690802,8.659879 C -14.036624,-7.174485 -8.803811,-49.444759 7.030552,-61.790581"
+              class="@BeboMundial @FoxNews" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -1.690802,8.659879 C -29.701641,6.933910 -69.128944,-37.671295 -67.402977,-65.682137"
+              class="@BeboMundial @Reuters" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -1.690802,8.659879 C 27.798767,-6.940100 95.433075,13.894287 111.033058,43.383854"
+              class="@BeboMundial @TeamLOA" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -1.690802,8.659879 C 4.450758,4.961514 19.210646,8.626307 22.909010,14.767867"
+              class="@BeboMundial @dimkay_" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -1.690802,8.659879 C -21.208996,-26.489988 2.238512,-108.492073 37.388378,-128.010269"
+              class="@BeboMundial @cnalive" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -1.690802,8.659879 C -5.286190,5.886840 -6.519715,-3.665802 -3.746676,-7.261190"
+              class="@BeboMundial @toohsuite" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -1.690802,8.659879 C -19.724487,3.263819 -38.680923,-31.880795 -33.284863,-49.914482"
+              class="@BeboMundial @nytimes" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -1.690802,8.659879 C 13.507264,17.198383 23.496605,52.803238 14.958100,68.001305"
+              class="@BeboMundial @AP" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -1.690802,8.659879 C -16.640793,21.467155 -58.276695,18.253084 -71.083969,3.303094"
+              class="@BeboMundial @INSSIsrael" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -1.690802,8.659879 C 2.632616,30.280430 -23.313087,69.196388 -44.933640,73.519806"
+              class="@BeboMundial @americamag" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -1.690802,8.659879 C -2.596868,17.500446 -17.216816,29.402195 -26.057384,28.496128"
+              class="@BeboMundial @willyfelipe1" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="5.054658E-4"
+              d="M -1.690802,8.659879 C -4.735888,0.546951 2.865873,-16.190065 10.978801,-19.235151"
+              class="@BeboMundial @blader809" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -1.690802,8.659879 C -13.458309,6.616936 -28.045156,-14.098737 -26.002213,-25.866245"
+              class="@BeboMundial @RossR5" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -1.690802,8.659879 C -24.494617,-6.972149 -35.252300,-64.625916 -19.620272,-87.429726"
+              class="@BeboMundial @romereports" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -1.690802,8.659879 C -24.175234,13.368745 -64.965179,-13.294605 -69.674049,-35.779037"
+              class="@BeboMundial @townhallcom" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -1.690802,8.659879 C 16.311905,-11.738874 73.914093,-15.332945 94.312843,2.669760"
+              class="@BeboMundial @guardian" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -1.690802,8.659879 C -5.898369,-13.388354 20.862625,-52.772049 42.910858,-56.979614"
+              class="@BeboMundial @officialR5" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -1.690802,8.659879 C -4.723582,27.711662 -37.850418,51.740166 -56.902203,48.707382"
+              class="@BeboMundial @georgegalloway" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -1.690802,8.659879 C 1.412256,0.973598 17.596262,-5.901235 25.282541,-2.798177"
+              class="@BeboMundial @ChamakoSeriOo" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -1.690802,8.659879 C 5.409860,-11.317125 46.026352,-30.631638 66.003357,-23.530977"
+              class="@BeboMundial @Btselem" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 3.880978,29.441196 C 28.575359,35.158161 57.041477,80.775185 51.324512,105.469566"
+              class="@Pontifex @NBCNews" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 3.880978,29.441196 C -13.735464,10.564924 -11.845719,-44.174137 7.030552,-61.790581"
+              class="@Pontifex @FoxNews" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 3.880978,29.441196 C -29.400478,24.673321 -72.170853,-32.400681 -67.402977,-65.682137"
+              class="@Pontifex @Reuters" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 3.880978,29.441196 C 28.099922,10.799314 92.391174,19.164907 111.033058,43.383854"
+              class="@Pontifex @TeamLOA" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 3.880978,29.441196 C 4.751919,22.700924 16.168737,13.896927 22.909010,14.767867"
+              class="@Pontifex @dimkay_" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="3.488879E-4"
+              d="M 3.880978,29.441196 C -20.907835,-8.750578 -0.803396,-103.221451 37.388378,-128.010269"
+              class="@Pontifex @cnalive" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 3.880978,29.441196 C -4.985029,23.626251 -9.561623,1.604818 -3.746676,-7.261190"
+              class="@Pontifex @toohsuite" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 3.880978,29.441196 C -19.423326,21.003227 -41.722832,-26.610178 -33.284863,-49.914482"
+              class="@Pontifex @nytimes" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 3.880978,29.441196 C 13.808424,34.937794 20.454697,58.073860 14.958100,68.001305"
+              class="@Pontifex @AP" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 3.880978,29.441196 C -16.339632,39.206566 -61.318604,23.523705 -71.083969,3.303094"
+              class="@Pontifex @INSSIsrael" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 3.880978,29.441196 C 2.933778,48.019844 -26.354992,74.467010 -44.933640,73.519806"
+              class="@Pontifex @americamag" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 3.880978,29.441196 C -2.295708,35.239853 -20.258726,34.672813 -26.057384,28.496128"
+              class="@Pontifex @willyfelipe1" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 3.880978,29.441196 C -4.434727,18.286362 -0.176033,-10.919446 10.978801,-19.235151"
+              class="@Pontifex @blader809" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 3.880978,29.441196 C -13.157148,24.356346 -31.087063,-8.828119 -26.002213,-25.866245"
+              class="@Pontifex @RossR5" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="4.3159002E-4"
+              d="M 3.880978,29.441196 C -24.193457,10.767262 -38.294205,-59.355293 -19.620272,-87.429726"
+              class="@Pontifex @romereports" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 3.880978,29.441196 C -23.874075,31.108158 -68.007088,-8.023984 -69.674049,-35.779037"
+              class="@Pontifex @townhallcom" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 3.880978,29.441196 C 16.613064,6.000534 70.872185,-10.062326 94.312843,2.669760"
+              class="@Pontifex @guardian" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 3.880978,29.441196 C -5.597208,4.351058 17.820719,-47.501427 42.910858,-56.979614"
+              class="@Pontifex @officialR5" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 3.880978,29.441196 C -4.422421,45.451069 -40.892330,57.010780 -56.902203,48.707382"
+              class="@Pontifex @georgegalloway" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 3.880978,29.441196 C 1.713417,18.713009 14.554354,-0.630615 25.282541,-2.798177"
+              class="@Pontifex @ChamakoSeriOo" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 3.880978,29.441196 C 5.711020,6.422285 42.984444,-25.361019 66.003357,-23.530977"
+              class="@Pontifex @Btselem" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.008904838"
+              d="M 51.324512,105.469566 C 9.013691,80.876328 -17.562685,-19.479759 7.030552,-61.790581"
+              class="@NBCNews @FoxNews" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.013003002"
+              d="M 51.324512,105.469566 C -6.651331,94.984726 -77.887817,-7.706293 -67.402977,-65.682137"
+              class="@NBCNews @Reuters" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.013191724"
+              d="M 51.324512,105.469566 C 50.849075,81.110710 86.674202,43.859291 111.033058,43.383854"
+              class="@NBCNews @TeamLOA" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="3.4330433E-4"
+              d="M 51.324512,105.469566 C 27.501070,93.012321 10.451769,38.591309 22.909010,14.767867"
+              class="@NBCNews @dimkay_" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0038075615"
+              d="M 51.324512,105.469566 C 1.841320,61.560829 -6.520359,-78.527077 37.388378,-128.010269"
+              class="@NBCNews @cnalive" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 51.324512,105.469566 C 17.764120,93.937653 -15.278589,26.299200 -3.746676,-7.261190"
+              class="@NBCNews @toohsuite" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.004247086"
+              d="M 51.324512,105.469566 C 3.325825,91.314629 -47.439800,-1.915794 -33.284863,-49.914482"
+              class="@NBCNews @nytimes" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.010875615"
+              d="M 51.324512,105.469566 C 36.557579,105.249199 14.737730,82.768242 14.958100,68.001305"
+              class="@NBCNews @AP" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0017241932"
+              d="M 51.324512,105.469566 C 6.409519,109.517967 -67.035568,48.218086 -71.083969,3.303094"
+              class="@NBCNews @INSSIsrael" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.004124555"
+              d="M 51.324512,105.469566 C 25.682930,118.331245 -32.071960,99.161392 -44.933640,73.519806"
+              class="@NBCNews @americamag" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 51.324512,105.469566 C 20.453445,105.551262 -25.975693,59.367195 -26.057384,28.496128"
+              class="@NBCNews @willyfelipe1" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 51.324512,105.469566 C 18.314426,88.597771 -5.893002,13.774936 10.978801,-19.235151"
+              class="@NBCNews @blader809" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="6.908887E-4"
+              d="M 51.324512,105.469566 C 9.592005,94.667747 -36.804031,15.866263 -26.002213,-25.866245"
+              class="@NBCNews @RossR5" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="8.092245E-4"
+              d="M 51.324512,105.469566 C -1.444302,81.078667 -44.011173,-34.660912 -19.620272,-87.429726"
+              class="@NBCNews @romereports" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.005703587"
+              d="M 51.324512,105.469566 C -1.124920,101.419563 -73.724052,16.670395 -69.674049,-35.779037"
+              class="@NBCNews @townhallcom" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.01165047"
+              d="M 51.324512,105.469566 C 39.362221,76.311943 65.155220,14.632052 94.312843,2.669760"
+              class="@NBCNews @guardian" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="7.1696646E-4"
+              d="M 51.324512,105.469566 C 17.151943,74.662460 12.103752,-22.807045 42.910858,-56.979614"
+              class="@NBCNews @officialR5" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="5.9516163E-4"
+              d="M 51.324512,105.469566 C 18.326733,115.762466 -46.609295,81.705162 -56.902203,48.707382"
+              class="@NBCNews @georgegalloway" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 51.324512,105.469566 C 24.462570,89.024414 8.837387,24.063768 25.282541,-2.798177"
+              class="@NBCNews @ChamakoSeriOo" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.006413678"
+              d="M 51.324512,105.469566 C 28.460171,76.733688 37.267479,-0.666636 66.003357,-23.530977"
+              class="@NBCNews @Btselem" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0044944515"
+              d="M 7.030552,-61.790581 C -8.634466,-47.682186 -53.294582,-50.017117 -67.402977,-65.682137"
+              class="@FoxNews @Reuters" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.017271625"
+              d="M 7.030552,-61.790581 C 48.865944,-61.556190 111.267448,1.548464 111.033058,43.383854"
+              class="@FoxNews @TeamLOA" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 7.030552,-61.790581 C 25.517933,-49.654579 35.045010,-3.719515 22.909010,14.767867"
+              class="@FoxNews @dimkay_" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.002398263"
+              d="M 7.030552,-61.790581 C -0.141820,-81.106079 18.072876,-120.837898 37.388378,-128.010269"
+              class="@FoxNews @cnalive" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 7.030552,-61.790581 C 15.780985,-48.729259 9.314648,-16.011623 -3.746676,-7.261190"
+              class="@FoxNews @toohsuite" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 7.030552,-61.790581 C 1.342689,-51.352276 -22.846560,-44.226620 -33.284863,-49.914482"
+              class="@FoxNews @nytimes" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.3570051E-4"
+              d="M 7.030552,-61.790581 C 34.574440,-37.417713 39.330971,40.457417 14.958100,68.001305"
+              class="@FoxNews @AP" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0163191"
+              d="M 7.030552,-61.790581 C 4.426382,-33.148937 -42.442329,5.907264 -71.083969,3.303094"
+              class="@FoxNews @INSSIsrael" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.026582144"
+              d="M 7.030552,-61.790581 C 23.699795,-24.335663 -7.478722,56.850563 -44.933640,73.519806"
+              class="@FoxNews @americamag" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 7.030552,-61.790581 C 18.470310,-37.115650 -1.382452,17.056370 -26.057384,28.496128"
+              class="@FoxNews @willyfelipe1" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 7.030552,-61.790581 C 16.331287,-54.069145 18.700237,-28.535887 10.978801,-19.235151"
+              class="@FoxNews @blader809" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 7.030552,-61.790581 C 7.608866,-47.999161 -12.210791,-26.444559 -26.002213,-25.866245"
+              class="@FoxNews @RossR5" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0017027818"
+              d="M 7.030552,-61.790581 C -3.427442,-61.588245 -19.417936,-76.971733 -19.620272,-87.429726"
+              class="@FoxNews @romereports" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.008447298"
+              d="M 7.030552,-61.790581 C -3.108060,-41.247353 -49.130821,-25.640425 -69.674049,-35.779037"
+              class="@FoxNews @townhallcom" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.008695133"
+              d="M 7.030552,-61.790581 C 37.379082,-66.354973 89.748451,-27.678768 94.312843,2.669760"
+              class="@FoxNews @guardian" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="4.7193622E-4"
+              d="M 7.030552,-61.790581 C 15.168807,-68.004448 36.696987,-65.117867 42.910858,-56.979614"
+              class="@FoxNews @officialR5" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="5.7100615E-4"
+              d="M 7.030552,-61.790581 C 16.343594,-26.904434 -22.016058,39.394341 -56.902203,48.707382"
+              class="@FoxNews @georgegalloway" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 7.030552,-61.790581 C 22.479431,-53.642498 33.430626,-18.247055 25.282541,-2.798177"
+              class="@FoxNews @ChamakoSeriOo" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.012130548"
+              d="M 7.030552,-61.790581 C 26.477036,-65.933220 61.860714,-42.977463 66.003357,-23.530977"
+              class="@FoxNews @Btselem" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.01738002"
+              d="M -67.402977,-65.682137 C -9.902567,-79.556145 97.159050,-14.116556 111.033058,43.383854"
+              class="@Reuters @TeamLOA" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -67.402977,-65.682137 C -33.250572,-67.654533 20.936613,-19.384533 22.909010,14.767867"
+              class="@Reuters @dimkay_" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0011327146"
+              d="M -67.402977,-65.682137 C -58.910336,-99.106033 3.964483,-136.502914 37.388378,-128.010269"
+              class="@Reuters @cnalive" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -67.402977,-65.682137 C -42.987526,-66.729210 -4.793745,-31.676641 -3.746676,-7.261190"
+              class="@Reuters @toohsuite" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0069306577"
+              d="M -67.402977,-65.682137 C -57.425823,-69.352226 -36.954956,-59.891636 -33.284863,-49.914482"
+              class="@Reuters @nytimes" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0018836077"
+              d="M -67.402977,-65.682137 C -24.194075,-55.417664 25.222572,24.792402 14.958100,68.001305"
+              class="@Reuters @AP" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0047201877"
+              d="M -67.402977,-65.682137 C -54.342129,-51.148891 -56.550724,-9.757753 -71.083969,3.303094"
+              class="@Reuters @INSSIsrael" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0036865969"
+              d="M -67.402977,-65.682137 C -35.068726,-42.335617 -21.587118,41.185555 -44.933640,73.519806"
+              class="@Reuters @americamag" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -67.402977,-65.682137 C -40.298203,-55.115601 -15.490849,1.391355 -26.057384,28.496128"
+              class="@Reuters @willyfelipe1" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -67.402977,-65.682137 C -42.437225,-72.069092 4.591842,-44.200905 10.978801,-19.235151"
+              class="@Reuters @blader809" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -67.402977,-65.682137 C -51.159649,-65.999115 -26.319187,-42.109573 -26.002213,-25.866245"
+              class="@Reuters @RossR5" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0019677815"
+              d="M -67.402977,-65.682137 C -62.195953,-79.588196 -33.526333,-92.636749 -19.620272,-87.429726"
+              class="@Reuters @romereports" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.002606221"
+              d="M -67.402977,-65.682137 C -61.876572,-59.247299 -63.239212,-41.305443 -69.674049,-35.779037"
+              class="@Reuters @townhallcom" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.03524932"
+              d="M -67.402977,-65.682137 C -21.389435,-84.354919 75.640060,-43.343781 94.312843,2.669760"
+              class="@Reuters @guardian" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="3.1103456E-4"
+              d="M -67.402977,-65.682137 C -43.599705,-86.004402 22.588594,-80.782890 42.910858,-56.979614"
+              class="@Reuters @officialR5" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.001998723"
+              d="M -67.402977,-65.682137 C -42.424919,-44.904385 -36.124451,23.729322 -56.902203,48.707382"
+              class="@Reuters @georgegalloway" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -67.402977,-65.682137 C -36.289082,-71.642448 19.322231,-33.912071 25.282541,-2.798177"
+              class="@Reuters @ChamakoSeriOo" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.014753414"
+              d="M -67.402977,-65.682137 C -32.291473,-83.933174 47.752319,-58.642479 66.003357,-23.530977"
+              class="@Reuters @Btselem" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 111.033058,43.383854 C 87.685051,55.285465 34.810623,38.115875 22.909010,14.767867"
+              class="@TeamLOA @dimkay_" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="9.151183E-4"
+              d="M 111.033058,43.383854 C 62.025299,23.833967 17.838493,-79.002510 37.388378,-128.010269"
+              class="@TeamLOA @cnalive" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 111.033058,43.383854 C 77.948105,56.210793 9.080262,25.823765 -3.746676,-7.261190"
+              class="@TeamLOA @toohsuite" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0014853439"
+              d="M 111.033058,43.383854 C 63.509804,53.587769 -23.080948,-2.391228 -33.284863,-49.914482"
+              class="@TeamLOA @nytimes" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0014835916"
+              d="M 111.033058,43.383854 C 96.741562,67.522339 39.096581,82.292801 14.958100,68.001305"
+              class="@TeamLOA @AP" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.008660677"
+              d="M 111.033058,43.383854 C 66.593498,71.791107 -42.676712,47.742653 -71.083969,3.303094"
+              class="@TeamLOA @INSSIsrael" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.009442734"
+              d="M 111.033058,43.383854 C 85.866913,80.604385 -7.713109,98.685959 -44.933640,73.519806"
+              class="@TeamLOA @americamag" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0010786877"
+              d="M 111.033058,43.383854 C 80.637428,67.824394 -1.616843,58.891762 -26.057384,28.496128"
+              class="@TeamLOA @willyfelipe1" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 111.033058,43.383854 C 78.498398,50.870907 18.465855,13.299502 10.978801,-19.235151"
+              class="@TeamLOA @blader809" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0011017747"
+              d="M 111.033058,43.383854 C 69.775978,56.940887 -12.445176,15.390832 -26.002213,-25.866245"
+              class="@TeamLOA @RossR5" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0020100733"
+              d="M 111.033058,43.383854 C 58.739670,43.351807 -19.652321,-35.136337 -19.620272,-87.429726"
+              class="@TeamLOA @romereports" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0029290032"
+              d="M 111.033058,43.383854 C 59.059063,63.692696 -49.365208,16.194958 -69.674049,-35.779037"
+              class="@TeamLOA @townhallcom" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.024798919"
+              d="M 111.033058,43.383854 C 99.546204,38.585079 89.514069,14.156621 94.312843,2.669760"
+              class="@TeamLOA @guardian" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="3.1205066E-4"
+              d="M 111.033058,43.383854 C 77.335922,36.935600 36.462605,-23.282482 42.910858,-56.979614"
+              class="@TeamLOA @officialR5" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0010346888"
+              d="M 111.033058,43.383854 C 78.510712,78.035614 -22.250446,81.229729 -56.902203,48.707382"
+              class="@TeamLOA @georgegalloway" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 111.033058,43.383854 C 84.646553,51.297546 33.196236,23.588333 25.282541,-2.798177"
+              class="@TeamLOA @ChamakoSeriOo" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.016298344"
+              d="M 111.033058,43.383854 C 88.644150,39.006828 61.626335,-1.142071 66.003357,-23.530977"
+              class="@TeamLOA @Btselem" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="8.7212895E-5"
+              d="M 22.909010,14.767867 C -2.750744,-16.683634 5.936876,-102.350517 37.388378,-128.010269"
+              class="@dimkay_ @cnalive" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 22.909010,14.767867 C 13.172062,15.693193 -2.821350,2.475759 -3.746676,-7.261190"
+              class="@dimkay_ @toohsuite" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 22.909010,14.767867 C -1.266236,13.070171 -34.982559,-25.739237 -33.284863,-49.914482"
+              class="@dimkay_ @nytimes" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 22.909010,14.767867 C 31.965515,27.004736 27.194969,58.944801 14.958100,68.001305"
+              class="@dimkay_ @AP" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 22.909010,14.767867 C 1.817460,31.273508 -54.578327,24.394644 -71.083969,3.303094"
+              class="@dimkay_ @INSSIsrael" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 22.909010,14.767867 C 21.090866,40.086784 -19.614721,75.337952 -44.933640,73.519806"
+              class="@dimkay_ @americamag" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.002582316"
+              d="M 22.909010,14.767867 C 15.861382,27.306799 -13.518453,35.543755 -26.057384,28.496128"
+              class="@dimkay_ @willyfelipe1" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 22.909010,14.767867 C 13.722364,10.353306 6.564239,-10.048506 10.978801,-19.235151"
+              class="@dimkay_ @blader809" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 22.909010,14.767867 C 4.999941,16.423290 -24.346790,-7.957176 -26.002213,-25.866245"
+              class="@dimkay_ @RossR5" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 22.909010,14.767867 C -6.036365,2.834206 -31.553932,-58.484348 -19.620272,-87.429726"
+              class="@dimkay_ @romereports" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 22.909010,14.767867 C -5.716985,23.175098 -61.266819,-7.153042 -69.674049,-35.779037"
+              class="@dimkay_ @townhallcom" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 22.909010,14.767867 C 34.770157,-1.932521 77.612450,-9.191385 94.312843,2.669760"
+              class="@dimkay_ @guardian" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 22.909010,14.767867 C 12.559883,-3.581999 24.560991,-46.630489 42.910858,-56.979614"
+              class="@dimkay_ @officialR5" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 22.909010,14.767867 C 13.734670,37.518013 -34.152058,57.881721 -56.902203,48.707382"
+              class="@dimkay_ @georgegalloway" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 22.909010,14.767867 C 19.870508,10.779951 21.294626,0.240326 25.282541,-2.798177"
+              class="@dimkay_ @ChamakoSeriOo" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 22.909010,14.767867 C 23.868109,-1.510770 49.724720,-24.490078 66.003357,-23.530977"
+              class="@dimkay_ @Btselem" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 37.388378,-128.010269 C 53.311180,-95.633446 28.630150,-23.183994 -3.746676,-7.261190"
+              class="@cnalive @toohsuite" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="9.1496634E-4"
+              d="M 37.388378,-128.010269 C 38.872887,-98.256462 -3.531054,-51.398987 -33.284863,-49.914482"
+              class="@cnalive @nytimes" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0025330186"
+              d="M 37.388378,-128.010269 C 72.104630,-84.321899 58.646469,33.285049 14.958100,68.001305"
+              class="@cnalive @AP" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.7443829E-4"
+              d="M 37.388378,-128.010269 C 41.956581,-80.053123 -23.126822,-1.265108 -71.083969,3.303094"
+              class="@cnalive @INSSIsrael" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.009680817"
+              d="M 37.388378,-128.010269 C 61.229988,-71.239853 11.836781,49.678196 -44.933640,73.519806"
+              class="@cnalive @americamag" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.3082795E-4"
+              d="M 37.388378,-128.010269 C 56.000507,-84.019829 17.933048,9.884000 -26.057384,28.496128"
+              class="@cnalive @willyfelipe1" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 37.388378,-128.010269 C 53.861488,-100.973335 38.015739,-35.708260 10.978801,-19.235151"
+              class="@cnalive @blader809" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 37.388378,-128.010269 C 45.139065,-94.903351 7.104713,-33.616932 -26.002213,-25.866245"
+              class="@cnalive @RossR5" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.04503886"
+              d="M 37.388378,-128.010269 C 34.102757,-108.492424 -0.102432,-84.144104 -19.620272,-87.429726"
+              class="@cnalive @romereports" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0047916896"
+              d="M 37.388378,-128.010269 C 34.422142,-88.151543 -29.815319,-32.812798 -69.674049,-35.779037"
+              class="@cnalive @townhallcom" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0016118098"
+              d="M 37.388378,-128.010269 C 74.909271,-113.259163 109.063950,-34.851139 94.312843,2.669760"
+              class="@cnalive @guardian" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.2609451E-4"
+              d="M 37.388378,-128.010269 C 52.699005,-114.908630 56.012493,-72.290237 42.910858,-56.979614"
+              class="@cnalive @officialR5" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="3.4792404E-4"
+              d="M 37.388378,-128.010269 C 53.873795,-73.808617 -2.700554,32.221966 -56.902203,48.707382"
+              class="@cnalive @georgegalloway" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 37.388378,-128.010269 C 60.009628,-100.546684 52.746124,-25.419426 25.282541,-2.798177"
+              class="@cnalive @ChamakoSeriOo" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0011770483"
+              d="M 37.388378,-128.010269 C 64.007233,-112.837402 81.176224,-50.149830 66.003357,-23.530977"
+              class="@cnalive @Btselem" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -3.746676,-7.261190 C -18.184973,-9.884212 -35.907883,-35.476185 -33.284863,-49.914482"
+              class="@toohsuite @nytimes" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -3.746676,-7.261190 C 15.046778,4.050354 26.269644,49.207851 14.958100,68.001305"
+              class="@toohsuite @AP" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -3.746676,-7.261190 C -15.101277,8.319125 -55.503651,14.657696 -71.083969,3.303094"
+              class="@toohsuite @INSSIsrael" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -3.746676,-7.261190 C 4.172132,17.132402 -20.540047,65.600998 -44.933640,73.519806"
+              class="@toohsuite @americamag" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -3.746676,-7.261190 C -1.057354,4.352416 -14.443777,25.806805 -26.057384,28.496128"
+              class="@toohsuite @willyfelipe1" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -3.746676,-7.261190 C -3.196373,-12.601078 5.638912,-19.785454 10.978801,-19.235151"
+              class="@toohsuite @blader809" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -3.746676,-7.261190 C -11.918795,-6.531093 -25.272118,-17.694126 -26.002213,-25.866245"
+              class="@toohsuite @RossR5" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -3.746676,-7.261190 C -22.955101,-20.120178 -32.479259,-68.221298 -19.620272,-87.429726"
+              class="@toohsuite @romereports" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -3.746676,-7.261190 C -22.635721,0.220716 -62.192146,-16.889992 -69.674049,-35.779037"
+              class="@toohsuite @townhallcom" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -3.746676,-7.261190 C 17.851419,-24.886904 76.687134,-18.928333 94.312843,2.669760"
+              class="@toohsuite @guardian" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -3.746676,-7.261190 C -4.358854,-26.536385 23.635664,-56.367435 42.910858,-56.979614"
+              class="@toohsuite @officialR5" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -3.746676,-7.261190 C -3.184067,14.563629 -35.077381,48.144775 -56.902203,48.707382"
+              class="@toohsuite @georgegalloway" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -3.746676,-7.261190 C 2.951770,-12.174431 20.369301,-9.496622 25.282541,-2.798177"
+              class="@toohsuite @ChamakoSeriOo" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -3.746676,-7.261190 C 6.949373,-24.465153 48.799397,-34.227028 66.003357,-23.530977"
+              class="@toohsuite @Btselem" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0013465784"
+              d="M -33.284863,-49.914482 C -0.053110,-35.979916 28.892666,34.769550 14.958100,68.001305"
+              class="@nytimes @AP" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0029585252"
+              d="M -33.284863,-49.914482 C -30.201170,-31.711143 -52.880630,0.219400 -71.083969,3.303094"
+              class="@nytimes @INSSIsrael" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0057644094"
+              d="M -33.284863,-49.914482 C -10.927759,-22.897869 -17.917028,51.162701 -44.933640,73.519806"
+              class="@nytimes @americamag" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -33.284863,-49.914482 C -16.157244,-35.677856 -11.820757,11.368509 -26.057384,28.496128"
+              class="@nytimes @willyfelipe1" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -33.284863,-49.914482 C -18.296263,-52.631348 8.261934,-34.223751 10.978801,-19.235151"
+              class="@nytimes @blader809" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -33.284863,-49.914482 C -27.018684,-46.561367 -22.649094,-32.132423 -26.002213,-25.866245"
+              class="@nytimes @RossR5" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -33.284863,-49.914482 C -38.054993,-60.150448 -29.856237,-82.659592 -19.620272,-87.429726"
+              class="@nytimes @romereports" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -33.284863,-49.914482 C -37.735611,-39.809559 -59.569126,-31.328287 -69.674049,-35.779037"
+              class="@nytimes @townhallcom" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.049591087"
+              d="M -33.284863,-49.914482 C 2.751528,-64.917175 79.310150,-33.366631 94.312843,2.669760"
+              class="@nytimes @guardian" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -33.284863,-49.914482 C -19.458746,-66.566650 26.258688,-70.805733 42.910858,-56.979614"
+              class="@nytimes @officialR5" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -33.284863,-49.914482 C -18.283957,-25.466639 -32.454361,33.706474 -56.902203,48.707382"
+              class="@nytimes @georgegalloway" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -33.284863,-49.914482 C -12.148120,-52.204704 22.992321,-23.934917 25.282541,-2.798177"
+              class="@nytimes @ChamakoSeriOo" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.009314351"
+              d="M -33.284863,-49.914482 C -8.150517,-64.495422 51.422417,-48.665321 66.003357,-23.530977"
+              class="@nytimes @Btselem" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.3584511E-4"
+              d="M 14.958100,68.001305 C -15.189957,72.270073 -66.815201,33.451149 -71.083969,3.303094"
+              class="@AP @INSSIsrael" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="5.43104E-4"
+              d="M 14.958100,68.001305 C 4.083452,81.083351 -31.851591,84.394455 -44.933640,73.519806"
+              class="@AP @americamag" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 14.958100,68.001305 C -1.146031,68.303368 -25.755323,44.600258 -26.057384,28.496128"
+              class="@AP @willyfelipe1" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 14.958100,68.001305 C -3.285052,51.349873 -5.672631,-0.991999 10.978801,-19.235151"
+              class="@AP @blader809" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 14.958100,68.001305 C -12.007472,57.419857 -36.583660,1.099327 -26.002213,-25.866245"
+              class="@AP @RossR5" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="6.480765E-4"
+              d="M 14.958100,68.001305 C -23.043783,43.830772 -43.790806,-49.427841 -19.620272,-87.429726"
+              class="@AP @romereports" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0012404223"
+              d="M 14.958100,68.001305 C -22.724396,64.171669 -73.503685,1.903460 -69.674049,-35.779037"
+              class="@AP @townhallcom" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0014788397"
+              d="M 14.958100,68.001305 C 17.762741,39.064049 65.375587,-0.134881 94.312843,2.669760"
+              class="@AP @guardian" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.02915794E-4"
+              d="M 14.958100,68.001305 C -4.447533,37.414566 12.324120,-37.573982 42.910858,-56.979614"
+              class="@AP @officialR5" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.3236949E-4"
+              d="M 14.958100,68.001305 C -3.272745,78.514580 -46.388927,66.938225 -56.902203,48.707382"
+              class="@AP @georgegalloway" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 14.958100,68.001305 C 2.863091,51.776520 9.057755,9.296833 25.282541,-2.798177"
+              class="@AP @ChamakoSeriOo" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0013538809"
+              d="M 14.958100,68.001305 C 6.860697,39.485794 37.487846,-15.433573 66.003357,-23.530977"
+              class="@AP @Btselem" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0028441015"
+              d="M -71.083969,3.303094 C -51.810562,12.116369 -36.120361,54.246399 -44.933640,73.519806"
+              class="@INSSIsrael @americamag" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -71.083969,3.303094 C -57.040043,-0.663615 -30.024096,14.452205 -26.057384,28.496128"
+              class="@INSSIsrael @willyfelipe1" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -71.083969,3.303094 C -59.179066,-17.617109 -9.941402,-31.140055 10.978801,-19.235151"
+              class="@INSSIsrael @blader809" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -71.083969,3.303094 C -67.901489,-11.547125 -40.852428,-29.048729 -26.002213,-25.866245"
+              class="@INSSIsrael @RossR5" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -71.083969,3.303094 C -78.937790,-25.136211 -48.059578,-79.575897 -19.620272,-87.429726"
+              class="@INSSIsrael @romereports" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="6.065764E-4"
+              d="M -71.083969,3.303094 C -78.618416,-4.795316 -77.772461,-28.244596 -69.674049,-35.779037"
+              class="@INSSIsrael @townhallcom" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.005461062"
+              d="M -71.083969,3.303094 C -38.131271,-29.902937 61.106812,-30.282938 94.312843,2.669760"
+              class="@INSSIsrael @guardian" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="3.1507493E-4"
+              d="M -71.083969,3.303094 C -60.341545,-31.552414 8.055351,-67.722038 42.910858,-56.979614"
+              class="@INSSIsrael @officialR5" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -71.083969,3.303094 C -59.166763,9.547598 -50.657700,36.790173 -56.902203,48.707382"
+              class="@INSSIsrael @georgegalloway" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -71.083969,3.303094 C -53.030922,-17.190462 4.788985,-20.851225 25.282541,-2.798177"
+              class="@INSSIsrael @ChamakoSeriOo" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.081882685"
+              d="M -71.083969,3.303094 C -49.033318,-29.481186 33.219078,-45.581627 66.003357,-23.530977"
+              class="@INSSIsrael @Btselem" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -44.933640,73.519806 C -50.163124,60.739819 -38.837372,33.725613 -26.057384,28.496128"
+              class="@americamag @willyfelipe1" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -44.933640,73.519806 C -52.302147,43.786324 -18.754681,-11.866647 10.978801,-19.235151"
+              class="@americamag @blader809" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -44.933640,73.519806 C -61.024567,49.856308 -49.665710,-9.775320 -26.002213,-25.866245"
+              class="@americamag @RossR5" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.036811717"
+              d="M -44.933640,73.519806 C -72.060867,36.267227 -56.872849,-60.302498 -19.620272,-87.429726"
+              class="@americamag @romereports" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0015126073"
+              d="M -44.933640,73.519806 C -71.741486,56.608120 -86.585739,-8.971188 -69.674049,-35.779037"
+              class="@americamag @townhallcom" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.01157081"
+              d="M -44.933640,73.519806 C -31.254351,31.500498 52.293537,-11.009529 94.312843,2.669760"
+              class="@americamag @guardian" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.574297E-4"
+              d="M -44.933640,73.519806 C -53.464622,29.851023 -0.757925,-48.448631 42.910858,-56.979614"
+              class="@americamag @officialR5" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -44.933640,73.519806 C -52.289837,70.951035 -59.470978,56.063580 -56.902203,48.707382"
+              class="@americamag @georgegalloway" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -44.933640,73.519806 C -46.153999,44.212975 -4.024291,-1.577816 25.282541,-2.798177"
+              class="@americamag @ChamakoSeriOo" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.014284402"
+              d="M -44.933640,73.519806 C -42.156395,31.922251 24.405800,-26.308220 66.003357,-23.530977"
+              class="@americamag @Btselem" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.01821032"
+              d="M -26.057384,28.496128 C -28.196404,11.542633 -5.974693,-17.096132 10.978801,-19.235151"
+              class="@willyfelipe1 @blader809" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -26.057384,28.496128 C -36.918827,17.612619 -36.885723,-15.004804 -26.002213,-25.866245"
+              class="@willyfelipe1 @RossR5" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="4.299777E-4"
+              d="M -26.057384,28.496128 C -47.955135,4.023532 -44.092865,-65.531975 -19.620272,-87.429726"
+              class="@willyfelipe1 @romereports" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -26.057384,28.496128 C -47.635750,24.364429 -73.805748,-14.200670 -69.674049,-35.779037"
+              class="@willyfelipe1 @townhallcom" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="9.078575E-4"
+              d="M -26.057384,28.496128 C -7.148613,-0.743191 65.073524,-16.239012 94.312843,2.669760"
+              class="@willyfelipe1 @guardian" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -26.057384,28.496128 C -29.358883,-2.392670 12.022060,-53.678116 42.910858,-56.979614"
+              class="@willyfelipe1 @officialR5" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -26.057384,28.496128 C -28.184097,38.707344 -46.690987,50.834095 -56.902203,48.707382"
+              class="@willyfelipe1 @georgegalloway" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -26.057384,28.496128 C -22.048260,11.969281 8.755695,-6.807302 25.282541,-2.798177"
+              class="@willyfelipe1 @ChamakoSeriOo" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -26.057384,28.496128 C -18.050657,-0.321444 37.185787,-31.537704 66.003357,-23.530977"
+              class="@willyfelipe1 @Btselem" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 10.978801,-19.235151 C 2.256379,-13.165168 -19.932230,-17.143822 -26.002213,-25.866245"
+              class="@blader809 @RossR5" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 10.978801,-19.235151 C -8.779928,-26.754251 -27.139374,-67.670998 -19.620272,-87.429726"
+              class="@blader809 @romereports" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 10.978801,-19.235151 C -8.460546,-6.413359 -56.852257,-16.339691 -69.674049,-35.779037"
+              class="@blader809 @townhallcom" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 10.978801,-19.235151 C 32.026592,-31.520979 82.027016,-18.378031 94.312843,2.669760"
+              class="@blader809 @guardian" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 10.978801,-19.235151 C 9.816319,-33.170452 28.975555,-55.817131 42.910858,-56.979614"
+              class="@blader809 @officialR5" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 10.978801,-19.235151 C 10.991106,7.929557 -29.737494,48.695076 -56.902203,48.707382"
+              class="@blader809 @georgegalloway" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.010003328"
+              d="M 10.978801,-19.235151 C 17.126944,-18.808504 25.709188,-8.946320 25.282541,-2.798177"
+              class="@blader809 @ChamakoSeriOo" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 10.978801,-19.235151 C 21.124546,-31.099228 54.139282,-33.676723 66.003357,-23.530977"
+              class="@blader809 @Btselem" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -26.002213,-25.866245 C -37.038521,-39.455330 -33.209354,-76.393417 -19.620272,-87.429726"
+              class="@RossR5 @romereports" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -26.002213,-25.866245 C -36.719139,-19.114437 -62.922241,-25.062111 -69.674049,-35.779037"
+              class="@RossR5 @townhallcom" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -26.002213,-25.866245 C 3.768002,-44.222057 75.957031,-27.100454 94.312843,2.669760"
+              class="@RossR5 @guardian" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.004727853"
+              d="M -26.002213,-25.866245 C -18.442272,-45.871536 22.905569,-64.539551 42.910858,-56.979614"
+              class="@RossR5 @officialR5" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="5.8500294E-4"
+              d="M -26.002213,-25.866245 C -17.267485,-4.771523 -35.807480,39.972652 -56.902203,48.707382"
+              class="@RossR5 @georgegalloway" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -26.002213,-25.866245 C -11.131647,-31.509583 19.639204,-17.668743 25.282541,-2.798177"
+              class="@RossR5 @ChamakoSeriOo" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -26.002213,-25.866245 C -7.134044,-43.800308 48.069294,-42.399147 66.003357,-23.530977"
+              class="@RossR5 @Btselem" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="0.002484079"
+              d="M -19.620272,-87.429726 C -19.300888,-67.088829 -49.333153,-36.098419 -69.674049,-35.779037"
+              class="@romereports @townhallcom" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0023459385"
+              d="M -19.620272,-87.429726 C 21.186251,-92.196457 89.546112,-38.136765 94.312843,2.669760"
+              class="@romereports @guardian" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -19.620272,-87.429726 C -1.024023,-93.845932 36.494656,-75.575867 42.910858,-56.979614"
+              class="@romereports @officialR5" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="3.4740334E-4"
+              d="M -19.620272,-87.429726 C 0.150766,-52.745914 -22.218391,28.936344 -56.902203,48.707382"
+              class="@romereports @georgegalloway" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -19.620272,-87.429726 C 6.286600,-79.483978 33.228287,-28.705048 25.282541,-2.798177"
+              class="@romereports @ChamakoSeriOo" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0016653404"
+              d="M -19.620272,-87.429726 C 10.284204,-91.774704 61.658382,-53.435452 66.003357,-23.530977"
+              class="@romereports @Btselem" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0025969779"
+              d="M -69.674049,-35.779037 C -29.186911,-60.886658 69.205223,-37.817379 94.312843,2.669760"
+              class="@townhallcom @guardian" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.39896E-4"
+              d="M -69.674049,-35.779037 C -51.397182,-62.536133 16.153761,-75.256477 42.910858,-56.979614"
+              class="@townhallcom @officialR5" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="2.6963555E-4"
+              d="M -69.674049,-35.779037 C -50.222397,-21.436123 -42.559288,29.255730 -56.902203,48.707382"
+              class="@townhallcom @georgegalloway" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -69.674049,-35.779037 C -44.086559,-48.174183 12.887396,-28.385666 25.282541,-2.798177"
+              class="@townhallcom @ChamakoSeriOo" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="5.966043E-4"
+              d="M -69.674049,-35.779037 C -40.088959,-60.464905 41.317490,-53.116066 66.003357,-23.530977"
+              class="@townhallcom @Btselem" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="3.107152E-4"
+              d="M 94.312843,2.669760 C 72.102570,1.020283 41.261379,-34.769341 42.910858,-56.979614"
+              class="@guardian @officialR5" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.0039556716"
+              d="M 94.312843,2.669760 C 73.277367,42.120293 -17.451672,69.742867 -56.902203,48.707382"
+              class="@guardian @georgegalloway" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 94.312843,2.669760 C 79.413193,15.382235 37.995018,12.101473 25.282541,-2.798177"
+              class="@guardian @ChamakoSeriOo" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.029495623"
+              d="M 94.312843,2.669760 C 83.410797,3.091510 66.425102,-12.628933 66.003357,-23.530977"
+              class="@guardian @Btselem" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.5218693E-4"
+              d="M 42.910858,-56.979614 C 44.085644,-15.879602 -15.802191,47.532597 -56.902203,48.707382"
+              class="@officialR5 @georgegalloway" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 42.910858,-56.979614 C 50.221481,-42.617661 39.644493,-10.108801 25.282541,-2.798177"
+              class="@officialR5 @ChamakoSeriOo" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 42.910858,-56.979614 C 54.219086,-54.908386 68.074585,-34.839207 66.003357,-23.530977"
+              class="@officialR5 @Btselem" stroke-opacity="1.0" stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M -56.902203,48.707382 C -50.766365,21.969318 -1.455522,-8.934015 25.282541,-2.798177"
+              class="@georgegalloway @ChamakoSeriOo" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="0.005489906"
+              d="M -56.902203,48.707382 C -46.768761,9.678598 26.974571,-33.664421 66.003357,-23.530977"
+              class="@georgegalloway @Btselem" stroke-opacity="1.0"
+              stroke="#77afde"/>
+        <path fill="none" stroke-width="1.0"
+              d="M 25.282541,-2.798177 C 29.280144,-15.088902 53.712631,-27.528580 66.003357,-23.530977"
+              class="@ChamakoSeriOo @Btselem" stroke-opacity="1.0"
+              stroke="#77afde"/>
+    </g>
+    <g id="nodes">
+        <circle fill-opacity="1.0" fill="#77afde" r="10.0" cx="-81.213646"
+                class="@Newsmax_Media" cy="42.274128" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#77afde" r="10.0" cx="97.76563"
+                class="@newsguy2005" cy="-53.505856" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#77afde" r="10.0" cx="-3.3333154"
+                class="@sharethis" cy="104.36063" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#77afde" r="10.0" cx="-107.61424"
+                class="@RichardGEarl" cy="-19.182732" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#77afde" r="10.0" cx="-41.51716"
+                class="@BBCWorld" cy="3.0706096" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#77afde" r="10.0" cx="68.1753"
+                class="@YahooNews" cy="60.830894" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#77afde" r="10.0" cx="-1.6908016"
+                class="@BeboMundial" cy="8.659879" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#77afde" r="10.0" cx="3.8809783"
+                class="@Pontifex" cy="29.441196" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#77afde" r="10.0" cx="51.324512"
+                class="@NBCNews" cy="105.46957" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#77afde" r="10.0" cx="7.0305524"
+                class="@FoxNews" cy="-61.79058" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#77afde" r="10.0" cx="-67.40298"
+                class="@Reuters" cy="-65.68214" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#77afde" r="10.0" cx="111.03306"
+                class="@TeamLOA" cy="43.383854" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#77afde" r="10.0" cx="22.90901"
+                class="@dimkay_" cy="14.767867" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#77afde" r="10.0" cx="37.38838"
+                class="@cnalive" cy="-128.01027" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#77afde" r="10.0" cx="-3.746676"
+                class="@toohsuite" cy="-7.26119" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#77afde" r="10.0" cx="-33.284863"
+                class="@nytimes" cy="-49.914482" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#77afde" r="10.0" cx="14.9581"
+                class="@AP" cy="68.001305" stroke="#000000" stroke-opacity="1.0"
+                stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#77afde" r="10.0" cx="-71.08397"
+                class="@INSSIsrael" cy="3.303094" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#77afde" r="10.0" cx="-44.93364"
+                class="@americamag" cy="73.519806" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#77afde" r="10.0" cx="-26.057384"
+                class="@willyfelipe1" cy="28.496128" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#77afde" r="10.0" cx="10.978801"
+                class="@blader809" cy="-19.235151" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#77afde" r="10.0" cx="-26.002213"
+                class="@RossR5" cy="-25.866245" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#77afde" r="10.0" cx="-19.620272"
+                class="@romereports" cy="-87.429726" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#77afde" r="10.0" cx="-69.67405"
+                class="@townhallcom" cy="-35.779037" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#77afde" r="10.0" cx="94.31284"
+                class="@guardian" cy="2.6697602" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#77afde" r="10.0" cx="42.91086"
+                class="@officialR5" cy="-56.979614" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#77afde" r="10.0" cx="-56.902203"
+                class="@georgegalloway" cy="48.707382" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#77afde" r="10.0" cx="25.282541"
+                class="@ChamakoSeriOo" cy="-2.7981765" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#77afde" r="10.0" cx="66.00336"
+                class="@Btselem" cy="-23.530977" stroke="#000000"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+    </g>
+    <g id="node-labels">
+        <text font-size="6" x="-81.213646" y="43.683796" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="@Newsmax_Media">
+            @Newsmax_Media
+        </text>
+        <text font-size="6" x="97.76563" y="-52.096188" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="@newsguy2005">
+            @newsguy2005
+        </text>
+        <text font-size="6" x="-3.3333154" y="105.770294" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="@sharethis">
+            @sharethis
+        </text>
+        <text font-size="6" x="-107.61424" y="-17.773064" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="@RichardGEarl">
+            @RichardGEarl
+        </text>
+        <text font-size="6" x="-41.51716" y="4.4802775" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="@BBCWorld">
+            @BBCWorld
+        </text>
+        <text font-size="6" x="68.1753" y="62.240562" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="@YahooNews">
+            @YahooNews
+        </text>
+        <text font-size="6" x="-1.6908016" y="10.069547" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="@BeboMundial">
+            @BeboMundial
+        </text>
+        <text font-size="6" x="3.8809783" y="30.850864" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="@Pontifex">
+            @Pontifex
+        </text>
+        <text font-size="6" x="51.324512" y="106.879234" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="@NBCNews">
+            @NBCNews
+        </text>
+        <text font-size="6" x="7.0305524" y="-60.380913" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="@FoxNews">
+            @FoxNews
+        </text>
+        <text font-size="6" x="-67.40298" y="-64.27247" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="@Reuters">
+            @Reuters
+        </text>
+        <text font-size="6" x="111.03306" y="44.79352" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="@TeamLOA">
+            @TeamLOA
+        </text>
+        <text font-size="6" x="22.90901" y="16.177536" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="@dimkay_">
+            @dimkay_
+        </text>
+        <text font-size="6" x="37.38838" y="-126.6006" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="@cnalive">
+            @cnalive
+        </text>
+        <text font-size="6" x="-3.746676" y="-5.851522" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="@toohsuite">
+            @toohsuite
+        </text>
+        <text font-size="6" x="-33.284863" y="-48.504814" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="@nytimes">
+            @nytimes
+        </text>
+        <text font-size="6" x="14.9581" y="69.41097" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="@AP">
+            @AP
+        </text>
+        <text font-size="6" x="-71.08397" y="4.712762" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="@INSSIsrael">
+            @INSSIsrael
+        </text>
+        <text font-size="6" x="-44.93364" y="74.929474" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="@americamag">
+            @americamag
+        </text>
+        <text font-size="6" x="-26.057384" y="29.905796" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="@willyfelipe1">
+            @willyfelipe1
+        </text>
+        <text font-size="6" x="10.978801" y="-17.825483" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="@blader809">
+            @blader809
+        </text>
+        <text font-size="6" x="-26.002213" y="-24.456577" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="@RossR5">
+            @RossR5
+        </text>
+        <text font-size="6" x="-19.620272" y="-86.02006" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="@romereports">
+            @romereports
+        </text>
+        <text font-size="6" x="-69.67405" y="-34.36937" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="@townhallcom">
+            @townhallcom
+        </text>
+        <text font-size="6" x="94.31284" y="4.079428" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="@guardian">
+            @guardian
+        </text>
+        <text font-size="6" x="42.91086" y="-55.569946" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="@officialR5">
+            @officialR5
+        </text>
+        <text font-size="6" x="-56.902203" y="50.11705" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="@georgegalloway">
+            @georgegalloway
+        </text>
+        <text font-size="6" x="25.282541" y="-1.3885086" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="@ChamakoSeriOo">
+            @ChamakoSeriOo
+        </text>
+        <text font-size="6" x="66.00336" y="-22.12131" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Dialog" class="@Btselem">
+            @Btselem
+        </text>
+    </g>
+</svg>
