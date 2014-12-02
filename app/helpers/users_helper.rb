@@ -37,7 +37,7 @@ def social_graph_data_2
 	@link_rows = []
 
 	User.all.each_with_index do |u1, i1|
-		node_row = {:name => u1.twitter_name , :group => 1}
+		node_row = {:name => u1.twitter_name , :group => 1, :mentions => u1.mentions}
 		@node_rows << node_row
 
 		User.all.each_with_index do |u2, i2|
