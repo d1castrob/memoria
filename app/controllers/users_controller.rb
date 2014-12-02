@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-
+include UsersHelper
 
 def index
     if session['access_token'] && session['access_token_secret']
@@ -27,6 +27,16 @@ def cleanup
     rescue Twitter::Error::TooManyRequests
       puts 'too many requests'
     end
+  end
+end
+
+
+def social_graph
+end
+
+def data
+  respond_to do |format|
+    format.any { render :json => social_graph_data.to_json }
   end
 end
 

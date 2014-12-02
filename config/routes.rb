@@ -15,6 +15,10 @@ Rails.application.routes.draw do
 
   get "/users_cleanup" => "users#cleanup"
 
+  get "/social_graph" => "users#social_graph"
+
+  get "/social_graph_data" => "users#data"
+
   resources :users
 
   resources :messages

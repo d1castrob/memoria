@@ -190,6 +190,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   jbuilder (~> 2.0)
   jquery-rails
+  json
   koala (~> 1.10.0rc)
   narray (~> 0.6.0.9)
   omniauth
