@@ -36,7 +36,7 @@ end
 
 def data
   respond_to do |format|
-    format.any { render :json => social_graph_data.to_json }
+    format.any { render :json => social_graph_data_2.to_json }
   end
 end
 
