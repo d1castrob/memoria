@@ -13,6 +13,7 @@ end
 #para la visualizacion en la app misma
 
 def text_distance_graph
+	data_location = '/text_distance_graph_data'
 end
 
 def text_distance
@@ -23,6 +24,7 @@ end
 
 
 def time_distance_graph
+	@data_location = '/time_distance_graph_data'
 end
 
 def time_distance
@@ -32,6 +34,7 @@ def time_distance
 end
 
 def geo_distance_graph
+	@data_location =  '/geo_distance_graph_data'
 end
 
 def geo_distance

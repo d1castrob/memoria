@@ -32,6 +32,7 @@ end
 
 
 def social_graph
+  @data_location = '/social_graph_data'
 end
 
 def data

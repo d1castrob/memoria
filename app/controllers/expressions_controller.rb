@@ -2,6 +2,7 @@ class ExpressionsController < ApplicationController
 include ExpressionsHelper
 
 def semantic_graph
+	@data_location = '/semantic_graph_data'
 end
 
 def semantic
