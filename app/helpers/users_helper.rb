@@ -1,50 +1,44 @@
 module UsersHelper
 
-def social_graph_data
 
-	@node_rows = []
-
-	# User.each do |u|
-		row1 = { :name => 'Myriel', :group => 1}
-		row2 = { :name => 'Napoleon', :group => 1}
-		@node_rows << row1
-		@node_rows << row2
-	# end
-
-	#@node_rows   devuelve   [{"name":"Myriel","group":1}, ... ]
-
-
-
-	@link_rows = []
-
-	# Edge.each do |e|
-		row1 = {:source => 1, :target => 0, :value => 3}
-		@link_rows << row1
-	# end
-
+#
+# METODO PARA PROBAR D3, DESCARTADO
+#
+# def social_graph_data
+# 	@node_rows = []
+# 	# User.each do |u|
+# 		row1 = { :name => 'Myriel', :group => 1}
+# 		row2 = { :name => 'Napoleon', :group => 1}
+# 		@node_rows << row1
+# 		@node_rows << row2
+# 	# end
+# 	#@node_rows   devuelve   [{"name":"Myriel","group":1}, ... ]
+# 	@link_rows = []
+# 	# Edge.each do |e|
+# 		row1 = {:source => 1, :target => 0, :value => 3}
+# 		@link_rows << row1
+# 	# end
+# 	@data = { :nodes => @node_rows, :links => @link_rows}
+# end
 
 
-	@data = { :nodes => @node_rows, :links => @link_rows}
-
-
-end
-
-
-
+#
+# Uso la raiz cuadrada para que la diferencia de tamano entre nodos no haga que algunos queden sin verse
+#
 def social_graph_data_2
 
 	@node_rows = []
 	@link_rows = []
 
 	User.all.each_with_index do |u1, i1|
-		node_row = {:name => u1.twitter_name , :group => 1, :mentions => u1.mentions}
+		node_row = {:name => u1.twitter_name , :group => 1, :mentions => 2*Math.sqrt(u1.mentions) }
 		@node_rows << node_row
 
 		User.all.each_with_index do |u2, i2|
 			e = Edge.where(source: u1.twitter_name, target: u2.twitter_name)
 
 			if !e.blank?
-				link_row = {:source => i1, :target => i2, :value => e.first.social_distance*10}
+				link_row = {:source => i1, :target => i2, :value => e.first.social_distance}
 				@link_rows << link_row
 			end
 		end
