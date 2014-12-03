@@ -1,4 +1,5 @@
 class MessagesController < ApplicationController
+include MessagesHelper
 
 #exportaccion de la BD a csv
 def index
@@ -30,6 +31,13 @@ def time_distance
 	end
 end
 
+def geo_distance_graph
+end
 
+def geo_distance
+	respond_to do |format|
+		format.any { render :json => geo_distance_data.to_json }
+	end
+end
 
 end

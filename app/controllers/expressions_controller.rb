@@ -1,4 +1,5 @@
 class ExpressionsController < ApplicationController
+include ExpressionsHelper
 
 def semantic_graph
 end
