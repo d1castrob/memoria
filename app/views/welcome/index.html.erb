@@ -1,32 +1,43 @@
-<h2>Hello World</h2>
-<p>
-  The time is now: <%= Time.now %>
-</p>
+<h2>Visualizacion de Redes sociales usando Grafos</h2>
 
-
-<% if current_user %>
-  Welcome <%= current_user.name %>!
-  <%= link_to "Sign Out", signout_path %>
-<% else %>
-  <%= link_to "Sign in with Twitter", "/auth/twitter" %>
-	<%= link_to "Sign in with Facebook", "/auth/facebook" %>
-<% end %>
+  <% if current_user %>
+    Welcome <%= current_user.name %>!
+    <%= link_to "Sign Out", signout_path %>
+  <% else %>
+    <%= link_to "Sign in with Twitter", "/auth/twitter" %>
+  	<% link_to "Sign in with Facebook", "/auth/facebook" %>
+  <% end %>
 
 <br>
 
-<p>
-  Bajar la BD (msgs como nodos) sin procesar como un archivo CSV para visualizar local
-  <%= link_to "CSV", messages_path(format: "csv") %>
-</p>
+<h3>Visualizaciones: </h3>
 
-<p>
-  Bajar la BD (ejes) procesada como un archivo CSV para visualizar local
-  <%= link_to "CSV", edges_path(format: "csv") %>
-</p>
+  <p>
+    se utiliza la libreria <a href='http://d3js.org/'>d3</a> para visualizar distintos aspectos de una coleccion de tweets
+  </p>
+
+  <p>Las areas de interes son las siguientes: </p>
+
+  <ul>
+    <li><%= link_to 'semantica (uso de hashtag, arroba, link)', '/semantic_graph'%></li>
+    <li><%= link_to 'distancia social de los actores relevantes', '/social_graph'%></li>
+    <li><%= link_to 'distancia de texto entre tweets', '/text_distance_graph'%></li>
+    <li><%= link_to 'distancia geografica', '/geo_distance_graph'%></li>
+    <li><%= link_to 'distancia temporal', '/time_distance_graph'%></li>      
+  </ul>
+
+
+<h3>Si quiere bajar la BD para trabajar local :</h3>
+
+  <p>
+    Bajar la BD (msgs como nodos) sin procesar como un archivo CSV para visualizar local
+    <%= link_to "CSV", messages_path(format: "csv") %>
+  </p>
+
+  <p>
+    Bajar la BD (ejes) procesada como un archivo CSV para visualizar local
+    <%= link_to "CSV", edges_path(format: "csv") %>
+  </p>
 
 
 <br>
-
-<p>
-	Para correr la aplicacion ir a /run
-</p>

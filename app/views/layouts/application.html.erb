@@ -8,6 +8,7 @@
 </head>
 <body>
 
+<%= yield %>
 
 <style>
 
@@ -77,7 +78,6 @@ d3.json('<%= @data_location %>', function(error, graph) {
 </script>
 
 
-<%= yield %>
 
 </body>
 </html>
