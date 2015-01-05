@@ -7,7 +7,7 @@ end
 
 def semantic
 	respond_to do |format|
-		format.any { render :json => semantic_graph_data.to_json }
+		format.any { render :json => semantic_graph_data2.to_json }
 	end
 end
 

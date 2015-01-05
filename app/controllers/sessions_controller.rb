@@ -35,13 +35,6 @@ include ApplicationHelper
         redirect_to failure_path
       end 
       
-
-
-      #debug here
-
-
-      #@user.asdgasdg
-      calculate_social_distance
     else #social media from facebook
       @graph = facebook_client(include_entities: true)
       # @graph = Koala::Facebook::API.new(session[:access_token])

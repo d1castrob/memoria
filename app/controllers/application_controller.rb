@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
-  @@stemmer = Lingua::Stemmer.new(:language => "spanish", :encoding => 'UTF-8')
+  @@stemmer = Lingua::Stemmer.new(:language => "english", :encoding => 'UTF-8')
 
   protected
 
@@ -231,37 +231,92 @@ class ApplicationController < ActionController::Base
   #
   # en base al texto de dos mensajes, calcula cuanto difiere uno de otro
   #
-  def calculate_text_distance
-    model = process_data(:documents => Message.all);
-    ActiveRecord::Base.logger = nil
-    # itera para el modelo construido
-    # los mensajes parten en 1 y la matriz en cero asi que por eso estan los indices corridos
-    # i.e. Messages.find(1) == model.documents[0] => true
-    # nota: index (e,i,j) == (valor,fila,col)
-    # es vital separar en estas dos lineas
-    puts 'loading matrix'
-    m = model.similarity_matrix
-    puts 'printing to db'
-    numeroIter = m.shape[0]-1
+    def calculate_text_distance
+        model = process_data(:documents => Message.all);
+        ActiveRecord::Base.logger = nil
+        # itera para el modelo construido
+        # los mensajes parten en 1 y la matriz en cero asi que por eso estan los indices corridos
+        # i.e. Messages.find(1) == model.documents[0] => true
+        # nota: index (e,i,j) == (valor,fila,col)
+        
+        # es vital separar en estas dos lineas
+        puts 'loading matrix'
+        m = model.similarity_matrix
+        puts 'printing to db'
+        numeroIter = m.shape[0]-1
 
-    for i in 0..numeroIter
-      for j in 0..numeroIter
-        # para ahorrar, pues la matriz es simetrica
-        if j > i 
-          #encontrar ids de mensajes en el sitio
-          m1 = Message.find(i.to_i+1).id_at_site;
-          m2 = Message.find(j.to_i+1).id_at_site;
-          #encontrar distancia
-          unless m[i,j] == 0
-            Edge.create(:source => m1,:target => m2,:text_distance => m[i,j]);  
-          end
+        #dan cuenta de un desface matriz vs numero msgs necesario por el tfidf
+        aux_i=0
+        aux_j=0
+
+        offset_i=0
+        offset_j=0
+
+        #recorremos la matriz partiendo en i
+        for i in 1..numeroIter
+
+            if aux_i == 0
+                  
+                m1 = Message.find(i-offset_i);
+
+                if m1.repetitions > 0
+                    aux_i = m1.repetitions
+                    offset_i += m1.repetitions
+                end
+
+                #recorremos la matriz desde j
+
+                for j in 1..numeroIter
+
+                    # para ahorrar, pues la matriz es simetrica
+                        
+                        if aux_j == 0
+
+                            m2 = Message.find(j-offset_j);           
+                            if m2.repetitions > 0
+                                aux_j = m2.repetitions
+                                offset_j += m2.repetitions
+                            end
+
+                            unless m[i,j] == 0 & i > j
+                                Edge.find_or_create_by(:source => m1.id.to_s,:target => m2.id.to_s,:text_distance => m[i,j]);  
+                            end
+                        else
+                            # arreglar offset
+                            aux_j -= 1
+                        end
+                    
+                end
+
+                offset_j = 0
+            else
+                # arreglar offset
+                aux_i -= 1
+            end
+            #print para saber el progreso del proceso
+            puts i
         end
-        #print para saber el progreso del proceso
-      end
-      puts i
+        offset_i = 0
     end
 
-  end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 end
 
