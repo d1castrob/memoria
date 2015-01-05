@@ -8,27 +8,23 @@ def calculate_text_distance_data
 	@node_rows = []
 	@link_rows = []
 
-	Message.all.each_with_index do |u1|
+	Message.all.order(id: :asc).each do |u1|
 		node_row = u1.to_hash
 		@node_rows << node_row
 		
 		#esta iteracion burda funciona xq no hay ejes de sobra.
-		Message.all.each_with_index do |u2|
 
-			if u1.id > u2.id
 
-				e = u1.edges.find_by(target_id: u2.id)
+			u1.edges.each do |e|
 
-				if !e.blank?
+
 					link_row = e.to_hash
 					@link_rows << link_row
-				end
 
 			end
 
-		end
 
-		puts i1
+		puts u1.id
 	end
 
 	@data = { :nodes => @node_rows, :links => @link_rows }
