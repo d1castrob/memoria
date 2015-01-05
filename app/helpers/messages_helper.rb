@@ -1,11 +1,6 @@
 module MessagesHelper
 
 
-def text_distance_data
-	@data ||= calculate_text_distance_data
-end
-
-
 
 def calculate_text_distance_data
     ActiveRecord::Base.logger = nil
@@ -22,10 +17,10 @@ def calculate_text_distance_data
 
 			if i1 > i2
 
-				e = Edge.where(source: u1.id.to_s, target: u2.id.to_s)
+				e = u1.edges.find_by(target_id: u2.id)
 
 				if !e.blank?
-					link_row = {:source => i1, :target => i2, :value => e.first.text_distance}
+					link_row = {:source => i1, :target => i2, :value => e.text_distance}
 					@link_rows << link_row
 				end
 

@@ -3,6 +3,11 @@ class Message < ActiveRecord::Base
   has_and_belongs_to_many :expressions
 
 
+  has_many :edges
+  has_many :targets, :through => :edges
+
+
+
   def self.to_csv(options = {})
     CSV.generate(options) do |csv|
       csv << column_names
@@ -10,6 +15,11 @@ class Message < ActiveRecord::Base
         csv << message.attributes.values_at(*column_names)
       end
     end
+  end
+
+
+  def self.to_hash
+    node_row = {:name => self.text , :group => 1, :mentions => self.repetitions + self.comments + self.likes}
   end
 
 

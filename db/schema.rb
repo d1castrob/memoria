@@ -17,8 +17,8 @@ ActiveRecord::Schema.define(version: 20141128131142) do
   enable_extension "plpgsql"
 
   create_table "edges", force: true do |t|
-    t.string   "source"
-    t.string   "target"
+    t.integer  "message_id"
+    t.integer  "target_id"
     t.string   "location"
     t.float    "social_distance"
     t.float    "text_distance"

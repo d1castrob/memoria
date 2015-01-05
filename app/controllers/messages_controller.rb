@@ -18,7 +18,7 @@ end
 
 def text_distance
 	respond_to do |format|
-		format.any { render :json => text_distance_data.asdfasdf }
+		format.any { render :json => text_distance_hash.asdfasdf }
 	end
 end
 

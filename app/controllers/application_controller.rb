@@ -23,7 +23,13 @@ class ApplicationController < ActionController::Base
   def signed_in?
     !!current_user
   end
-  helper_method :current_user, :signed_in?
+
+  def text_distance_hash
+    @text_distance_data ||= calculate_text_distance_data
+  end
+
+
+  helper_method :current_user, :signed_in?, :text_distance_hash
 
   #
   # inicializa un cliente de twitter mediante el cual se puede pedir info privada
@@ -268,23 +274,23 @@ class ApplicationController < ActionController::Base
 
                 for j in 1..numeroIter
 
-                    # para ahorrar, pues la matriz es simetrica
                         
-                        if aux_j == 0
+                  if aux_j == 0
 
-                            m2 = Message.find(j-offset_j);           
-                            if m2.repetitions > 0
-                                aux_j = m2.repetitions
-                                offset_j += m2.repetitions
-                            end
+                      m2 = Message.find(j-offset_j);           
+                      if m2.repetitions > 0
+                          aux_j = m2.repetitions
+                          offset_j += m2.repetitions
+                      end
 
-                            unless m[i,j] == 0 & i > j
-                                Edge.find_or_create_by(:source => m1.id.to_s,:target => m2.id.to_s,:text_distance => m[i,j]);  
-                            end
-                        else
-                            # arreglar offset
-                            aux_j -= 1
-                        end
+                      # para ahorrar, pues la matriz es simetrica
+                      unless m[i,j] == 0 & i > j
+                          Edge.find_or_create_by(:message_id => m1.id,:target_id => m2.id,:text_distance => m[i,j]);  
+                      end
+                  else
+                      # arreglar offset
+                      aux_j -= 1
+                  end
                     
                 end
 

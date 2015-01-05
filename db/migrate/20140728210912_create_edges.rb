@@ -1,8 +1,8 @@
 class CreateEdges < ActiveRecord::Migration
   def change
     create_table :edges do |t|
-      t.string :source
-      t.string :target
+      t.integer :message_id
+      t.integer :target_id
       t.string :location
       t.float :social_distance
       t.float :text_distance
