@@ -3,7 +3,9 @@ class Edge < ActiveRecord::Base
 	belongs_to :message
 	belongs_to :target, :class_name => "Message"
 
-
+  def to_hash
+    link_row = {:source => self.message_id, :target => self.target_id, :value => self.text_distance}
+  end
 
   def self.to_csv(options = {})
     CSV.generate(options) do |csv|
