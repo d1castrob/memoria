@@ -51,5 +51,7 @@ Rails.application.routes.draw do
 
   resources :edges
 
+  resources :expressions
+
 
 end

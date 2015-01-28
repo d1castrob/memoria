@@ -1,0 +1,66 @@
+
+<h1>MENSAJE</h1>
+
+<% @message.text.split.each do |w| %>
+	
+	<% e = Expression.find_by_raw_text(w) %>
+
+    <% if e.nil? %>
+   		<%= w %>
+    <% else %>
+   		<%= link_to(e.raw_text, e) %>
+   	<% end %>
+
+<% end %>
+
+<br>
+
+
+n° comentarios : <%= @message.comments %><br>
+n° favoritos : <%= @message.likes %><br>
+n° retweets : <%= @message.repetitions %><br>
+
+<br>
+
+<hr>
+
+
+<% ########################################## DISTANCIA SOCIAL ##################################3 %>
+
+<h3>Distancia Social: </h3>
+
+	<% @specific_social_distance.each do |u, i| %>
+		<%= u.twitter_name %> is close with: <%= link_to(i.twitter_name, i) %> <br> <br>
+	<% end %>
+
+<% ########################################## DISTANCIA SEMANTICA ##################################3 %>
+
+
+<hr>
+<br>
+<h3>Distancia Semantica: </h3>
+
+	<% @message.expressions.each do |e| %>
+	
+	<p>tweets con la expresion:</p> <%= e.raw_text %>
+
+	<ol> <% e.messages.each do |m| %>
+		<li> <%= link_to(m.text, m) %> </li>
+		<% end -%>
+	</ol>
+
+
+<% ########################################## DISTANCIA DE TEXTO ##################################3 %>
+
+<hr>
+<br>
+<h3>Distancia de Texto: </h3>
+
+	<% @specific_text_distance.each do |i| %>
+
+		dist_texto: <%= i.text_distance%><br>
+		otro mensaje: <%= link_to(Message.find(i.target_id).text, Message.find(i.target_id)) %><br>
+		<br>
+
+	<% end %>
+
