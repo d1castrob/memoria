@@ -42,13 +42,19 @@ n° retweets : <%= @message.repetitions %><br>
 
 	<% @message.expressions.each do |e| %>
 	
-	<p>tweets con la expresion:</p> <%= e.raw_text %>
+	<p>otros tweets con la expresion <%= e.raw_text %> :</p>
 
 	<ol> <% e.messages.each do |m| %>
-		<li> <%= link_to(m.text, m) %> </li>
+			<% if e.messages.count == 1%>
+				<ul>self and no others</ul>
+			<% else %>
+				<% unless m.id == @message.id %>
+					<ul> <%= link_to(m.text, m) %> </ul>
+				<% end -%>
+			<% end -%>
 		<% end -%>
 	</ol>
-
+<% end -%>
 
 <% ########################################## DISTANCIA DE TEXTO ##################################3 %>
 

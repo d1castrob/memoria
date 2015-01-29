@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141128131142) do
+ActiveRecord::Schema.define(version: 20150129194552) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -33,6 +33,11 @@ ActiveRecord::Schema.define(version: 20141128131142) do
     t.integer "count",          default: 0
     t.string  "raw_text"
     t.string  "processed_text"
+  end
+
+  create_table "expressions_messages", id: false, force: true do |t|
+    t.integer "expression_id", null: false
+    t.integer "message_id",    null: false
   end
 
   create_table "followers", force: true do |t|
