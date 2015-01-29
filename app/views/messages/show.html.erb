@@ -54,7 +54,17 @@ n° retweets : <%= @message.repetitions %><br>
 			<% end -%>
 		<% end -%>
 	</ol>
-<% end -%>
+	<% end -%>
+
+	<% @message.expressions.each do |e| %>
+
+		expressiones relacionadas con <%= e.raw_text %> : 
+		<% e.coocurrances.each do |c| %>
+			<li> <%= c.raw_text %> </li>
+		<% end -%>
+		<br>
+	<% end -%>
+
 
 <% ########################################## DISTANCIA DE TEXTO ##################################3 %>
 

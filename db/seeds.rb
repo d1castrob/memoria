@@ -53,7 +53,7 @@ file.each_line do |line|
       aux[index][0].save
 
       #si existen coocurrencias
-      if index > 1
+      if index > 0
         #para toda tupla de aux con indice menor al actual
         for i in 0..index-1
           #crear relacion con aux actual
