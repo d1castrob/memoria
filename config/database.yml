@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: minutoaminuto_development_8
+  database: minutoaminuto_development_9
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
