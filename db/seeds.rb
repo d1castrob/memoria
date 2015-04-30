@@ -5,13 +5,9 @@
 
 # CSV.open('User.csv', 'wb') do |csv|
 #   User.all.each do |m|
-#     csv << [m.twitter_name, m.mentions]
+#     csv << [m.id, m.twitter_name, m.mentions]
 #   end
 # end
-
-CSV.foreach('User.csv') do |row|
-	User.find_or_create_by(twitter_name: row[0], mentions: row[1])
-end
 
 # CSV.open('Message.csv', 'wb') do |csv|
 #   Message.all.each do |m|
@@ -19,39 +15,23 @@ end
 #   end
 # end
 
-CSV.foreach('Message.csv') do |row|
-    Message.find_or_create_by(id: row[0].to_i, from: row[1], id_at_site: row[2], comments: row[3].to_i, likes: row[4].to_i, repetitions: row[5].to_i, created_at: row[6].to_datetime, text: row[7])
-end
-
 # CSV.open('Expression.csv', 'wb') do |csv|
 #   Expression.all.each do |m|
 #     csv << [m.symbol, m.from, m.count, m.raw_text]
 #   end
 # end
 
-CSV.foreach('Expression.csv') do |row|
-	Expression.find_or_create_by(symbol: row[0], count: row[1].to_i, raw_text: row[2])
-end
-
 # CSV.open('Relationship.csv', 'wb') do |csv|
 #   Relationship.all.each do |m|
 #     csv << [m.expression_id, m.coocurrance_id, m.count]
 #   end
-# en
-
-CSV.foreach('Relationship.csv') do |row|
-	Relationship.find_or_create_by(expression_id: row[0].to_i, coocurrance_id: row[1].to_i, count: row[2].to_i)
-end
+# end
 
 # CSV.open('Friendship.csv', 'wb') do |csv|
 #   Friendship.all.each do |m|
 #     csv << [m.friend_id, m.user_id, m.weight]
 #   end
-# en
-
-CSV.foreach('Friendship.csv') do |row|
-	Friendship.find_or_create_by(friend_id: row[0].to_i, user_id: row[1].to_i, weight: row[2].to_float)
-end
+# end
 
 # CSV.open('Edge.csv', 'wb') do |csv|
 #   Edge.all.each do |m|
@@ -59,8 +39,30 @@ end
 #   end
 # end;0
 
-CSV.foreach('Edge.csv') do |row|
-	Edge.find_or_create_by(id: row[0].to_i, message_id: row[1].to_i, target_id: row[2].to_i, location: row[3], social_distance: row[4].to_float, text_distance: row[5].to_float)
-end
 
 # system('cls')
+
+
+CSV.foreach('User.csv') do |row|
+    User.find_or_create_by(id: row[0], twitter_name: row[1], mentions: row[2])
+end
+
+CSV.foreach('Message.csv') do |row|
+    Message.find_or_create_by(id: row[0].to_i, from: row[1], id_at_site: row[2], comments: row[3].to_i, likes: row[4].to_i, repetitions: row[5].to_i, created_at: row[6].to_datetime, text: row[7])
+end
+
+CSV.foreach('Expression.csv') do |row|
+    Expression.find_or_create_by(symbol: row[0], count: row[1].to_i, raw_text: row[2])
+end
+
+CSV.foreach('Relationship.csv') do |row|
+    Relationship.find_or_create_by(expression_id: row[0].to_i, coocurrance_id: row[1].to_i, count: row[2].to_i)
+end
+
+CSV.foreach('Friendship.csv') do |row|
+    Friendship.find_or_create_by(friend_id: row[0].to_i, user_id: row[1].to_i, weight: row[2].to_f)
+end
+
+CSV.foreach('Edge.csv') do |row|
+    Edge.find_or_create_by(id: row[0].to_i, message_id: row[1].to_i, target_id: row[2].to_i, location: row[3], social_distance: row[4].to_f, text_distance: row[5].to_f)
+end
