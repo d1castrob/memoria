@@ -13,16 +13,20 @@ CSV.foreach('User.csv') do |row|
 	User.find_or_create_by(twitter_name: row[0], mentions: row[1])
 end
 
-# File.open('Message.csv', 'w') do |f2|
-# Message.all.each do |m|
-# 	a = m.id.to_s+','+m.from+','+m.id_at_site+','+m.comments.to_s+','+m.likes.to_s+','+m.repetitions.to_s+','+m.created_at.to_s+','+m.text
-# 	f2.puts a
+
+# CSV.open('msg.csv', 'wb') do |csv|
+#   Message.all.each do |m|
+#     csv << [m.id, m.from, m.id_at_site, m.comments, m.likes, m.repetitions, m.created_at, m.text]
+#   end
 # end
-# end
+
 
 CSV.foreach('Message.csv') do |row|
 	Message.find_or_create_by(id: row[0].to_i, from: row[1], id_at_site: row[2], comments: row[3].to_i, likes: row[4].to_i, repetitions: row[5].to_i, created_at: row[6].to_datetime, text: row[7])
 end
+
+
+
 
 # File.open('Expression.csv', 'w') do |f2|
 # Expression.all.each do |m|
