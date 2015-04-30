@@ -10,18 +10,18 @@
 # end
 
 CSV.foreach('User.csv') do |row|
-	User.create(twitter_name: row[0], mentions: row[1])
+	User.find_or_create_by(twitter_name: row[0], mentions: row[1])
 end
 
 # File.open('Message.csv', 'w') do |f2|
 # Message.all.each do |m|
-# a = m.id.to_s+','+m.from+','+m.id_at_site+','+m.comments.to_s+','+m.likes.to_s+','+m.repetitions.to_s+','+m.created_at.to_s
-# f2.puts a
+# 	a = m.id.to_s+','+m.from+','+m.id_at_site+','+m.comments.to_s+','+m.likes.to_s+','+m.repetitions.to_s+','+m.created_at.to_s+','+m.text
+# 	f2.puts a
 # end
 # end
 
 CSV.foreach('Message.csv') do |row|
-	Message.create(id: row[0].to_i, from: row[1], id_at_site: row[2], comments: row[3].to_i, likes: row[4].to_i, repetitions: row[5].to_i, created_at: row[6].to_datetime)
+	Message.find_or_create_by(id: row[0].to_i, from: row[1], id_at_site: row[2], comments: row[3].to_i, likes: row[4].to_i, repetitions: row[5].to_i, created_at: row[6].to_datetime, text: row[7])
 end
 
 # File.open('Expression.csv', 'w') do |f2|
@@ -32,7 +32,7 @@ end
 # end
 
 CSV.foreach('Expression.csv') do |row|
-	Expression.create(symbol: row[0], count: row[1].to_i, raw_text: row[2])
+	Expression.find_or_create_by(symbol: row[0], count: row[1].to_i, raw_text: row[2])
 end
 
 # File.open('Relationship.csv', 'w') do |f2|
@@ -43,7 +43,7 @@ end
 # end
 
 CSV.foreach('Relationship.csv') do |row|
-	Relationship.create(expression_id: row[0].to_i, coocurrance_id: row[1].to_i, count: row[2].to_i)
+	Relationship.find_or_create_by(expression_id: row[0].to_i, coocurrance_id: row[1].to_i, count: row[2].to_i)
 end
 
 # File.open('Friendship.csv', 'w') do |f2|
@@ -54,7 +54,7 @@ end
 # end
 
 CSV.foreach('Friendship.csv') do |row|
-	Friendship.create(friend_id: row[0].to_i, user_id: row[1].to_i, weight: row[2].to_i)
+	Friendship.find_or_create_by(friend_id: row[0].to_i, user_id: row[1].to_i, weight: row[2].to_i)
 end
 
 # File.open('Edge', 'w') do |f2|
@@ -65,7 +65,7 @@ end
 # end
 
 CSV.foreach('Edge.csv') do |row|
-	Edge.create(id: row[0].to_i, message_id: row[1].to_i, target_id: row[2].to_i, location: row[3], social_distance: row[4].to_i, text_distance: row[5].to_i)
+	Edge.find_or_create_by(id: row[0].to_i, message_id: row[1].to_i, target_id: row[2].to_i, location: row[3], social_distance: row[4].to_i, text_distance: row[5].to_i)
 end
 
 # system('cls')
