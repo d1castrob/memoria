@@ -1,101 +1,71 @@
-# encoding: utf-8
-include ApplicationHelper
+# En los comentarios esta el script que fue usado para pasar la base de datos local, ya procesada,
+# hacia los archivos .csv de respaldo en la carpeta publica.  Estos archivos son usados como semillas
+# para construir la BD de una sola vez en el servidor y ahorrar procesamiento.
 
-
-
-#archivo proporcionado por MQ con tweets
-file = File.open('C:\Users\VAIO\Desktop\tweets.csv')
-# primera linea del archivo (headers)
-l1 = file.readline.split(/\t/)[15]
-# aqui esta el id del evento
-ActiveRecord::Base.logger = nil
-
-
-#
-# PASO 1
-#
-# preprocesamiento de los datos proveidos por MQ
-# se incluyen en el modelo de datos de la aplicacion
-# y se limpian redundancias obvias
-#
-
-total = 0
-skipped = 0 
-
-file.each_line do |line|
-
-  if line.split(/\t/)[15].remove(/\n/) == '26900'
-    total += 1
-    puts 'found'
-    # likes = rt, comments = favs
-    l = line.split(/\t/)
-   	m = Message.find_by_text(l[1])
-
-
-    #crear los mensajes
-   	if m.nil?
-      m = Message.create(from: l[12], text: l[1], id_at_site:l[0], likes:l[3], comments: l[9], created_at: l[14].to_datetime)
-    else
-      #add favorites and retweets
-      m.likes = m.likes + l[3].to_i
-      m.comments = m.likes + l[9].to_i
-      m.repetitions += 1
-    end
-    m.save
-
-    #crear las expresiones
-    expressions = m.get_expressions
-    aux = []
-    expressions.each_with_index do |e, index|
-      
-      aux << [Expression.find_or_create_by(raw_text: e[0], symbol: e[1]), index]
-      aux[index][0].count += 1
-      aux[index][0].save
-
-      #si existen coocurrencias
-      if index > 0
-        #para toda tupla de aux con indice menor al actual
-        for i in 0..index-1
-          #crear relacion con aux actual
-          @eje = aux[index][0].relationships.find_or_initialize_by(coocurrance_id: aux[i][0].id)
-          @eje.count += 1
-          @eje.save
-        end
-      end
-
-    end
-
-  end
-end
-
-
-#
-# PASO 2: post procesamiento de los datos
-#
-# calcular distancias entre distintos nodos.
-# en este caso dist social
-#
-Expression.where(symbol: 'at').each do |e|
-  User.create(twitter_name: e.raw_text, mentions: e.count)
-end
-
-
-#
-# @ApplicationController
-#
-# User.all.each do |u1|
-#   User.all.each do |u2|
-#
-#     a = Edge.where(source: u1.twitter_name, target: u2.twitter_name)
-#     #holi.holi
-#     dist = twitter_social_distance(u1.twitter_name, u2.twitter_name)
-#   
-#     if a.blank? || !a.social_distance.nil?
-#       Edge.create(sourc: u1.twitter_name, target: u2.twitter_name, social_distance: dist)
-#     else
-#       a.each do |edg|
-#         edg.social_distance = dist
-#       end
-#     end
-#   end
+# File.open('User.csv', 'w') do |f2|
+# User.all.each do |u|
+# a = u.twitter_name+','+u.mentions.to_s
+# f2.puts a
 # end
+# end
+
+CSV.foreach('User.csv') do |row|
+	User.create(twitter_name: row[0], mentions: row[1])
+end
+
+# File.open('Message.csv', 'w') do |f2|
+# Message.all.each do |m|
+# a = m.id.to_s+','+m.from+','+m.id_at_site+','+m.comments.to_s+','+m.likes.to_s+','+m.repetitions.to_s+','+m.created_at.to_s
+# f2.puts a
+# end
+# end
+
+CSV.foreach('Message.csv') do |row|
+	Message.create(id: row[0].to_i, from: row[1], id_at_site: row[2], comments: row[3].to_i, likes: row[4].to_i, repetitions: row[5].to_i, created_at: row[6].to_datetime)
+end
+
+# File.open('Expression.csv', 'w') do |f2|
+# Expression.all.each do |m|
+# a = m.symbol.to_s+','+m.count.to_s+','+m.raw_text
+# f2.puts a
+# end
+# end
+
+CSV.foreach('Expression.csv') do |row|
+	Expression.create(symbol: row[0], count: row[1].to_i, raw_text: row[2])
+end
+
+# File.open('Relationship.csv', 'w') do |f2|
+# Relationship.all.each do |m|
+# a = m.expression_id.to_s+','+m.coocurrance_id.to_s+','+m.count.to_s
+# f2.puts a
+# end
+# end
+
+CSV.foreach('Relationship.csv') do |row|
+	Relationship.create(expression_id: row[0].to_i, coocurrance_id: row[1].to_i, count: row[2].to_i)
+end
+
+# File.open('Friendship.csv', 'w') do |f2|
+# Friendship.all.each do |m|
+# a = m.friend_id.to_s+','+m.user_id.to_s+','+m.weight.to_s
+# f2.puts a
+# end
+# end
+
+CSV.foreach('Friendship.csv') do |row|
+	Friendship.create(friend_id: row[0].to_i, user_id: row[1].to_i, weight: row[2].to_i)
+end
+
+# File.open('Edge', 'w') do |f2|
+# Edge.all.each do |m|
+# a = m.id.to_s+','+m.message_id.to_s+','+m.target_id.to_s+','+m.location.to_s+','+m.social_distance.to_s+','+m.text_distance.to_s
+# f2.puts a
+# end
+# end
+
+CSV.foreach('Edge.csv') do |row|
+	Edge.create(id: row[0].to_i, message_id: row[1].to_i, target_id: row[2].to_i, location: row[3], social_distance: row[4].to_i, text_distance: row[5].to_i)
+end
+
+# system('cls')
