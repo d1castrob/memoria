@@ -1,5 +1,5 @@
-
-<h1>MENSAJE</h1>
+<div class="page-header">
+<h2>
 
 <% @message.text.split.each do |w| %>
 	
@@ -12,33 +12,29 @@
    	<% end %>
 
 <% end %>
+</h2>
 
-<br>
+<span> comentarios:<%= @message.comments %>, </span>
+<span> favoritos:<%= @message.likes %>, </span>
+<span> retweets:<%= @message.repetitions %> </span>
 
-
-n° comentarios : <%= @message.comments %><br>
-n° favoritos : <%= @message.likes %><br>
-n° retweets : <%= @message.repetitions %><br>
-
-<br>
-
-<hr>
+</div>
 
 
 <% ########################################## DISTANCIA SOCIAL ##################################3 %>
 
-<h3>Distancia Social: </h3>
+<div class="col-md-4">
+<h3>Usuarios Relacionados: </h3>
 
 	<% @specific_social_distance.each do |u, i| %>
 		<%= u.twitter_name %> is close with: <%= link_to(i.twitter_name, i) %> <br> <br>
 	<% end %>
+</div>
 
 <% ########################################## DISTANCIA SEMANTICA ##################################3 %>
 
-
-<hr>
-<br>
-<h3>Distancia Semantica: </h3>
+<div class="col-md-4">
+<h3>Expresiones Semanticas Similares: </h3>
 
 	<% @message.expressions.each do |e| %>
 	
@@ -65,18 +61,19 @@ n° retweets : <%= @message.repetitions %><br>
 		<br>
 	<% end -%>
 
+</div>
 
 <% ########################################## DISTANCIA DE TEXTO ##################################3 %>
 
-<hr>
-<br>
-<h3>Distancia de Texto: </h3>
+<div class="col-md-4">
+<h3>Mensajes con Texto Similar: </h3>
 
 	<% @specific_text_distance.each do |i| %>
 
-		dist_texto: <%= i.text_distance%><br>
-		otro mensaje: <%= link_to(Message.find(i.target_id).text, Message.find(i.target_id)) %><br>
+		<%#= i.text_distance%>
+		<%= link_to(Message.find(i.target_id).text, Message.find(i.target_id)) %><br>
 		<br>
 
 	<% end %>
 
+</div>
