@@ -27,7 +27,7 @@ def show
             @links << e[0]
         elsif e[1]=='at'
             @users << e[0]
-        elsif e[1]=='hash'
+        elsif e[1]=='hashtag'
             @links << e[0]
         end
     end 
@@ -48,7 +48,7 @@ def show
             mentioned_user.friendships.order(weight: :desc).take(5).each do |f|
                 
                 #expresiones que contienen el nombre del usuario amigo y sus respectivos mensajes
-                e = Expression.find_by_raw_text(User.find(f.friend_id).twitter_name)
+                e = Expression.find_by_raw_text(f.friend.twitter_name)
                 e.messages.each do |msg|
                     @specific_social_distance << msg
                 end
