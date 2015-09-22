@@ -71,10 +71,10 @@ class Message < ActiveRecord::Base
           output << [w.remove(':'), expression]
         else
           output << [w, expression]
+        end
       end
     end
     output
-    
   end
 
   def get_type(word)
