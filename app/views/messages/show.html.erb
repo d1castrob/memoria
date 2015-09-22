@@ -5,61 +5,56 @@
 	
 	<% e = Expression.find_by_raw_text(w) %>
 
-    <% if e.nil? %>
-   		<%= w %>
+    <% if !e.nil? && e.symbol=='link' %>
+   		<%= link_to(e.raw_text, e.raw_text) %>
     <% else %>
-   		<%= link_to(e.raw_text, e) %>
+   		<%= w %>
    	<% end %>
 
 <% end %>
 </h2>
 
+<p>
 <span> comentarios:<%= @message.comments %>, </span>
 <span> favoritos:<%= @message.likes %>, </span>
 <span> retweets:<%= @message.repetitions %> </span>
-
+</p>
 </div>
 
 
 <% ########################################## DISTANCIA SOCIAL ##################################3 %>
 
 <div class="col-md-4">
-<h3>Usuarios Relacionados: </h3>
+<h3>Mensajes que mencionan a usuarios cercanos: </h3>
+	<% if !@specific_social_distance.empty? %>
+	<% @specific_social_distance.each do |i| %>
+		
+		<%= link_to(i.text, i) %><br>
+		<br>
 
-	<% @specific_social_distance.each do |u, i| %>
-		<%= u.twitter_name %> is close with: <%= link_to(i.twitter_name, i) %> <br> <br>
-	<% end %>
+	<% end -%>
+	<% else %>
+		<p>No hay mensajes de usuarios cercanos</p>
+	<% end -%>
 </div>
 
 <% ########################################## DISTANCIA SEMANTICA ##################################3 %>
 
 <div class="col-md-4">
-<h3>Expresiones Semanticas Similares: </h3>
+<h3>Mensajes con hashtags o links relacionados: </h3>
 
-	<% @message.expressions.each do |e| %>
-	
-	<p>otros tweets con la expresion <%= e.raw_text %> :</p>
-
-	<ol> <% e.messages.each do |m| %>
-			<% if e.messages.count == 1%>
-				<ul>self and no others</ul>
-			<% else %>
-				<% unless m.id == @message.id %>
-					<ul> <%= link_to(m.text, m) %> </ul>
-				<% end -%>
-			<% end -%>
-		<% end -%>
-	</ol>
-	<% end -%>
-
-	<% @message.expressions.each do |e| %>
-
-		expressiones relacionadas con <%= e.raw_text %> : 
-		<% e.coocurrances.each do |c| %>
-			<li> <%= c.raw_text %> </li>
-		<% end -%>
+	<% if !@specific_semantic_distance.empty?%>
+	<% @specific_semantic_distance.each do |i| %>
+		
+				<%#= i.text_distance%>
+		<%= link_to(i.text, i) %><br>
 		<br>
+
 	<% end -%>
+	<% else %>
+		<p>No hay mensajes con links o hashtags relacionados</p>
+	<% end -%>
+
 
 </div>
 
@@ -68,6 +63,7 @@
 <div class="col-md-4">
 <h3>Mensajes con Texto Similar: </h3>
 
+	<% if !@specific_text_distance.empty?%>
 	<% @specific_text_distance.each do |i| %>
 
 		<%#= i.text_distance%>
@@ -75,5 +71,8 @@
 		<br>
 
 	<% end %>
+	<% else %>
+		<p>No hay mensajes con texto similar</p>
+	<% end -%>
 
 </div>
