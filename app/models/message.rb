@@ -74,6 +74,7 @@ class Message < ActiveRecord::Base
       end
     end
     output
+    
   end
 
   def get_type(word)
