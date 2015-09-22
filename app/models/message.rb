@@ -89,4 +89,8 @@ class Message < ActiveRecord::Base
     end
   end
 
+  def has_expression(word)
+    self.text.include?(word)
+  end
+
 end

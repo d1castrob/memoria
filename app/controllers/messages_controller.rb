@@ -49,7 +49,29 @@ def show
                 
                 #expresiones que contienen el nombre del usuario amigo y sus respectivos mensajes
                 e = Expression.find_by_raw_text(f.friend.twitter_name)
-                e.messages.each do |msg|
+                
+
+
+
+                messages = []
+
+
+
+                Message.all.each do |m|
+                    if m.has_expression(e.raw_text)
+                        messages << m
+                    end
+                end
+
+
+
+
+
+
+
+
+                #e.messages.each do |msg|
+                messages.each do |msg|
                     @specific_social_distance << msg
                 end
             end
@@ -64,10 +86,38 @@ def show
     @links.each do |h|
         e = Expression.find_by_raw_text(h)
         e.relationships.order(count: :desc).each do |exp|
-            exp.coocurrance.messages.each do |msg|
+            
 
-                @specific_semantic_distance << msg
-            end
+
+            messages = []
+
+
+
+
+
+
+
+            otra_exp = exp.coocurrance
+            #exp.coocurrance.messages.each do |msg|
+
+
+
+
+
+
+                Message.all.each do |m|
+                    if m.has_expression(exp.coocurrance.raw_text)
+                        messages << m
+                    end
+                end
+
+
+
+
+
+                #@specific_semantic_distance << msg
+                @specific_semantic_distance = messages
+            #end
         end
     end
 
