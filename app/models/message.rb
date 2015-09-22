@@ -67,7 +67,10 @@ class Message < ActiveRecord::Base
     words.each do |w|
       expression = get_type(w)
       if !expression.nil?
-        output << [w.remove(':'), expression]
+        if expression == 'at'
+          output << [w.remove(':'), expression]
+        else
+          output << [w, expression]
       end
     end
     output
